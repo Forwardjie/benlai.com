@@ -1,6 +1,33 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
+}
+
+input:-ms-input-placeholder {
+  color: #3e4141;
+  font-size: 12px;
+  opacity: 1;
+}
+
+        
+input::-webkit-input-placeholder {
+  color: #3e4141;
+  font-size: 12px;
+  opacity: 1;
+}
+
+:-moz-placeholder {
+  color: #3e4141;
+  font-size: 12px;
+  opacity: 1;
+}
+
+      
+::-moz-placeholder {
+  color: #3e4141;
+  font-size: 12px;
+  opacity: 1;
 }
 
 .container {
@@ -10,7 +37,6 @@
 
 #benlai .header {
   height: 237px;
-  background: #cccccc;
 }
 #benlai .header .head_top {
   height: 31px;
@@ -19,6 +45,8 @@
   background: #fcfcfc;
   color: #3e4141;
   font-size: 12px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ccc;
 }
 #benlai .header .head_top .login {
   float: left;
@@ -37,6 +65,222 @@
   width: 79px;
   height: 22px;
   padding-left: 6px;
+  text-decoration: none;
+  color: #3e4141;
+  background: url(img/header/n_top_ico_e5a1c5b5.png) 70px 8px no-repeat #ffffff;
+  border: 1px solid #eeeee7;
+  line-height: 22px;
+  text-align: left;
+  margin-top: 3px;
+}
+#benlai .header .head_top .head_menu {
+  float: right;
+}
+#benlai .header .head_top .head_menu li {
+  float: left;
+  box-sizing: border-box;
+  height: 31px;
+  background: url(img/header/n_top_ico_e5a1c5b5.png) right -79px no-repeat;
+}
+#benlai .header .head_top .head_menu li .menu_word {
+  margin: 0 15px;
+}
+#benlai .header .head_top .head_menu li a {
+  line-height: 30px;
+  color: #3e4141;
+  display: inline-block;
+  text-decoration: none;
+}
+#benlai .header .head_top .head_menu li .towcode dl {
+  width: 101px;
+  height: 30px;
+  position: relative;
+}
+#benlai .header .head_top .head_menu li .towcode dl dt a {
+  display: block;
+  padding-left: 30px;
+  background: url(img/header/top_ipico01_708559df.gif) 11px 4px no-repeat;
+}
+#benlai .header .head_top .head_menu li .towcode dl dd {
+  width: 101px;
+  height: 157px;
+  background: #fff;
+  text-align: center;
+  position: absolute;
+  border: 1px solid #ccc;
+  border-top: none;
+  top: 30px;
+  left: -1px;
+  display: none;
+}
+#benlai .header .head_top .head_menu li .towcode dl dd img {
+  width: 98px;
+  padding: 15px 0 0 0;
+}
+#benlai .header .head_top .head_menu li .towcode dl dd p {
+  line-height: 38px;
+  color: #2c2e2d;
+  font-size: 12px;
+}
+#benlai .header .head_top .head_menu li .head_service dl {
+  width: 87px;
+  height: 30px;
+  position: relative;
+}
+#benlai .header .head_top .head_menu li .head_service dl dt {
+  width: 73px;
+  padding-left: 14px;
+  background: url(img/header/n_top_ico_e5a1c5b5.png) 65px 13px no-repeat;
+}
+#benlai .header .head_top .head_menu li .head_service dl dd {
+  width: 89px;
+  height: 102px;
+  position: absolute;
+  top: 30px;
+  left: -1px;
+  border: 1px solid #ccc;
+  border-top: none;
+  background: #fff;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 6px;
+  display: none;
+}
+#benlai .header .head_top .head_menu li .head_service dl dd a {
+  display: block;
+  font-size: 12px;
+  line-height: 22px;
+  height: 22px;
+}
+#benlai .header .head_top_bar {
+  height: 60px;
+  background: pink;
+}
+#benlai .header .head_top_bar a {
+  display: block;
+  height: 100%;
+  display: none;
+}
+#benlai .header .head_top_bar a:nth-child(1) {
+  background: url(img/header/dtpf29.jpg) center top no-repeat;
+  display: block;
+}
+#benlai .header .head_top_bar a:nth-child(2) {
+  background: url(img/header/dtgdx.jpg) center top no-repeat;
+}
+#benlai .header .head_top_bar a:nth-child(3) {
+  background: url(img/header/dthf1.jpg) center top no-repeat;
+}
+#benlai .header .head_logo_box {
+  background: #fff;
+  margin-top: 2px;
+}
+#benlai .header .head_logo_box .container {
+  overflow: hidden;
+}
+#benlai .header .head_logo_box .container .head_buy {
+  margin: 30px 0 0 20px;
+  position: relative;
+  z-index: 60;
+}
+#benlai .header .head_logo_box .container .head_buy dl {
+  height: 40px;
+}
+#benlai .header .head_logo_box .container .head_buy dl dt {
+  height: 38px;
+  width: 123px;
+  border: 1px solid #e5e5e5;
+  line-height: 38px;
+}
+#benlai .header .head_logo_box .container .head_buy dl dt .buy_quantity {
+  width: 37px;
+  height: 23px;
+  background: url(img/header/n_top_ico_e5a1c5b5.png) 0 -194px no-repeat;
+  position: absolute;
+  top: -16px;
+  left: 25px;
+  line-height: 19px;
+  text-align: center;
+  color: #fff;
+}
+#benlai .header .head_logo_box .container .head_buy dl dt a {
+  display: block;
+  background: url(img/header/n_top_ico_e5a1c5b5.png) 98px 17px no-repeat;
+  font-size: 14px;
+  color: #3e4141;
+  padding-right: 35px;
+}
+#benlai .header .head_logo_box .container .head_buy dl dt a s {
+  display: inline-block;
+  width: 20px;
+  height: 15px;
+  background: url(img/header/n_top_ico_e5a1c5b5.png) 0 -159px no-repeat;
+  margin: 12px 13px 0 12px;
+}
+#benlai .header .head_logo_box .container .head_my {
+  margin: 30px 0;
+}
+#benlai .header .head_logo_box .container .head_my #dtIsNoLogin {
+  height: 40px;
+}
+#benlai .header .head_logo_box .container .head_my #dtIsNoLogin dt {
+  height: 38px;
+  border: 1px solid #e5e5e5;
+}
+#benlai .header .head_logo_box .container .head_my #dtIsNoLogin dt a {
+  display: block;
+  background: url(img/header/n_top_ico_e5a1c5b5.png) 113px 17px no-repeat;
+  font-size: 14px;
+  color: #3e4141;
+  padding-right: 35px;
+}
+#benlai .header .head_logo_box .container .head_my #dtIsNoLogin dt s {
+  display: inline-block;
+  width: 20px;
+  height: 15px;
+  background: url(img/header/n_top_ico_e5a1c5b5.png) 0 -122px no-repeat;
+  margin: 12px 13px 0 12px;
+}
+#benlai .header .head_logo_box .container .head_search {
+  width: 470px;
+  height: 41px;
+  margin: 29px 45px 0 0;
+  position: relative;
+}
+#benlai .header .head_logo_box .container .head_search .search_box {
+  border: 3px solid #91be16;
+  overflow: hidden;
+}
+#benlai .header .head_logo_box .container .head_search .search_box input {
+  width: 367px;
+  height: 35px;
+  padding: 0 10px;
+  vertical-align: middle;
+}
+#benlai .header .head_logo_box .container .head_search .search_box a {
+  display: inline-block;
+  width: 77px;
+  height: 35px;
+  background: url(img/header/n_top_ico_e5a1c5b5.png) 0 -265px no-repeat;
+}
+#benlai .header .head_logo_box .container .head_search .search_word {
+  position: absolute;
+  top: -32px;
+  left: 0;
+  line-height: 32px;
+  width: 470px;
+}
+#benlai .header .head_logo_box .container .head_search .search_word span {
+  margin-right: 25px;
+}
+#benlai .header .head_logo_box .container .head_search .search_word span a {
+  font-size: 12px;
+  color: #8c8c8c;
+}
+#benlai .header .head15_menu_bg {
+  height: 44px;
+  width: 100%;
+  background-color: #8ab700;
 }
 #benlai .banner {
   height: 400px;
