@@ -1,0 +1,56 @@
+@charset "utf-8";//设置编码
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+#benlai{
+    // background: #ccc;
+    .header{
+        height: 237px;
+        background: #cccccc;
+        .head_top{
+            height: 31px;
+            box-sizing: border-box;
+            line-height: 31px;
+            background: #fcfcfc;
+            color: #3e4141;
+            font-size: 12px;
+            .login{
+                float: left;
+                a{
+                    color: #ff6900;
+                }
+            }
+            .head_city{
+                float: left;
+                background: url(img/header/n_top_ico_e5a1c5b5.png) 0 -43px no-repeat;
+                padding-left: 34px;
+                margin-left: 15px;
+                a{
+                    display: block;
+                    width: 79px;
+                    height: 22px;
+                    padding-left: 6px;
+                }
+            }
+        }
+    }
+    .banner{
+        height: 400px;
+        background: pink;
+    }
+    .main1200{
+        height: 8251px;
+        background: #58bc58;
+    }
+    .footer{
+        height: 459px;
+        background: #585858;
+    }
+}
