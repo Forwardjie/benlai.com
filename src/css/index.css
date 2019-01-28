@@ -35,8 +35,25 @@ input::-webkit-input-placeholder {
   margin: 0 auto;
 }
 
+#benlai {
+  /*头部样式 开始*/
+  /*大轮播图 开始*/
+  /*大轮播图 结束*/
+  /*页面主体内容 开始*/
+  /*页面主体内容 结束*/
+  /*页面尾部 开始*/
+  /*页面尾部 结束*/
+}
 #benlai .header {
   height: 237px;
+  /*头部顶 开始*/
+  /*头部顶 结束*/
+  /*头部轮播图 开始*/
+  /*头部轮播图 结束*/
+  /*头部搜索 开始*/
+  /*头部搜索 结束*/
+  /*头部菜单 开始*/
+  /*头部菜单 结束*/
 }
 #benlai .header .head_top {
   height: 31px;
@@ -175,9 +192,6 @@ input::-webkit-input-placeholder {
   background: #fff;
   margin-top: 2px;
 }
-#benlai .header .head_logo_box .container {
-  overflow: hidden;
-}
 #benlai .header .head_logo_box .container .head_buy {
   margin: 30px 0 0 20px;
   position: relative;
@@ -277,14 +291,201 @@ input::-webkit-input-placeholder {
   font-size: 12px;
   color: #8c8c8c;
 }
-#benlai .header .head15_menu_bg {
+#benlai .header .head_menu_bg {
   height: 44px;
   width: 100%;
   background-color: #8ab700;
 }
+#benlai .header .head_menu_bg .head_menu_all_OnlineCategory {
+  width: 210px;
+  line-height: 44px;
+  position: relative;
+  z-index: 60px;
+  /*一级导航 开始*/
+}
+#benlai .header .head_menu_bg .head_menu_all_OnlineCategory .tit_all a {
+  display: inline-block;
+  color: #fff;
+  width: 175px;
+  background: url(img/header/n_top_ico_e5a1c5b5.png) 158px -218px no-repeat #78a000;
+  padding-left: 35px;
+  font-size: 18px;
+}
+#benlai .header .head_menu_bg .head_menu_all_OnlineCategory .tit_sort {
+  width: 206px;
+  height: 396px;
+  border: 2px solid #91be16;
+  background: #fff;
+  position: absolute;
+  top: 44px;
+  left: 0;
+  z-index: 89;
+}
+#benlai .header .head_menu_bg .head_menu_all_OnlineCategory .tit_sort dl {
+  height: 33px;
+  width: 204px;
+  float: left;
+  /*一级导航 结束*/
+  /*二级导航 开始*/
+  /*二级导航 结束*/
+}
+#benlai .header .head_menu_bg .head_menu_all_OnlineCategory .tit_sort dl dt {
+  height: 31px;
+  line-height: 31px;
+  width: 154px;
+  position: relative;
+  z-index: 31;
+  top: 0;
+  left: 0;
+  padding: 1px 0 1px 50px;
+  text-overflow: clip;
+}
+#benlai .header .head_menu_bg .head_menu_all_OnlineCategory .tit_sort dl dt:after {
+  content: "";
+  background: url(img/header/n_icon12_498beb5a.png) 0 0 no-repeat;
+  display: block;
+  float: right;
+  width: 6px;
+  height: 12px;
+  margin: 12px 12px 0 0;
+}
+#benlai .header .head_menu_bg .head_menu_all_OnlineCategory .tit_sort dl dt a {
+  color: #4c4c4c;
+  font-size: 12px;
+  font-weight: "Microsoft YaHei";
+  line-height: 31px;
+}
+#benlai .header .head_menu_bg .head_menu_all_OnlineCategory .tit_sort dl .sort_bg01 {
+  background: url(img/header/n_menu_bg01_oc_b4237de2.png) 8px 0 no-repeat #fff;
+}
+#benlai .header .head_menu_bg .head_menu_all_OnlineCategory .tit_sort dl .sort_bg02 {
+  background: url(img/header/n_menu_bg01_oc_b4237de2.png) 8px -33px no-repeat #fff;
+}
+#benlai .header .head_menu_bg .head_menu_all_OnlineCategory .tit_sort dl .sort_bg03 {
+  background: url(img/header/n_menu_bg01_oc_b4237de2.png) 8px -66px no-repeat #fff;
+}
+#benlai .header .head_menu_bg .head_menu_all_OnlineCategory .tit_sort dl .sort_bg04 {
+  background: url(img/header/n_menu_bg01_oc_b4237de2.png) 8px -99px no-repeat #fff;
+}
+#benlai .header .head_menu_bg .head_menu_all_OnlineCategory .tit_sort dl .sort_bg05 {
+  background: url(img/header/n_menu_bg01_oc_b4237de2.png) 8px -132px no-repeat #fff;
+}
+#benlai .header .head_menu_bg .head_menu_all_OnlineCategory .tit_sort dl .sort_bg06 {
+  background: url(img/header/n_menu_bg01_oc_b4237de2.png) 8px -165px no-repeat #fff;
+}
+#benlai .header .head_menu_bg .head_menu_all_OnlineCategory .tit_sort dl .sort_bg07 {
+  background: url(img/header/n_menu_bg01_oc_b4237de2.png) 8px -198px no-repeat #fff;
+}
+#benlai .header .head_menu_bg .head_menu_all_OnlineCategory .tit_sort dl .sort_bg08 {
+  background: url(img/header/n_menu_bg01_oc_b4237de2.png) 8px -231px no-repeat #fff;
+}
+#benlai .header .head_menu_bg .head_menu_all_OnlineCategory .tit_sort dl .sort_bg09 {
+  background: url(img/header/n_menu_bg01_oc_b4237de2.png) 8px -264px no-repeat #fff;
+}
+#benlai .header .head_menu_bg .head_menu_all_OnlineCategory .tit_sort dl .sort_bg10 {
+  background: url(img/header/n_menu_bg01_oc_b4237de2.png) 8px -297px no-repeat #fff;
+}
+#benlai .header .head_menu_bg .head_menu_all_OnlineCategory .tit_sort dl .sort_bg11 {
+  background: url(img/header/n_menu_bg01_oc_b4237de2.png) 8px -330px no-repeat #fff;
+}
+#benlai .header .head_menu_bg .head_menu_all_OnlineCategory .tit_sort dl .sort_bg12 {
+  background: url(img/header/n_menu_bg01_oc_b4237de2.png) 8px -363px no-repeat #fff;
+}
+#benlai .header .head_menu_bg .head_menu_all_OnlineCategory .tit_sort dl dd {
+  width: 973px;
+  height: auto !important;
+  height: 400px;
+  min-height: 400px;
+  background-color: #fff;
+  background: rgba(255, 255, 255, 0.97);
+  position: absolute;
+  left: 208px;
+  top: -2px;
+  border: 1px solid #8ab700;
+  border-top: none;
+}
+#benlai .header .head_menu_bg .head_menu_big {
+  width: 988px;
+  height: 40px;
+  margin: 2px 0 0 2px;
+}
+#benlai .header .head_menu_bg .head_menu_big ul {
+  float: left;
+}
+#benlai .header .head_menu_bg .head_menu_big ul li {
+  float: left;
+  position: relative;
+  margin: 0 2px;
+}
+#benlai .header .head_menu_bg .head_menu_big ul li img {
+  position: absolute;
+  z-index: 1000;
+  top: -10px;
+}
+#benlai .header .head_menu_bg .head_menu_big ul li a {
+  display: inline-block;
+  line-height: 40px;
+  padding: 0 23px;
+  font-size: 18px;
+  color: #fff;
+}
+#benlai .header .head_menu_bg .head_menu_big ul li a:hover {
+  background: #78a000;
+}
 #benlai .banner {
   height: 400px;
+  width: 100%;
+  text-align: center;
+  float: left;
+  position: relative;
+  z-index: 0;
   background: pink;
+}
+#benlai .banner:hover .index_control .banner_nav a {
+  background: rgba(255, 255, 255, 0.78);
+  transition: all .4s linear;
+  color: #626252;
+}
+#benlai .banner .index_control {
+  display: none;
+  width: 990px;
+  margin: 0 auto;
+  background: red;
+  position: relative;
+  z-index: 1;
+  padding-left: 210px;
+}
+#benlai .banner .index_control .banner_nav {
+  width: 990px;
+  height: 30px;
+  position: absolute;
+  top: 386px;
+  left: 210px;
+  overflow: hidden;
+  transition: all .4s linear;
+}
+#benlai .banner .index_control .banner_nav li {
+  width: 163px;
+  margin-left: 2px;
+  float: left;
+}
+#benlai .banner .index_control .banner_nav li a {
+  display: block;
+  width: 143px;
+  height: 30px;
+  background: rgba(162, 162, 147, 0.78);
+  color: #626252;
+  line-height: 30px;
+  padding: 0 10px;
+  text-align: center;
+  text-overflow: clip;
+  overflow: hidden;
+  font-size: 14px;
+}
+#benlai .banner .index_control .banner_nav li:hover a {
+  background: rgba(150, 191, 23, 0.78);
+  transition: none !important;
+  color: #fff;
 }
 #benlai .main1200 {
   height: 8251px;
