@@ -56,6 +56,7 @@ input::-webkit-input-placeholder {
   /*头部菜单 结束*/
 }
 #benlai .header .head_top {
+  font-family: '宋体';
   height: 31px;
   box-sizing: border-box;
   line-height: 31px;
@@ -128,6 +129,7 @@ input::-webkit-input-placeholder {
   border-top: none;
   top: 30px;
   left: -1px;
+  z-index: 200;
   display: none;
 }
 #benlai .header .head_top .head_menu li .towcode dl dd img {
@@ -155,6 +157,7 @@ input::-webkit-input-placeholder {
   position: absolute;
   top: 30px;
   left: -1px;
+  z-index: 200;
   border: 1px solid #ccc;
   border-top: none;
   background: #fff;
@@ -172,28 +175,44 @@ input::-webkit-input-placeholder {
 #benlai .header .head_top_bar {
   height: 60px;
   background: pink;
+  position: relative;
 }
 #benlai .header .head_top_bar a {
   display: block;
   height: 100%;
-  display: none;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 1s;
 }
 #benlai .header .head_top_bar a:nth-child(1) {
   background: url(img/header/dtpf29.jpg) center top no-repeat;
-  display: block;
+  opacity: 1;
+  z-index: 100;
 }
 #benlai .header .head_top_bar a:nth-child(2) {
   background: url(img/header/dtgdx.jpg) center top no-repeat;
+  opacity: 0;
+  z-index: 0;
 }
 #benlai .header .head_top_bar a:nth-child(3) {
   background: url(img/header/dthf1.jpg) center top no-repeat;
+  opacity: 0;
+  z-index: 0;
 }
 #benlai .header .head_logo_box {
   background: #fff;
   margin-top: 2px;
 }
+#benlai .header .head_logo_box .container h1 a {
+  display: inline-block;
+  padding: 8px 0 0px;
+}
 #benlai .header .head_logo_box .container .head_buy {
-  margin: 30px 0 0 20px;
+  width: 125px;
+  height: 40px;
+  margin: 38px 0 0 20px;
   position: relative;
   z-index: 60;
 }
@@ -202,7 +221,7 @@ input::-webkit-input-placeholder {
 }
 #benlai .header .head_logo_box .container .head_buy dl dt {
   height: 38px;
-  width: 123px;
+  width: 125px;
   border: 1px solid #e5e5e5;
   line-height: 38px;
 }
@@ -222,7 +241,7 @@ input::-webkit-input-placeholder {
   background: url(img/header/n_top_ico_e5a1c5b5.png) 98px 17px no-repeat;
   font-size: 14px;
   color: #3e4141;
-  padding-right: 35px;
+  padding-right: 30px;
 }
 #benlai .header .head_logo_box .container .head_buy dl dt a s {
   display: inline-block;
@@ -232,7 +251,10 @@ input::-webkit-input-placeholder {
   margin: 12px 13px 0 12px;
 }
 #benlai .header .head_logo_box .container .head_my {
-  margin: 30px 0;
+  width: 125px;
+  height: 40px;
+  margin: 38px 0 22px 13px;
+  text-align: center;
 }
 #benlai .header .head_logo_box .container .head_my #dtIsNoLogin {
   height: 40px;
@@ -243,23 +265,24 @@ input::-webkit-input-placeholder {
 }
 #benlai .header .head_logo_box .container .head_my #dtIsNoLogin dt a {
   display: block;
-  background: url(img/header/n_top_ico_e5a1c5b5.png) 113px 17px no-repeat;
+  background: url(img/header/n_top_ico_e5a1c5b5.png) 103px 17px no-repeat;
   font-size: 14px;
   color: #3e4141;
-  padding-right: 35px;
+  padding-right: 30px;
 }
 #benlai .header .head_logo_box .container .head_my #dtIsNoLogin dt s {
   display: inline-block;
   width: 20px;
   height: 15px;
   background: url(img/header/n_top_ico_e5a1c5b5.png) 0 -122px no-repeat;
-  margin: 12px 13px 0 12px;
+  margin: 12px 6px -3px 4px;
 }
 #benlai .header .head_logo_box .container .head_search {
   width: 470px;
   height: 41px;
-  margin: 29px 45px 0 0;
+  margin: 38px 32px 0 0;
   position: relative;
+  font-family: '宋体';
 }
 #benlai .header .head_logo_box .container .head_search .search_box {
   border: 3px solid #91be16;
@@ -279,13 +302,13 @@ input::-webkit-input-placeholder {
 }
 #benlai .header .head_logo_box .container .head_search .search_word {
   position: absolute;
-  top: -32px;
+  top: -34px;
   left: 0;
   line-height: 32px;
   width: 470px;
 }
 #benlai .header .head_logo_box .container .head_search .search_word span {
-  margin-right: 25px;
+  margin-right: 17px;
 }
 #benlai .header .head_logo_box .container .head_search .search_word span a {
   font-size: 12px;
@@ -298,15 +321,16 @@ input::-webkit-input-placeholder {
 }
 #benlai .header .head_menu_bg .head_menu_all_OnlineCategory {
   width: 210px;
-  line-height: 44px;
+  float: left;
   position: relative;
-  z-index: 60px;
+  z-index: 39px;
   /*一级导航 开始*/
 }
 #benlai .header .head_menu_bg .head_menu_all_OnlineCategory .tit_all a {
   display: inline-block;
   color: #fff;
   width: 175px;
+  line-height: 44px;
   background: url(img/header/n_top_ico_e5a1c5b5.png) 158px -218px no-repeat #78a000;
   padding-left: 35px;
   font-size: 18px;
@@ -329,16 +353,22 @@ input::-webkit-input-placeholder {
   /*二级导航 开始*/
   /*二级导航 结束*/
 }
+#benlai .header .head_menu_bg .head_menu_all_OnlineCategory .tit_sort dl:hover dt:after {
+  background-image: url(img/header/n_icon13_9285c147.png);
+}
 #benlai .header .head_menu_bg .head_menu_all_OnlineCategory .tit_sort dl dt {
   height: 31px;
   line-height: 31px;
   width: 154px;
   position: relative;
-  z-index: 31;
+  z-index: 100;
   top: 0;
   left: 0;
   padding: 1px 0 1px 50px;
   text-overflow: clip;
+  background-image: url(img/header/n_menu_bg01_oc_b4237de2.png);
+  background-repeat: no-repeat;
+  background-color: #fff;
 }
 #benlai .header .head_menu_bg .head_menu_all_OnlineCategory .tit_sort dl dt:after {
   content: "";
@@ -356,53 +386,84 @@ input::-webkit-input-placeholder {
   line-height: 31px;
 }
 #benlai .header .head_menu_bg .head_menu_all_OnlineCategory .tit_sort dl .sort_bg01 {
-  background: url(img/header/n_menu_bg01_oc_b4237de2.png) 8px 0 no-repeat #fff;
+  background-position: 8px 0;
 }
 #benlai .header .head_menu_bg .head_menu_all_OnlineCategory .tit_sort dl .sort_bg02 {
-  background: url(img/header/n_menu_bg01_oc_b4237de2.png) 8px -33px no-repeat #fff;
+  background-position: 8px -33px;
 }
 #benlai .header .head_menu_bg .head_menu_all_OnlineCategory .tit_sort dl .sort_bg03 {
-  background: url(img/header/n_menu_bg01_oc_b4237de2.png) 8px -66px no-repeat #fff;
+  background-position: 8px -66px;
 }
 #benlai .header .head_menu_bg .head_menu_all_OnlineCategory .tit_sort dl .sort_bg04 {
-  background: url(img/header/n_menu_bg01_oc_b4237de2.png) 8px -99px no-repeat #fff;
+  background-position: 8px -99px;
 }
 #benlai .header .head_menu_bg .head_menu_all_OnlineCategory .tit_sort dl .sort_bg05 {
-  background: url(img/header/n_menu_bg01_oc_b4237de2.png) 8px -132px no-repeat #fff;
+  background-position: 8px -132px;
 }
 #benlai .header .head_menu_bg .head_menu_all_OnlineCategory .tit_sort dl .sort_bg06 {
-  background: url(img/header/n_menu_bg01_oc_b4237de2.png) 8px -165px no-repeat #fff;
+  background-position: 8px -165px;
 }
 #benlai .header .head_menu_bg .head_menu_all_OnlineCategory .tit_sort dl .sort_bg07 {
-  background: url(img/header/n_menu_bg01_oc_b4237de2.png) 8px -198px no-repeat #fff;
+  background-position: 8px -198px;
 }
 #benlai .header .head_menu_bg .head_menu_all_OnlineCategory .tit_sort dl .sort_bg08 {
-  background: url(img/header/n_menu_bg01_oc_b4237de2.png) 8px -231px no-repeat #fff;
+  background-position: 8px -231px;
 }
 #benlai .header .head_menu_bg .head_menu_all_OnlineCategory .tit_sort dl .sort_bg09 {
-  background: url(img/header/n_menu_bg01_oc_b4237de2.png) 8px -264px no-repeat #fff;
+  background-position: 8px -264px;
 }
 #benlai .header .head_menu_bg .head_menu_all_OnlineCategory .tit_sort dl .sort_bg10 {
-  background: url(img/header/n_menu_bg01_oc_b4237de2.png) 8px -297px no-repeat #fff;
+  background-position: 8px -297px;
 }
 #benlai .header .head_menu_bg .head_menu_all_OnlineCategory .tit_sort dl .sort_bg11 {
-  background: url(img/header/n_menu_bg01_oc_b4237de2.png) 8px -330px no-repeat #fff;
+  background-position: 8px -330px;
 }
 #benlai .header .head_menu_bg .head_menu_all_OnlineCategory .tit_sort dl .sort_bg12 {
-  background: url(img/header/n_menu_bg01_oc_b4237de2.png) 8px -363px no-repeat #fff;
+  background-position: 8px -363px;
 }
 #benlai .header .head_menu_bg .head_menu_all_OnlineCategory .tit_sort dl dd {
-  width: 973px;
-  height: auto !important;
-  height: 400px;
-  min-height: 400px;
+  display: none;
+  border: 1px solid #8ab700;
+  border-top: none;
   background-color: #fff;
   background: rgba(255, 255, 255, 0.97);
   position: absolute;
   left: 208px;
   top: -2px;
-  border: 1px solid #8ab700;
-  border-top: none;
+  z-index: 36;
+  width: 600px;
+  height: 384px;
+  padding: 15px 15px 0 0;
+  font-size: 12px;
+  color: #333;
+  font-family: '宋体';
+  vertical-align: top;
+}
+#benlai .header .head_menu_bg .head_menu_all_OnlineCategory .tit_sort dl dd .memu_list ul li {
+  width: 615px;
+  float: left;
+}
+#benlai .header .head_menu_bg .head_menu_all_OnlineCategory .tit_sort dl dd .memu_list ul li .list_l {
+  float: left;
+  text-align: right;
+  width: 90px;
+  font-weight: bold;
+}
+#benlai .header .head_menu_bg .head_menu_all_OnlineCategory .tit_sort dl dd .memu_list ul li .list_l a {
+  color: #6c8422;
+}
+#benlai .header .head_menu_bg .head_menu_all_OnlineCategory .tit_sort dl dd .memu_list ul li .list_r {
+  width: 495px;
+}
+#benlai .header .head_menu_bg .head_menu_all_OnlineCategory .tit_sort dl dd .memu_list ul li .list_r em {
+  display: inline-block;
+  padding: 0 15px;
+  border-right: 1px solid #4c4c4c;
+  margin: 0 0 17px;
+  max-width: 400px;
+}
+#benlai .header .head_menu_bg .head_menu_all_OnlineCategory .tit_sort dl dd .memu_list ul li .list_r em a {
+  color: #4c4c4c;
 }
 #benlai .header .head_menu_bg .head_menu_big {
   width: 988px;
@@ -429,17 +490,11 @@ input::-webkit-input-placeholder {
   font-size: 18px;
   color: #fff;
 }
-#benlai .header .head_menu_bg .head_menu_big ul li a:hover {
-  background: #78a000;
-}
 #benlai .banner {
   height: 400px;
   width: 100%;
   text-align: center;
-  float: left;
-  position: relative;
-  z-index: 0;
-  background: pink;
+  overflow: hidden;
 }
 #benlai .banner:hover .index_control .banner_nav a {
   background: rgba(255, 255, 255, 0.78);
@@ -447,22 +502,45 @@ input::-webkit-input-placeholder {
   color: #626252;
 }
 #benlai .banner .index_control {
-  display: none;
   width: 990px;
   margin: 0 auto;
   background: red;
   position: relative;
-  z-index: 1;
   padding-left: 210px;
+}
+#benlai .banner .index_control .pis .prev {
+  position: absolute;
+  top: 182px;
+  left: 210px;
+}
+#benlai .banner .index_control .pis .prev a {
+  display: block;
+  width: 24px;
+  height: 48px;
+  opacity: 0.8;
+  background: url(img/banner/n_icon_tab_a2631635.png) 7px 15px no-repeat #fff;
+}
+#benlai .banner .index_control .pis .next {
+  position: absolute;
+  top: 182px;
+  right: 0;
+}
+#benlai .banner .index_control .pis .next a {
+  display: block;
+  width: 24px;
+  height: 48px;
+  opacity: 0.8;
+  background: url(img/banner/n_icon_tab_a2631635.png) -43px 15px no-repeat #fff;
 }
 #benlai .banner .index_control .banner_nav {
   width: 990px;
   height: 30px;
   position: absolute;
-  top: 386px;
+  top: 395px;
   left: 210px;
   overflow: hidden;
   transition: all .4s linear;
+  z-index: 100;
 }
 #benlai .banner .index_control .banner_nav li {
   width: 163px;
@@ -482,14 +560,209 @@ input::-webkit-input-placeholder {
   overflow: hidden;
   font-size: 14px;
 }
-#benlai .banner .index_control .banner_nav li:hover a {
+#benlai .banner .index_control .banner_nav .on a {
   background: rgba(150, 191, 23, 0.78);
   transition: none !important;
   color: #fff;
 }
+#benlai .banner .picture {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: -100;
+}
+#benlai .banner .picture a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 0;
+  transition: opacity 1s;
+}
+#benlai .banner .picture a:nth-child(1) {
+  background: url(img/banner/sjchucheng18.jpg) center top no-repeat;
+  opacity: 1;
+  z-index: 100;
+}
+#benlai .banner .picture a:nth-child(2) {
+  background: url(img/banner/sjnhdj22.jpg) center top no-repeat;
+}
+#benlai .banner .picture a:nth-child(3) {
+  background: url(img/banner/sjyq79m.jpg) center top no-repeat;
+}
+#benlai .banner .picture a:nth-child(4) {
+  background: url(img/banner/sj190108nianhuo.jpg) center top no-repeat;
+}
+#benlai .banner .picture a:nth-child(5) {
+  background: url(img/banner/sjhgg22.jpg) center top no-repeat;
+}
+#benlai .banner .picture a:nth-child(6) {
+  background: url(img/banner/sjnr23.jpg) center top no-repeat;
+}
 #benlai .main1200 {
   height: 8251px;
-  background: #58bc58;
+}
+#benlai .main1200 .index15_ad {
+  width: 1200px;
+  height: 175px;
+  margin-bottom: 20px;
+}
+#benlai .main1200 .index15_ad li {
+  float: left;
+  width: 300px;
+}
+#benlai .main1200 .index15_ad li img {
+  height: 175px;
+  width: 300px;
+}
+#benlai .main1200 .index_new {
+  float: left;
+  width: 1010px;
+  height: 266px;
+  margin-bottom: 20px;
+}
+#benlai .main1200 .index_new .index15_tab {
+  background-color: #f8f8f6;
+  border-right: 1px solid #c2d58f;
+  border-left: 1px solid #e5e5e5;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  float: left;
+  width: 123px;
+  height: 264px;
+  position: relative;
+  z-index: 0;
+}
+#benlai .main1200 .index_new .index15_tab dl {
+  height: 44px;
+  float: left;
+}
+#benlai .main1200 .index_new .index15_tab dl .on {
+  top: -1px;
+  left: -1px;
+}
+#benlai .main1200 .index_new .index15_tab dl .on a {
+  color: #78a000;
+  background-color: #fff;
+  border-top: 1px solid #c2d58f;
+  border-bottom: 1px solid #c2d58f;
+  border-left: 4px solid #91be16;
+  width: 117px;
+  padding-right: 4px;
+}
+#benlai .main1200 .index_new .index15_tab dl dt {
+  position: relative;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  text-align: center;
+}
+#benlai .main1200 .index_new .index15_tab dl dt a {
+  font: 400 16px/44px "Microsoft YaHei";
+  color: #626252;
+  text-decoration: none;
+  display: block;
+  height: 44px;
+  width: 123px;
+  border-bottom: 1px solid #e5e5e5;
+}
+#benlai .main1200 .index_new .index15_tab dl dd {
+  border-top: 1px solid #c2d58f;
+  position: absolute;
+  top: -1px;
+  left: 124px;
+  z-index: 4;
+  width: 885px;
+  height: 265px;
+}
+#benlai .main1200 .index_new .index15_tab dl dd .index_sku {
+  width: 885px;
+  height: 265px;
+  float: left;
+}
+#benlai .main1200 .index_new .index15_tab dl dd .index_sku li {
+  border-bottom: 1px solid #c2d58f;
+  float: left;
+  width: 176px;
+  height: 264px;
+  border-right: 1px solid #eee;
+  background-color: #fff;
+  overflow: hidden;
+  position: relative;
+}
+#benlai .main1200 .index_new .index15_tab dl dd .index_sku li .box {
+  border: 4px solid #fff;
+  width: 140px;
+  height: 256px;
+  padding: 0 14px;
+  position: relative;
+  transition: all .2s linear;
+}
+#benlai .main1200 .index_new .index15_tab dl dd .index_sku li .box .pic {
+  margin-top: 15px;
+  transition: all .2s linear;
+}
+#benlai .main1200 .index_new .index15_tab dl dd .index_sku li .box .pic a {
+  color: #666;
+  text-decoration: none;
+  outline: 0;
+  cursor: pointer;
+}
+#benlai .main1200 .index_new .index15_tab dl dd .index_sku li .box .pic a img {
+  width: 140px;
+  height: 140px;
+}
+#benlai .main1200 .index_new .index15_tab dl dd .index_sku li .box .name {
+  height: 38px;
+  width: 140px;
+  text-overflow: clip;
+  display: block;
+  overflow: hidden;
+  margin-top: 15px;
+  transition: all .2s linear;
+}
+#benlai .main1200 .index_new .index15_tab dl dd .index_sku li .box .name a {
+  font: 400 14px/18px "Microsoft YaHei";
+  color: #3e4141;
+}
+#benlai .main1200 .index_new .index15_tab dl dd .index_sku li .box .name a font {
+  height: 19px;
+  text-overflow: clip;
+  display: block;
+  overflow: hidden;
+}
+#benlai .main1200 .index_new .index15_tab dl dd .index_sku li .box .name a span {
+  font: 400 12px/18px "Microsoft YaHei";
+  color: #898989;
+}
+#benlai .main1200 .index_new .index15_tab dl dd .index_sku li .box .price {
+  font: 400 17px/25px "Microsoft YaHei";
+  color: #ff6900;
+  margin-top: 7px;
+  transition: all .2s linear;
+}
+#benlai .main1200 .index_new .index15_tab dl dd .index_sku li .box .price span {
+  font: 400 12px/25px "Microsoft YaHei";
+  color: #686c69;
+  text-decoration: line-through;
+}
+#benlai .main1200 .index_new .index15_tab dl dd .index_sku li .box .btn {
+  position: absolute;
+  top: 260px;
+  left: 0;
+  transition: all .2s linear;
+}
+#benlai .main1200 .index_new .index15_tab dl dd .index_sku li .box .btn a {
+  width: 168px;
+  height: 33px;
+  display: block;
+}
+#benlai .main1200 .index_new .index15_tab dl dd .index_sku li .box .btn a.ico00 {
+  background-position: center 0;
+  cursor: pointer;
 }
 #benlai .footer {
   height: 459px;

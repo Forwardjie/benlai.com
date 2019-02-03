@@ -7,8 +7,12 @@
     <title>本来生活网 - 中国家庭的优质食品购买平台，冷链配送、安全检测、基地直供</title>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="js/common.js">
-    <link rel="stylesheet" href="js/index.js">
+    <script src="js/jquery-1.10.1.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/banner.js"></script>
+    <script src="js/index.js"></script>
+    
+
 </head>
 <body>
     <div id="benlai">
@@ -159,7 +163,7 @@
                                                     <div class="list_l">
                                                         <a href="javascript:;">本来推荐</a>
                                                     </div>
-                                                    <div class="list_r">
+                                                    <div class="list_r fl">
                                                         <em><a href="javascript:;" title="佳沛奇异果">佳沛奇异果</a></em>
                                                         <em><a href="javascript:;" title="鲜奶宅配">鲜奶宅配</a></em>
                                                         <em><a href="javascript:;" title="每日鲜">每日鲜</a></em>
@@ -170,11 +174,41 @@
                                                         <em><a href="javascript:;" title="新西兰水">新西兰水</a></em>
                                                         <em><a href="javascript:;" title="每日坚果">每日坚果</a></em>
                                                         <em><a href="javascript:;" title="厄瓜多尔白虾">厄瓜多尔白虾</a></em>
-                                                        <em><a href="javascript:;" title="椰青">椰青</a></em>
+                                                        <em style="border-right: none"><a href="javascript:;" title="椰青">椰青</a></em>
                                                     </div>
                                                 </li>
-                                                <li></li>
-                                                <li></li>
+                                                <li>
+                                                    <div class="list_l">
+                                                        <a href="javascript:;">有机食材</a>
+                                                    </div>
+                                                    <div class="list_r fl">
+                                                        <em><a href="javascript:;" title="有机精选">有机精选</a></em>
+                                                        <em><a href="javascript:;" title="有机杂粮">有机杂粮</a></em>
+                                                        <em><a href="javascript:;" title="有机蔬菜">有机蔬菜</a></em>
+                                                        <em><a href="javascript:;" title="有机面点">有机面点</a></em>
+                                                        <em><a href="javascript:;" title="有机肉禽">有机肉禽</a></em>
+                                                        <em style="border-right: none"><a href="javascript:;" title="有机干货">有机干货</a></em> 
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="list_l">
+                                                        <a href="javascript:;">料理之味</a>
+                                                    </div>
+                                                    <div class="list_r fl">
+                                                        <em><a href="javascript:;" title="麻辣香锅">麻辣香锅</a></em>
+                                                        <em><a href="javascript:;" title="糖醋排骨">糖醋排骨</a></em>
+                                                        <em><a href="javascript:;" title="寿喜锅">寿喜锅</a></em>
+                                                        <em><a href="javascript:;" title="冬荫功">冬荫功</a></em>
+                                                        <em><a href="javascript:;" title="烛光晚餐">烛光晚餐</a></em>
+                                                        <em><a href="javascript:;" title="低卡纤体">低卡纤体</a></em>
+                                                        <em><a href="javascript:;" title="烘培甜品">烘培甜品</a></em>
+                                                        <em><a href="javascript:;" title="周末Brunch">周末Brunch</a></em>
+                                                        <em><a href="javascript:;" title="中式家宴">中式家宴</a></em>
+                                                        <em><a href="javascript:;" title="婴儿辅食">婴儿辅食</a></em>
+                                                        <em><a href="javascript:;" title="儿童早餐">儿童早餐</a></em>
+                                                        <em style="border-right: none"><a href="javascript:;" title="快手意面">快手意面</a></em>
+                                                    </div>
+                                                </li>
                                             </ul>
                                         </div>
                                     </dd>
@@ -183,67 +217,849 @@
                                     <dt class="sort_bg02">
                                         <a href="javascript:;">水果</a>
                                     </dt>
-                                    <dd></dd>
+                                    <dd>
+                                        <div class="memu_list">
+                                            <ul>
+                                                <li>
+                                                    <div class="list_l">
+                                                        <a href="javascript:;">热门推荐</a>
+                                                    </div>
+                                                    <div class="list_r fl">
+                                                        <em><a href="javascript:;" title="樱桃/车厘子">樱桃/车厘子</a></em>
+                                                        <em><a href="javascript:;" title="褚橘">褚橘</a></em>
+                                                        <em><a href="javascript:;" title="柑橘柚">柑橘柚</a></em>
+                                                        <em><a href="javascript:;" title="佳沛奇异果">佳沛奇异果</a></em>
+                                                        <em><a href="javascript:;" title="进口水果">进口水果</a></em>
+                                                        <em><a href="javascript:;" title="车油果">车油果</a></em>
+                                                        <em style="border-right: none"><a href="javascript:;" title="热带水果">热带水果</a></em>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="list_l">
+                                                        <a href="javascript:;">精选水果</a>
+                                                    </div>
+                                                    <div class="list_r fl">
+                                                        <em><a href="javascript:;" title="有机精选">菠萝/凤梨</a></em>
+                                                        <em><a href="javascript:;" title="有机杂粮">草莓</a></em>
+                                                        <em><a href="javascript:;" title="有机蔬菜">橙子</a></em>
+                                                        <em><a href="javascript:;" title="有机面点">柑/橘/柚</a></em>
+                                                        <em><a href="javascript:;" title="有机肉禽">火龙果</a></em>
+                                                        <em><a href="javascript:;" title="有机精选">蓝莓树莓</a></em>
+                                                        <em><a href="javascript:;" title="有机杂粮">梨</a></em>
+                                                        <em><a href="javascript:;" title="有机蔬菜">榴莲</a></em>
+                                                        <em><a href="javascript:;" title="有机面点">龙眼</a></em>
+                                                        <em><a href="javascript:;" title="有机肉禽">芒果</a></em>
+                                                        <em><a href="javascript:;" title="有机面点">蜜瓜/西瓜</a></em>
+                                                        <em><a href="javascript:;" title="有机肉禽">枇杷</a></em>
+                                                        <em><a href="javascript:;" title="有机精选">苹果</a></em>
+                                                        <em><a href="javascript:;" title="有机杂粮">葡萄/提子</a></em>
+                                                        <em><a href="javascript:;" title="有机蔬菜">其他</a></em>
+                                                        <em><a href="javascript:;" title="有机面点">奇异果/猕猴桃</a></em>
+                                                        <em><a href="javascript:;" title="有机肉禽">香蕉</a></em>
+                                                        <em style="border-right: none"><a href="javascript:;" title="椰青">椰青</a></em>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="list_l">
+                                                        <a href="javascript:;">礼盒/组合</a>
+                                                    </div>
+                                                    <div class="list_r fl">
+                                                        <em><a href="javascript:;" title="麻辣香锅">水果礼盒</a></em>
+                                                        <em style="border-right: none"><a href="javascript:;" title="快手意面">原箱水果</a></em>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </dd>
                                 </dl>
                                 <dl>
                                     <dt class="sort_bg03">
                                         <a href="javascript:;">蔬菜</a>
                                     </dt>
-                                    <dd></dd>
+                                    <dd>
+                                        <div class="memu_list">
+                                            <ul>
+                                                <li>
+                                                    <div class="list_l">
+                                                        <a href="javascript:;">热门推荐</a>
+                                                    </div>
+                                                    <div class="list_r fl">
+                                                        <em><a href="javascript:;" title="樱桃/车厘子">有机蔬菜</a></em>
+                                                        <em><a href="javascript:;" title="褚橘">地域特色</a></em>
+                                                        <em><a href="javascript:;" title="柑橘柚">番茄</a></em>
+                                                        <em><a href="javascript:;" title="佳沛奇异果">玉米</a></em>
+                                                        <em><a href="javascript:;" title="进口水果">山药</a></em>
+                                                        <em><a href="javascript:;" title="车油果">南瓜</a></em>
+                                                        <em><a href="javascript:;" title="车油果">笋</a></em>
+                                                        <em style="border-right: none"><a href="javascript:;" title="热带水果">红薯</a></em>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="list_l">
+                                                        <a href="javascript:;">新鲜蔬菜</a>
+                                                    </div>
+                                                    <div class="list_r fl">
+                                                        <em><a href="javascript:;" title="有机精选">叶菜</a></em>
+                                                        <em><a href="javascript:;" title="有机杂粮">茄果</a></em>
+                                                        <em><a href="javascript:;" title="有机蔬菜">根茎</a></em>
+                                                        <em><a href="javascript:;" title="有机面点">菌菇</a></em>
+                                                        <em><a href="javascript:;" title="有机肉禽">豆制品</a></em>
+                                                        <em style="border-right: none"><a href="javascript:;" title="葱姜蒜">葱姜蒜</a></em>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="list_l">
+                                                        <a href="javascript:;">礼盒/宅配</a>
+                                                    </div>
+                                                    <div class="list_r fl">
+                                                        <em style="border-right: none"><a href="javascript:;" title="快手意面">蔬菜礼盒</a></em>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </dd>
                                 </dl>
                                 <dl>
                                     <dt class="sort_bg04">
                                         <a href="javascript:;">肉禽蛋品</a>
                                     </dt>
-                                    <dd></dd>
+                                    <dd>
+                                        <div class="memu_list">
+                                            <ul>
+                                                <li>
+                                                    <div class="list_l">
+                                                        <a href="javascript:;">热门推荐</a>
+                                                    </div>
+                                                    <div class="list_r fl">
+                                                        <em><a href="javascript:;" title="樱桃/车厘子">安格斯牛肉</a></em>
+                                                        <em><a href="javascript:;" title="褚橘">家佳康猪肉</a></em>
+                                                        
+                                                        <em style="border-right: none"><a href="javascript:;" title="热带水果">有机肉禽</a></em>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="list_l">
+                                                        <a href="javascript:;">牛羊</a>
+                                                    </div>
+                                                    <div class="list_r fl">
+                                                        <em><a href="javascript:;" title="有机精选">肥牛片</a></em>
+                                                        <em><a href="javascript:;" title="有机杂粮">国产牛排</a></em>
+                                                        <em><a href="javascript:;" title="有机蔬菜">国产牛肉</a></em>
+                                                        <em><a href="javascript:;" title="有机面点">进口牛排</a></em>
+                                                        <em><a href="javascript:;" title="有机肉禽">进口牛肉</a></em>
+                                                        <em><a href="javascript:;" title="有机精选">牛腱</a></em>
+                                                        <em><a href="javascript:;" title="有机杂粮">牛腩</a></em>
+                                                        <em><a href="javascript:;" title="有机蔬菜">牛尾</a></em>
+                                                        <em><a href="javascript:;" title="有机面点">其他</a></em>
+                                
+                                                        <em style="border-right: none"><a href="javascript:;" title="葱姜蒜">羊肉</a></em>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="list_l">
+                                                        <a href="javascript:;">禽类</a>
+                                                    </div>
+                                                    <div class="list_r fl">
+                                                        <em><a href="javascript:;" title="有机精选">鸡翅鸡腿</a></em>
+                                                        <em><a href="javascript:;" title="有机杂粮">鸡胸肉</a></em>
+                                                        <em><a href="javascript:;" title="有机蔬菜">老鸽</a></em>
+                                                        <em><a href="javascript:;" title="有机面点">老母鸡</a></em>
+                                                        <em><a href="javascript:;" title="有机肉禽">乳鸽</a></em>
+                                                        <em><a href="javascript:;" title="有机精选">童子鸡</a></em>
+                                                        <em><a href="javascript:;" title="有机杂粮">乌鸡</a></em>
+                                                        <em><a href="javascript:;" title="有机蔬菜">整鸡</a></em>
+                                                        <em><a href="javascript:;" title="有机面点">整鸭</a></em>
+                                                        <em><a href="javascript:;" title="有机面点">其他</a></em>
+                                                        <em style="border-right: none"><a href="javascript:;" title="快手意面">分割禽</a></em>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="list_l">
+                                                        <a href="javascript:;">猪肉</a>
+                                                    </div>
+                                                    <div class="list_r fl">
+                                                        <em><a href="javascript:;" title="有机精选">黑毛猪</a></em>
+                                                        <em><a href="javascript:;" title="有机杂粮">家佳康猪肉</a></em>
+                                                        <em><a href="javascript:;" title="有机蔬菜">五花肉</a></em>
+                                                        <em><a href="javascript:;" title="有机面点">猪肋排</a></em> 
+                                                        <em><a href="javascript:;" title="有机面点">其他</a></em>
+                                                        <em style="border-right: none"><a href="javascript:;" title="快手意面">进口猪肉</a></em>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="list_l">
+                                                        <a href="javascript:;">肉制品</a>
+                                                    </div>
+                                                    <div class="list_r fl">
+                                                        <em><a href="javascript:;" title="有机精选">半成品/即食</a></em>
+                                                        <em><a href="javascript:;" title="有机杂粮">火腿培根</a></em>
+                                                        <em><a href="javascript:;" title="有机蔬菜">肉糜肉馅</a></em>
+                                                        <em><a href="javascript:;" title="有机面点">肉丸肉串</a></em>
+                                                        <em style="border-right: none"><a href="javascript:;" title="快手意面">腌肉腊肉</a></em>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="list_l">
+                                                        <a href="javascript:;">蛋类</a>
+                                                    </div>
+                                                    <div class="list_r fl">
+                                                        <em><a href="javascript:;" title="有机精选">鹌鹑蛋/鸽蛋</a></em>
+                                                        <em><a href="javascript:;" title="有机杂粮">鸡蛋</a></em>
+                                                        <em style="border-right: none"><a href="javascript:;" title="快手意面">咸鸭蛋/松花蛋</a></em>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="list_l">
+                                                        <a href="javascript:;">礼盒/组合</a>
+                                                    </div>
+                                                    <div class="list_r fl">
+                                                        <em style="border-right: none"><a href="javascript:;" title="快手意面">礼盒</a></em>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </dd>
                                 </dl>
                                 <dl>
                                     <dt class="sort_bg05">
                                         <a href="javascript:;">水产海鲜</a>
                                     </dt>
-                                    <dd></dd>
+                                    <dd>
+                                        <div class="memu_list">
+                                            <ul>
+                                                <li>
+                                                    <div class="list_l">
+                                                        <a href="javascript:;">热门推荐</a>
+                                                    </div>
+                                                    <div class="list_r fl">
+                                                        <em><a href="javascript:;" title="樱桃/车厘子">厄瓜多尔白虾</a></em>
+                                                        <em><a href="javascript:;" title="褚橘">翡翠生虾仁</a></em>
+                                                        <em><a href="javascript:;" title="樱桃/车厘子">日料刺身</a></em>
+                                                        <em><a href="javascript:;" title="褚橘">三都港</a></em>
+                                                        <em><a href="javascript:;" title="樱桃/车厘子">新西兰青口贝</a></em>
+                                                        <em style="border-right: none"><a href="javascript:;" title="热带水果">舟山海鲜</a></em>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="list_l">
+                                                        <a href="javascript:;">鱼</a>
+                                                    </div>
+                                                    <div class="list_r fl">
+                                                        <em><a href="javascript:;" title="有机精选">带鱼</a></em>
+                                                        <em><a href="javascript:;" title="有机杂粮">黄鱼</a></em>
+                                                        <em><a href="javascript:;" title="有机蔬菜">鳕鱼</a></em>
+                                                        <em><a href="javascript:;" title="有机面点">三文鱼</a></em>
+                                                        <em><a href="javascript:;" title="有机肉禽">河鱼</a></em>
+                                                        <em><a href="javascript:;" title="有机精选">淡水鱼</a></em>
+                                                        <em><a href="javascript:;" title="有机杂粮">海鱼</a></em>
+                                                        <em style="border-right: none"><a href="javascript:;" title="葱姜蒜">其他</a></em>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="list_l">
+                                                        <a href="javascript:;">虾</a>
+                                                    </div>
+                                                    <div class="list_r fl">
+                                                        <em><a href="javascript:;" title="有机精选">白虾</a></em>
+                                                        <em><a href="javascript:;" title="有机杂粮">北极虾</a></em>
+                                                        <em><a href="javascript:;" title="有机蔬菜">红虾</a></em>
+                                                        <em><a href="javascript:;" title="有机面点">虎虾</a></em>
+                                                        <em><a href="javascript:;" title="有机肉禽">龙虾</a></em>
+                                                        <em><a href="javascript:;" title="有机精选">虾仁</a></em>
+                                                        <em style="border-right: none"><a href="javascript:;" title="快手意面">其他</a></em>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="list_l">
+                                                        <a href="javascript:;">软足类</a>
+                                                    </div>
+                                                    <div class="list_r fl">
+                                                        <em style="border-right: none"><a href="javascript:;" title="快手意面">八爪鱼</a></em>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="list_l">
+                                                        <a href="javascript:;">海产干货</a>
+                                                    </div>
+                                                    <div class="list_r fl">
+                                                        <em><a href="javascript:;" title="有机精选">干货</a></em>
+                                                        <em><a href="javascript:;" title="有机杂粮">海参</a></em>
+                                                        <em><a href="javascript:;" title="有机蔬菜">海带紫菜</a></em>
+                                                        <em><a href="javascript:;" title="有机面点">扇贝</a></em>
+                                                        <em><a href="javascript:;" title="有机面点">丸子</a></em>
+                                                        <em style="border-right: none"><a href="javascript:;" title="快手意面">海蜇</a></em>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="list_l">
+                                                        <a href="javascript:;">礼盒/组合</a>
+                                                    </div>
+                                                    <div class="list_r fl">
+                                                        <em style="border-right: none"><a href="javascript:;" title="快手意面">海鲜礼盒</a></em>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="list_l">
+                                                        <a href="javascript:;">大闸蟹</a>
+                                                    </div>
+                                                    <div class="list_r fl">
+                                                        <em style="border-right: none"><a href="javascript:;" title="快手意面">大闸蟹</a></em>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="list_l">
+                                                        <a href="javascript:;">蟹贝</a>
+                                                    </div>
+                                                    <div class="list_r fl">
+                                                        <em><a href="javascript:;" title="有机精选">鲍鱼</a></em>
+                                                        <em><a href="javascript:;" title="有机杂粮">海蟹/帝王蟹</a></em>
+                                                        <em><a href="javascript:;" title="有机蔬菜">青口贝</a></em>
+                                                        <em><a href="javascript:;" title="有机面点">扇贝</a></em>
+                                                        <em style="border-right: none"><a href="javascript:;" title="快手意面">其他</a></em>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </dd>
                                 </dl>
                                 <dl>
                                     <dt class="sort_bg06">
                                         <a href="javascript:;">熟食面点</a>
                                     </dt>
-                                    <dd></dd>
+                                    <dd>
+                                        <div class="memu_list">
+                                            <ul>
+                                                <li>
+                                                    <div class="list_l">
+                                                        <a href="javascript:;">热门推荐</a>
+                                                    </div>
+                                                    <div class="list_r fl">
+                                                        <em><a href="javascript:;" title="樱桃/车厘子">粽子</a></em>
+                                                        <em><a href="javascript:;" title="褚橘">小龙虾</a></em>
+                                                        <em><a href="javascript:;" title="樱桃/车厘子">广州酒家</a></em>
+                                                        <em><a href="javascript:;" title="褚橘">湾仔码头</a></em>
+                                                        <em><a href="javascript:;" title="樱桃/车厘子">缸鸭狗</a></em>
+                                                        <em><a href="javascript:;" title="樱桃/车厘子">港式茶点</a></em>
+                                                        <em><a href="javascript:;" title="褚橘">功德林</a></em>
+                                                        <em><a href="javascript:;" title="樱桃/车厘子">荷美尔</a></em>
+                                                        <em><a href="javascript:;" title="褚橘">健康早餐</a></em>
+                                                        <em style="border-right: none"><a href="javascript:;" title="热带水果">避风塘</a></em>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="list_l">
+                                                        <a href="javascript:;">面点</a>
+                                                    </div>
+                                                    <div class="list_r fl">
+                                                        <em><a href="javascript:;" title="有机精选">包子/汤包</a></em>
+                                                        <em><a href="javascript:;" title="有机杂粮">飞饼/薯饼</a></em>
+                                                        <em><a href="javascript:;" title="有机蔬菜">鳕鱼</a></em>
+                                                        <em><a href="javascript:;" title="有机面点">馒头/花卷</a></em>
+                                                        <em><a href="javascript:;" title="有机肉禽">面条/拉面</a></em>
+                                                        <em><a href="javascript:;" title="有机精选">年糕</a></em>
+                                                        <em><a href="javascript:;" title="有机杂粮">其他</a></em>
+                                                        <em><a href="javascript:;" title="有机精选">水饺/混沌</a></em>
+                                                        <em><a href="javascript:;" title="有机杂粮">汤圆/小圆子</a></em>
+                                                        <em style="border-right: none"><a href="javascript:;" title="葱姜蒜">披萨</a></em>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="list_l">
+                                                        <a href="javascript:;">肉制品</a>
+                                                    </div>
+                                                    <div class="list_r fl">
+                                                        <em><a href="javascript:;" title="有机精选">河鲜海鲜</a></em>
+                                                        <em><a href="javascript:;" title="有机杂粮">鸡鸭鹅</a></em>
+                                                        <em><a href="javascript:;" title="有机蔬菜">礼品/礼盒</a></em>
+                                                        <em><a href="javascript:;" title="有机面点">卤肉</a></em>
+                                                        <em><a href="javascript:;" title="有机肉禽">培根火腿</a></em>
+                                                        <em><a href="javascript:;" title="有机精选">其他</a></em>
+                                                        <em style="border-right: none"><a href="javascript:;" title="快手意面">香肠/腊肠</a></em>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="list_l">
+                                                        <a href="javascript:;">豆制品/小菜</a>
+                                                    </div>
+                                                    <div class="list_r fl">
+                                                        <em><a href="javascript:;" title="有机精选">其他</a></em>
+                                                        <em style="border-right: none"><a href="javascript:;" title="快手意面">素鸡素鸭</a></em>
+                                                    </div>
+                                                </li>
+                                                
+                                            </ul>
+                                        </div>
+                                    </dd>
                                 </dl>
                                 <dl>
                                     <dt class="sort_bg07">
                                         <a href="javascript:;">粮油副食</a>
                                     </dt>
-                                    <dd></dd>
+                                    <dd>
+                                        <div class="memu_list">
+                                            <ul>
+                                                <li>
+                                                    <div class="list_l">
+                                                        <a href="javascript:;">热门推荐</a>
+                                                    </div>
+                                                    <div class="list_r fl">
+                                                        <em><a href="javascript:;" title="樱桃/车厘子">煲汤佳配</a></em>
+                                                        <em><a href="javascript:;" title="褚橘">橄榄油</a></em>
+                                                        <em><a href="javascript:;" title="樱桃/车厘子">李玉双大米</a></em>
+                                                        <em><a href="javascript:;" title="褚橘">泰国香米</a></em>
+                                                        <em><a href="javascript:;" title="樱桃/车厘子">五常稻花香</a></em>
+                                                        <em><a href="javascript:;" title="樱桃/车厘子">有机粮油</a></em>
+                                                        <em style="border-right: none"><a href="javascript:;" title="热带水果">营养滋补</a></em>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="list_l">
+                                                        <a href="javascript:;">米面杂粮</a>
+                                                    </div>
+                                                    <div class="list_r fl">
+                                                        <em><a href="javascript:;" title="有机精选">大米</a></em>
+                                                        <em><a href="javascript:;" title="有机杂粮">东南亚香米</a></em>
+                                                        <em><a href="javascript:;" title="有机蔬菜">拉面/方便面</a></em>
+                                                        <em><a href="javascript:;" title="有机面点">面粉</a></em>
+                                                        <em><a href="javascript:;" title="有机肉禽">面条/米粉</a></em>
+                                                        <em><a href="javascript:;" title="有机精选">南方大米</a></em>
+                                                        <em><a href="javascript:;" title="有机杂粮">其他</a></em>
+                                                        <em><a href="javascript:;" title="有机杂粮">意大利面</a></em>
+                                                        <em style="border-right: none"><a href="javascript:;" title="葱姜蒜">杂粮</a></em>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="list_l">
+                                                        <a href="javascript:;">食用油</a>
+                                                    </div>
+                                                    <div class="list_r fl">
+                                                        <em><a href="javascript:;" title="有机精选">菜籽油</a></em>
+                                                        <em><a href="javascript:;" title="有机杂粮">大豆油</a></em>
+                                                        <em><a href="javascript:;" title="有机蔬菜">橄榄油</a></em>
+                                                        <em><a href="javascript:;" title="有机面点">国产油</a></em>
+                                                        <em><a href="javascript:;" title="有机肉禽">花生油</a></em>
+                                                        <em><a href="javascript:;" title="有机精选">进口油</a></em>
+                                                        <em><a href="javascript:;" title="有机面点">葵花油</a></em>
+                                                        <em><a href="javascript:;" title="有机肉禽">葡萄籽油</a></em>
+                                                        <em><a href="javascript:;" title="有机精选">山茶油</a></em>
+                                                        <em style="border-right: none"><a href="javascript:;" title="快手意面">玉米油</a></em>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="list_l">
+                                                        <a href="javascript:;">调味酱料</a>
+                                                    </div>
+                                                    <div class="list_r fl">
+                                                        <em><a href="javascript:;" title="有机精选">醋/料酒</a></em>
+                                                        <em><a href="javascript:;" title="有机杂粮">风味酱</a></em>
+                                                        <em><a href="javascript:;" title="有机蔬菜">火锅调料底料</a></em>
+                                                        <em><a href="javascript:;" title="有机面点">酱油/香油</a></em>
+                                                        <em><a href="javascript:;" title="有机面点">其他</a></em>
+                                                        <em><a href="javascript:;" title="有机精选">沙拉酱/果酱</a></em>
+                                                        <em><a href="javascript:;" title="有机杂粮">糖盐淀粉</a></em>
+                                                        <em><a href="javascript:;" title="有机蔬菜">香辛料</a></em>
+                                                        <em style="border-right: none"><a href="javascript:;" title="快手意面">芝麻/花生酱</a></em>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="list_l">
+                                                        <a href="javascript:;">干货/罐头</a>
+                                                    </div>
+                                                    <div class="list_r fl">
+                                                        <em><a href="javascript:;" title="有机精选">粉丝/腐竹</a></em>
+                                                        <em><a href="javascript:;" title="有机杂粮">干菜</a></em>
+                                                        <em><a href="javascript:;" title="有机蔬菜">干菌菇</a></em>
+                                                        <em><a href="javascript:;" title="有机面点">罐头</a></em>
+                                                        <em><a href="javascript:;" title="有机面点">酱菜/腌渍菜</a></em>
+                                                        <em><a href="javascript:;" title="有机面点">肉松/鱼松</a></em>
+                                                        <em><a href="javascript:;" title="有机面点">银耳/木耳</a></em>
+                                                        <em style="border-right: none"><a href="javascript:;" title="快手意面">滋补</a></em>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="list_l">
+                                                        <a href="javascript:;">礼盒/组合</a>
+                                                    </div>
+                                                    <div class="list_r fl">
+                                                        <em><a href="javascript:;" title="有机面点">干货礼盒</a></em>
+                                                        <em><a href="javascript:;" title="有机面点">米/杂粮礼盒</a></em>
+                                                        <em style="border-right: none"><a href="javascript:;" title="快手意面">食用油礼盒</a></em>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </dd>
                                 </dl>
                                 <dl>
                                     <dt class="sort_bg08">
                                         <a href="javascript:;">烘焙乳品</a>
                                     </dt>
-                                    <dd></dd>
+                                    <dd>
+                                        <div class="memu_list">
+                                            <ul>
+                                                <li>
+                                                    <div class="list_l">
+                                                        <a href="javascript:;">热门推荐</a>
+                                                    </div>
+                                                    <div class="list_r fl">
+                                                        <em><a href="javascript:;" title="樱桃/车厘子">鲜奶宅配</a></em>
+                                                        <em><a href="javascript:;" title="褚橘">低温酸奶</a></em>
+                                                        <em><a href="javascript:;" title="樱桃/车厘子">低温牛奶</a></em>
+                                                        <em><a href="javascript:;" title="褚橘">乳酸饮料</a></em>
+                                                        <em><a href="javascript:;" title="樱桃/车厘子">常温酸奶</a></em>
+                                                        <em><a href="javascript:;" title="樱桃/车厘子">儿童奶</a></em>
+                                                        <em><a href="javascript:;" title="樱桃/车厘子">低脂/脱脂奶</a></em>
+                                                        <em><a href="javascript:;" title="褚橘">全脂奶</a></em>
+                                                        <em><a href="javascript:;" title="樱桃/车厘子">奶粉/酸奶粉</a></em>
+                                                        <em><a href="javascript:;" title="褚橘">豆奶</a></em>
+                                                        <em><a href="javascript:;" title="樱桃/车厘子">进口牛奶</a></em>
+                                                        <em style="border-right: none"><a href="javascript:;" title="热带水果">冰淇淋</a></em>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="list_l">
+                                                        <a href="javascript:;">品牌推荐</a>
+                                                    </div>
+                                                    <div class="list_r fl">
+                                                        <em><a href="javascript:;" title="有机精选">维必滋</a></em>
+                                                        <em><a href="javascript:;" title="有机杂粮">爱氏晨曦</a></em>
+                                                        <em><a href="javascript:;" title="有机蔬菜">乐纯</a></em>
+                                                        <em><a href="javascript:;" title="有机面点">Delta希腊酸奶</a></em>
+                                                        <em><a href="javascript:;" title="有机肉禽">天润</a></em>
+                                                        <em><a href="javascript:;" title="有机精选">卡士</a></em>
+                                                        <em><a href="javascript:;" title="有机杂粮">优诺</a></em>
+                                                        <em><a href="javascript:;" title="有机杂粮">伊利/蒙牛</a></em>
+                                                        <em><a href="javascript:;" title="有机面点">安佳</a></em>
+                                                        <em><a href="javascript:;" title="有机肉禽">德亚/德运</a></em>
+                                                        <em><a href="javascript:;" title="有机精选">百吉福</a></em>
+                                                        <em><a href="javascript:;" title="有机杂粮">明治</a></em>
+                                                        <em><a href="javascript:;" title="有机杂粮">全味</a></em>
+                                                        <em><a href="javascript:;" title="有机杂粮">总统牌</a></em>
+                                                        <em><a href="javascript:;" title="有机杂粮">延世</a></em>
+                                                        <em style="border-right: none"><a href="javascript:;" title="葱姜蒜">林海雪原</a></em>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="list_l">
+                                                        <a href="javascript:;">烘培乳品</a>
+                                                    </div>
+                                                    <div class="list_r fl">
+                                                        <em><a href="javascript:;" title="有机精选">贝思客</a></em>
+                                                        <em><a href="javascript:;" title="有机杂粮">约翰丹尼</a></em>
+                                                        <em><a href="javascript:;" title="有机蔬菜">奶酪</a></em>
+                                                        <em><a href="javascript:;" title="有机面点">面包</a></em>
+                                                        <em style="border-right: none"><a href="javascript:;" title="快手意面">下午茶</a></em>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </dd>
                                 </dl>
                                 <dl>
                                     <dt class="sort_bg09">
                                         <a href="javascript:;">休闲食品</a>
                                     </dt>
-                                    <dd></dd>
+                                    <dd>
+                                        <div class="memu_list">
+                                            <ul>
+                                                <li>
+                                                    <div class="list_l">
+                                                        <a href="javascript:;">热门推荐</a>
+                                                    </div>
+                                                    <div class="list_r fl">
+                                                        <em><a href="javascript:;" title="樱桃/车厘子">每日坚果</a></em>
+                                                        <em><a href="javascript:;" title="褚橘">百草味</a></em>
+                                                        <em><a href="javascript:;" title="樱桃/车厘子">办公室零食</a></em>
+                                                        <em><a href="javascript:;" title="褚橘">费列罗</a></em>
+                                                        <em><a href="javascript:;" title="樱桃/车厘子">下午茶甜品</a></em>
+                                                        <em style="border-right: none"><a href="javascript:;" title="热带水果">张君雅</a></em>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="list_l">
+                                                        <a href="javascript:;">坚果果干</a>
+                                                    </div>
+                                                    <div class="list_r fl">
+                                                        <em><a href="javascript:;" title="有机精选">瓜子</a></em>
+                                                        <em><a href="javascript:;" title="有机杂粮">果仁/果干</a></em>
+                                                        <em><a href="javascript:;" title="有机蔬菜">混合果干</a></em>
+                                                        <em><a href="javascript:;" title="有机面点">坚果</a></em>
+                                                        <em><a href="javascript:;" title="有机肉禽">开心果</a></em>
+                                                        <em><a href="javascript:;" title="有机精选">蜜饯</a></em>
+                                                        <em><a href="javascript:;" title="有机杂粮">蔬果干</a></em>
+                                                        <em><a href="javascript:;" title="有机杂粮">杏仁</a></em>
+                                                        <em><a href="javascript:;" title="有机面点">腰果</a></em>
+                                                        <em style="border-right: none"><a href="javascript:;" title="葱姜蒜">枣</a></em>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="list_l">
+                                                        <a href="javascript:;">零嘴小食</a>
+                                                    </div>
+                                                    <div class="list_r fl">
+                                                        <em><a href="javascript:;" title="有机精选">口香糖/薄荷糖</a></em>
+                                                        <em><a href="javascript:;" title="有机杂粮">膨化食品</a></em>
+                                                        <em><a href="javascript:;" title="有机蔬菜">巧克力</a></em>
+                                                        <em><a href="javascript:;" title="有机面点">薯片</a></em>
+                                                        <em style="border-right: none"><a href="javascript:;" title="快手意面">糖果</a></em>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="list_l">
+                                                        <a href="javascript:;">糕点饼干</a>
+                                                    </div>
+                                                    <div class="list_r fl">
+                                                        <em><a href="javascript:;" title="有机精选">茶点小食</a></em>
+                                                        <em><a href="javascript:;" title="有机杂粮">蛋卷</a></em>
+                                                        <em><a href="javascript:;" title="有机蔬菜">凤梨酥</a></em>
+                                                        <em><a href="javascript:;" title="有机面点">其他</a></em>
+                                                        <em><a href="javascript:;" title="有机蔬菜">曲奇</a></em>
+                                                        <em><a href="javascript:;" title="有机面点">沙琪玛</a></em>
+                                                        <em style="border-right: none"><a href="javascript:;" title="快手意面">威化饼干</a></em>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="list_l">
+                                                        <a href="javascript:;">肉干海产</a>
+                                                    </div>
+                                                    <div class="list_r fl">
+                                                        <em><a href="javascript:;" title="有机精选">海苔</a></em>
+                                                        <em><a href="javascript:;" title="有机杂粮">海味即食</a></em>
+                                                        <em style="border-right: none"><a href="javascript:;" title="快手意面">肉干肉脯</a></em>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </dd>
                                 </dl>
                                 <dl>
                                     <dt class="sort_bg10">
                                         <a href="javascript:;">酒水茶饮</a>
                                     </dt>
-                                    <dd></dd>
+                                    <dd>
+                                        <div class="memu_list">
+                                            <ul>
+                                                <li>
+                                                    <div class="list_l">
+                                                        <a href="javascript:;">热门推荐</a>
+                                                    </div>
+                                                    <div class="list_r fl">
+                                                        <em><a href="javascript:;" title="樱桃/车厘子">法国葡萄酒</a></em>
+                                                        <em><a href="javascript:;" title="褚橘">新西兰蜂蜜</a></em>
+                                                        <em><a href="javascript:;" title="樱桃/车厘子">名白酒</a></em>
+                                                        <em style="border-right: none"><a href="javascript:;" title="热带水果">礼品礼盒</a></em>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="list_l">
+                                                        <a href="javascript:;">饮料/水</a>
+                                                    </div>
+                                                    <div class="list_r fl">
+                                                        <em><a href="javascript:;" title="有机精选">茶饮料</a></em>
+                                                        <em><a href="javascript:;" title="有机杂粮">低温果汁</a></em>
+                                                        <em><a href="javascript:;" title="有机蔬菜">功能饮料</a></em>
+                                                        <em><a href="javascript:;" title="有机面点">果汁饮料</a></em>
+                                                        <em style="border-right: none"><a href="javascript:;" title="葱姜蒜">饮用水</a></em>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="list_l">
+                                                        <a href="javascript:;">酒</a>
+                                                    </div>
+                                                    <div class="list_r fl">
+                                                        <em><a href="javascript:;" title="有机精选">白葡萄酒</a></em>
+                                                        <em><a href="javascript:;" title="有机杂粮">红葡萄酒</a></em>
+                                                        <em><a href="javascript:;" title="有机蔬菜">黄酒</a></em>
+                                                        <em><a href="javascript:;" title="有机面点">名白酒</a></em>
+                                                        <em><a href="javascript:;" title="有机精选">啤酒</a></em>
+                                                        <em><a href="javascript:;" title="有机杂粮">其他酒</a></em>
+                                                        <em><a href="javascript:;" title="有机蔬菜">香槟/气泡酒</a></em>
+                                                        <em><a href="javascript:;" title="有机面点">洋酒</a></em>
+                                                        <em style="border-right: none"><a href="javascript:;" title="快手意面">预调酒</a></em>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="list_l">
+                                                        <a href="javascript:;">茶</a>
+                                                    </div>
+                                                    <div class="list_r fl">
+                                                        <em><a href="javascript:;" title="有机精选">花草茶</a></em>
+                                                        <em><a href="javascript:;" title="有机杂粮">青茶/乌龙茶</a></em>
+                                                        <em><a href="javascript:;" title="有机蔬菜">红茶</a></em>
+                                                        <em><a href="javascript:;" title="有机面点">绿茶</a></em>
+                                                        <em><a href="javascript:;" title="有机蔬菜">黑茶/普洱茶</a></em>
+                                                        <em style="border-right: none"><a href="javascript:;" title="快手意面">白茶</a></em>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="list_l">
+                                                        <a href="javascript:;">冲饮品</a>
+                                                    </div>
+                                                    <div class="list_r fl">
+                                                        <em><a href="javascript:;" title="有机精选">蜂蜜</a></em>
+                                                        <em><a href="javascript:;" title="有机杂粮">谷物麦片</a></em>
+                                                        <em><a href="javascript:;" title="有机精选">黑糖</a></em>
+                                                        <em><a href="javascript:;" title="有机杂粮">咖啡</a></em>
+                                                        <em><a href="javascript:;" title="有机蔬菜">其他</a></em>
+                                                        <em style="border-right: none"><a href="javascript:;" title="快手意面">柚子茶</a></em>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="list_l">
+                                                        <a href="javascript:;">营养滋补</a>
+                                                    </div>
+                                                    <div class="list_r fl">
+                                                        <em><a href="javascript:;" title="有机精选">阿胶</a></em>
+                                                        <em><a href="javascript:;" title="有机杂粮">鱼胶鱼油</a></em>
+                                                        <em><a href="javascript:;" title="有机精选">冲饮</a></em>
+                                                        <em><a href="javascript:;" title="有机杂粮">滋补酒</a></em>
+                                                        <em><a href="javascript:;" title="有机蔬菜">营养粉</a></em>
+                                                        <em style="border-right: none"><a href="javascript:;" title="快手意面">营养饮品</a></em>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </dd>
                                 </dl>
                                 <dl>
                                     <dt class="sort_bg11">
                                         <a href="javascript:;">厨房用品</a>
                                     </dt>
-                                    <dd></dd>
+                                    <dd>
+                                        <div class="memu_list">
+                                            <ul>
+                                                <li>
+                                                    <div class="list_l">
+                                                        <a href="javascript:;">热门推荐</a>
+                                                    </div>
+                                                    <div class="list_r fl">
+                                                        <em><a href="javascript:;" title="樱桃/车厘子">碧然德</a></em>
+                                                        <em><a href="javascript:;" title="褚橘">菲仕乐</a></em>
+                                                        <em><a href="javascript:;" title="樱桃/车厘子">九阳</a></em>
+                                                        <em><a href="javascript:;" title="有机精选">乐扣乐扣</a></em>
+                                                        <em><a href="javascript:;" title="有机杂粮">美的</a></em>
+                                                        <em><a href="javascript:;" title="有机蔬菜">苏泊尔</a></em>
+                                                        <em><a href="javascript:;" title="有机面点">特美刻</a></em>
+                                                        <em><a href="javascript:;" title="有机精选">心相印</a></em>
+                                                        <em><a href="javascript:;" title="有机杂粮">BWT</a></em>
+                                                        <em><a href="javascript:;" title="有机蔬菜">米技</a></em>
+                                                        <em><a href="javascript:;" title="有机面点">爱仕达</a></em>
+                                                        <em><a href="javascript:;" title="有机面点">物生物</a></em>
+                                                        <em style="border-right: none"><a href="javascript:;" title="热带水果">海尔</a></em>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="list_l">
+                                                        <a href="javascript:;">烹饪用具</a>
+                                                    </div>
+                                                    <div class="list_r fl">
+                                                        <em><a href="javascript:;" title="有机精选">炒锅</a></em>
+                                                        <em><a href="javascript:;" title="有机杂粮">刀剪</a></em>
+                                                        <em><a href="javascript:;" title="有机蔬菜">珐琅锅</a></em>
+                                                        <em><a href="javascript:;" title="有机面点">锅铲/勺</a></em>
+                                                        <em><a href="javascript:;" title="有机精选">锅具套组</a></em>
+                                                        <em><a href="javascript:;" title="有机杂粮">煎锅</a></em>
+                                                        <em><a href="javascript:;" title="有机蔬菜">奶锅</a></em>
+                                                        <em><a href="javascript:;" title="有机面点">其他用具</a></em>
+                                                        <em><a href="javascript:;" title="有机精选">烧烤用具</a></em>
+                                                        <em><a href="javascript:;" title="有机杂粮">汤锅</a></em>
+                                                        <em><a href="javascript:;" title="有机蔬菜">压力锅</a></em>
+                                                        <em style="border-right: none"><a href="javascript:;" title="葱姜蒜">蒸锅</a></em>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="list_l">
+                                                        <a href="javascript:;">厨房电器</a>
+                                                    </div>
+                                                    <div class="list_r fl">
+                                                        <em><a href="javascript:;" title="有机精选">冰箱</a></em>
+                                                        <em><a href="javascript:;" title="有机杂粮">电磁炉</a></em>
+                                                        <em><a href="javascript:;" title="有机蔬菜">电炖锅</a></em>
+                                                        <em><a href="javascript:;" title="有机面点">电饭煲</a></em>
+                                                        <em><a href="javascript:;" title="有机精选">电烤箱</a></em>
+                                                        <em><a href="javascript:;" title="有机杂粮">电水壶</a></em>
+                                                        <em><a href="javascript:;" title="有机蔬菜">电压力锅</a></em>
+                                                        <em><a href="javascript:;" title="有机面点">豆浆机</a></em>
+                                                        <em><a href="javascript:;" title="有机蔬菜">煎烤机</a></em>
+                                                        <em><a href="javascript:;" title="有机面点">面包机</a></em>
+                                                        <em><a href="javascript:;" title="有机精选">破壁/料理机</a></em>
+                                                        <em><a href="javascript:;" title="有机杂粮">其他电器</a></em>
+                                                        <em style="border-right: none"><a href="javascript:;" title="快手意面">榨汁机</a></em>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="list_l">
+                                                        <a href="javascript:;">餐饮用具</a>
+                                                    </div>
+                                                    <div class="list_r fl">
+                                                        <em><a href="javascript:;" title="有机精选">保温杯/壶/杯</a></em>
+                                                        <em><a href="javascript:;" title="有机杂粮">保鲜用品</a></em>
+                                                        <em><a href="javascript:;" title="有机蔬菜">餐具/刀叉</a></em>
+                                                        <em><a href="javascript:;" title="有机面点">茶具</a></em>
+                                                        <em><a href="javascript:;" title="有机蔬菜">酒具/酒杯</a></em>
+                                                        <em style="border-right: none"><a href="javascript:;" title="快手意面">一次性用品</a></em>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="list_l">
+                                                        <a href="javascript:;">厨房配件</a>
+                                                    </div>
+                                                    <div class="list_r fl">
+                                                        <em><a href="javascript:;" title="有机精选">便利工具</a></em>
+                                                        <em><a href="javascript:;" title="有机杂粮">净水用品</a></em>
+                                                        <em><a href="javascript:;" title="有机蔬菜">其它配件</a></em>
+                                                        <em style="border-right: none"><a href="javascript:;" title="快手意面">清洁用品</a></em>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </dd>
                                 </dl>
                                 <dl>
                                     <dt class="sort_bg12">
                                         <a href="javascript:;">礼品礼盒</a>
                                     </dt>
-                                    <dd></dd>
+                                    <dd>
+                                        <div class="memu_list">
+                                            <ul>
+                                                <li>
+                                                    <div class="list_l">
+                                                        <a href="javascript:;">甄选礼盒</a>
+                                                    </div>
+                                                    <div class="list_r fl">
+                                                        <em><a href="javascript:;" title="樱桃/车厘子">水果礼盒</a></em>
+                                                        <em><a href="javascript:;" title="褚橘">蔬菜礼盒</a></em>
+                                                        <em><a href="javascript:;" title="樱桃/车厘子">肉禽礼盒</a></em>
+                                                        <em><a href="javascript:;" title="有机精选">水产礼盒</a></em>
+                                                        <em><a href="javascript:;" title="有机杂粮">粮油礼盒</a></em>
+                                                        <em><a href="javascript:;" title="有机蔬菜">乳品饮料</a></em>
+                                                        <em style="border-right: none"><a href="javascript:;" title="热带水果">酒水礼盒</a></em>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="list_l">
+                                                        <a href="javascript:;">节日赠礼</a>
+                                                    </div>
+                                                    <div class="list_r fl">
+                                                        <em><a href="javascript:;" title="有机精选">端午节</a></em>
+                                                        <em><a href="javascript:;" title="有机杂粮">父母亲节</a></em>
+                                                        <em><a href="javascript:;" title="有机蔬菜">儿童节</a></em>
+                                                        <em style="border-right: none"><a href="javascript:;" title="葱姜蒜">情人节/七夕</a></em>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="list_l">
+                                                        <a href="javascript:;">亲朋好友</a>
+                                                    </div>
+                                                    <div class="list_r fl">
+                                                        <em><a href="javascript:;" title="有机精选">父母长辈</a></em>
+                                                        <em><a href="javascript:;" title="有机杂粮">同事好友</a></em>
+                                                        <em style="border-right: none"><a href="javascript:;" title="快手意面">夫妻情侣</a></em>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </dd>
                                 </dl>
                             </div>
                         </div>
@@ -273,21 +1089,21 @@
         <!-- 大轮播图 开始-->
         <div class="banner" id="IndexBanner">
             <div class="index_control">
-                <dl>
-                    <dt class="prev">
+                <div class="pis">
+                    <div class="prev">
                         <a href="javascript:;"></a>
-                    </dt>
-                    <dd class="next">
+                    </div>
+                    <div class="next">
                         <a href="javascript:;"></a>
-                    </dd>
-                </dl>
+                    </div>
+                </div>
                 <ul class="banner_nav">
-                    <li class="on"><a href="javascript:;">休眠清远鸡59.9元一只</a></li>
-                    <li><a href="javascript:;">褚橙优级果168元10斤</a></li>
+                    <li class="on"><a href="javascript:;">褚橙优级果168元10斤</a></li>
                     <li><a href="javascript:;">本来年货大街</a></li>
                     <li><a href="javascript:;">泰国青椰79元9个</a></li>
                     <li><a href="javascript:;">新春年货礼包上线</a></li>
                     <li><a href="javascript:;">韩国馆周周有新品</a></li>
+                    <li><a href="javascript:;">休眠清远鸡59.9元一只</a></li>
                 </ul>
             </div>
             <div class="picture">
@@ -301,7 +1117,143 @@
         </div>
         <!-- 大轮播图 结束-->
         <!-- 主体内容 开始-->
-        <div class="main1200"></div>
+        <div class="main1200">
+            <div class="container">
+                <!--首页滚动广告位 开始-->
+                <div class="index15_ad">
+                    <ul>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="img/sltomato.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="img/slnmc39.8.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="img/sllys129.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <img src="img/slds8.jpg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!--首页滚动广告位 结束-->
+                <!--新品上线 开始-->
+                <div class="index_new">
+                    <div class="index15_tab">
+                        <dl>
+                            <dt>
+                                <a href="javascript:;">好评如潮</a>
+                            </dt>
+                            <dd>
+                                <div class="index_sku">
+                                    <ul>
+                                        <li>
+                                            <div class="box">
+                                                <p class="pic"><a href="javascript:;">
+                                                    <img src="img/55809142-ab6d-422f-b419-45da9911f4ec.webp" alt="">
+                                                </a></p>
+                                                <p class="name"><a href="javascript:;">
+                                                    <font>家佳康香脆炸猪排200g</font>
+                                                    <span>外香脆，内松软</span>
+                                                </a></p>
+                                                <p class="price">
+                                                    ￥19.90
+                                                    <span>￥49.90</span>
+                                                </p>
+                                                <p class="btn"><a class="ico00" href="javascript:;">
+
+                                                </a></p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="box">
+                                                <p class="pic"><a href="javascript:;">
+                                                    <img src="img/0c708b01-8822-4c95-b784-eb72f6993fc6.webp" alt="">
+                                                </a></p>
+                                                <p class="name"><a href="javascript:;">
+                                                    <font>渔天下真鳕颈肉（宝宝鳕鱼）180g（内含3小袋）</font>
+                                                    <span>手工去刺，富含宝宝成长需要的营养</span>
+                                                </a></p>
+                                                <p class="price">
+                                                    ￥25.80
+                                                    <span>￥28.80</span>
+                                                </p>
+                                                <p class="btn"><a class="ico00" href="javascript:;">
+
+                                                </a></p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="box">
+                                                <p class="pic"><a href="javascript:;">
+                                                    <img src="img/0d77116b-4d61-405a-b4ad-1bda4dedf687.webp" alt="">
+                                                </a></p>
+                                                <p class="name"><a href="javascript:;">
+                                                    <font>澳洲牛腱子500g</font>
+                                                    <span>筋肉交错 爽口鲜香</span>
+                                                </a></p>
+                                                <p class="price">
+                                                    ￥49.90
+                                                    <span>￥88.90</span>
+                                                </p>
+                                                <p class="btn"><a class="ico00" href="javascript:;">
+
+                                                </a></p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="box">
+                                                <p class="pic"><a href="javascript:;">
+                                                    <img src="img/146a829a-3d6c-47cd-ae6b-2caec379a591.webp" alt="">
+                                                </a></p>
+                                                <p class="name"><a href="javascript:;">
+                                                    <font>原味手抓饼800g(80g*10片)</font>
+                                                    <span>台湾风味，百般搭配</span>
+                                                </a></p>
+                                                <p class="price">
+                                                    ￥23.80
+                                                    <!-- <span>￥49.90</span> -->
+                                                </p>
+                                                <p class="btn"><a class="ico00" href="javascript:;">
+
+                                                </a></p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="box">
+                                                <p class="pic"><a href="javascript:;">
+                                                    <img src="img/0413473f-6c45-42cc-aaab-be5bff250e55.webp" alt="">
+                                                </a></p>
+                                                <p class="name"><a href="javascript:;">
+                                                    <font>国联金鲳鱼原条两条装 300/400 700g</font>
+                                                    <span>产自南海之滨，深海养殖确保肉质纯净</span>
+                                                </a></p>
+                                                <p class="price">
+                                                        ￥54.90
+                                                    <span>￥78.00</span>
+                                                </p>
+                                                <p class="btn"><a class="ico00" href="javascript:;">
+
+                                                </a></p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <!--新品上线 结束-->
+            </div>
+        </div>
         <!-- 主体内容 结束-->
         <!-- 页尾 开始-->
         <div class="footer" id="footers"></div>
