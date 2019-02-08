@@ -4,6 +4,13 @@
   margin: 0;
 }
 
+a {
+  color: #666;
+  text-decoration: none;
+  outline: 0;
+  cursor: pointer;
+}
+
 input:-ms-input-placeholder {
   color: #3e4141;
   font-size: 12px;
@@ -323,7 +330,7 @@ input::-webkit-input-placeholder {
   width: 210px;
   float: left;
   position: relative;
-  z-index: 39px;
+  z-index: 3900;
   /*一级导航 开始*/
 }
 #benlai .header .head_menu_bg .head_menu_all_OnlineCategory .tit_all a {
@@ -430,7 +437,7 @@ input::-webkit-input-placeholder {
   position: absolute;
   left: 208px;
   top: -2px;
-  z-index: 36;
+  z-index: 3600;
   width: 600px;
   height: 384px;
   padding: 15px 15px 0 0;
@@ -677,6 +684,7 @@ input::-webkit-input-placeholder {
   z-index: 4;
   width: 885px;
   height: 265px;
+  display: none;
 }
 #benlai .main1200 .index_new .index15_tab dl dd .index_sku {
   width: 885px;
@@ -756,11 +764,241 @@ input::-webkit-input-placeholder {
   transition: all .2s linear;
 }
 #benlai .main1200 .index_new .index15_tab dl dd .index_sku li .box .btn a {
+  background: url(img/btn_new_b1771e22.png) no-repeat;
   width: 168px;
   height: 33px;
   display: block;
 }
 #benlai .main1200 .index_new .index15_tab dl dd .index_sku li .box .btn a.ico00 {
+  background-position: center 0;
+  cursor: pointer;
+}
+#benlai .main1200 .index15_ann {
+  width: 177px;
+  height: 266px;
+  box-sizing: border-box;
+  border: 1px solid #c9cdb2;
+  float: right;
+  padding: 0 10px;
+  position: relative;
+  overflow: hidden;
+}
+#benlai .main1200 .index15_ann .tit {
+  font-size: 18px;
+  line-height: 38px;
+  margin-top: 10px;
+  color: #615a54;
+  text-align: center;
+}
+#benlai .main1200 .index15_ann ul {
+  margin-top: 4px;
+}
+#benlai .main1200 .index15_ann ul li {
+  font-size: 14px;
+  line-height: 28px;
+  text-overflow: clip;
+  width: 145px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+#benlai .main1200 .index15_ann ul li a {
+  color: #615a54;
+}
+#benlai .main1200 .index15_ann a img {
+  position: absolute;
+  bottom: 17px;
+  left: 0;
+}
+#benlai .main1200 .index15_origin {
+  float: left;
+  width: 1200px;
+  height: 470px;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+  background: url(img/ae3b7884-e071-4c9b-8362-6396fe069568.jpg) no-repeat;
+}
+#benlai .main1200 .index15_origin .origin_tit {
+  width: 74px;
+  height: 45px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  font: 400 16px/45px "Microsoft YaHei";
+  color: #fff;
+  padding-left: 49px;
+  background: url(img/n_bg_be18aeea.png) 0 -84px no-repeat;
+}
+#benlai .main1200 .index15_origin .index15_path {
+  float: left;
+  width: 1200px;
+  height: 170px;
+  background: url(img/n_path_c5a3e09b.png) no-repeat;
+  position: relative;
+  z-index: 8;
+}
+#benlai .main1200 .index15_origin .index15_path dl dt {
+  position: absolute;
+  width: 25px;
+  z-index: 7;
+}
+#benlai .main1200 .index15_origin .index15_path dl dt .ico01 {
+  margin-bottom: 9px;
+  background: url(img/n_bg_be18aeea.png) 0 -50px no-repeat;
+  width: 25px;
+  height: 33px;
+}
+#benlai .main1200 .index15_origin .index15_path dl dt .ico02 {
+  top: 48px;
+  left: 7px;
+  position: absolute;
+  z-index: 7;
+  background: url(img/n_bg_be18aeea.png) -35px -50px no-repeat;
+  width: 10px;
+  height: 10px;
+}
+#benlai .main1200 .index15_origin .index15_path dl dt .ico03 {
+  margin: 8px 0 0 1px;
+  *margin: 15px 0 0 1px;
+  background: url(img/n_bg_be18aeea.png) -55px -50px no-repeat;
+  width: 22px;
+  height: 22px;
+  -webkit-animation: twinkle 1s ease-out infinite normal;
+  -moz-animation: twinkle 1s ease-out infinite normal;
+  -ms-animation: twinkle 1s ease-out infinite normal;
+  -o-animation: twinkle 1s ease-out infinite normal;
+  animation: twinkle 1s ease-out infinite normal;
+}
+@keyframes twinkle {
+  0% {
+    transform: scale(0.45);
+  }
+  100% {
+    -webkit-transform: scale(1.59);
+    transform: scale(1.59);
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+}
+#benlai .main1200 .index15_origin .index15_path dl dd {
+  position: absolute;
+  z-index: 8;
+}
+#benlai .main1200 .index15_origin .index15_path dl dd a {
+  font: 400 16px/45px "Microsoft YaHei";
+  color: #1e301d;
+  width: 90px;
+  height: 45px;
+  text-overflow: clip;
+  display: block;
+  overflow: hidden;
+  text-align: center;
+  padding-top: 60px;
+}
+#benlai .main1200 .index15_origin .index15_path dl .country01 {
+  top: 30px;
+  left: 196px;
+}
+#benlai .main1200 .index15_origin .index15_path dl .country02 {
+  top: 16px;
+  left: 390px;
+}
+#benlai .main1200 .index15_origin .index15_path dl .country03 {
+  top: 44px;
+  left: 582px;
+}
+#benlai .main1200 .index15_origin .index15_path dl .country04 {
+  top: 19px;
+  left: 771px;
+}
+#benlai .main1200 .index15_origin .index15_path dl .country05 {
+  top: 33px;
+  left: 984px;
+}
+#benlai .main1200 .index15_origin .index15_sku2 {
+  width: 1160px;
+  height: 280px;
+  float: left;
+  position: relative;
+  z-index: 9;
+  margin-left: 20px;
+}
+#benlai .main1200 .index15_origin .index15_sku2 .sku_bg {
+  background-color: #fff;
+  opacity: .9;
+  filter: alpha(opacity=91);
+  box-shadow: 3px 1px 9px rgba(0, 0, 0, 0.2);
+  width: 1160px;
+  height: 280px;
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 0;
+}
+#benlai .main1200 .index15_origin .index15_sku2 ul {
+  padding: 0 22px;
+  float: left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 7;
+  overflow: hidden;
+}
+#benlai .main1200 .index15_origin .index15_sku2 ul li {
+  width: 178px;
+  float: left;
+  height: 272px;
+  padding: 4px;
+  position: relative;
+  transition: all .2s linear;
+}
+#benlai .main1200 .index15_origin .index15_sku2 ul li .pic {
+  margin: 25px 0 0 19px;
+  transition: all .2s linear;
+}
+#benlai .main1200 .index15_origin .index15_sku2 ul li .pic img {
+  width: 140px;
+  height: 140px;
+}
+#benlai .main1200 .index15_origin .index15_sku2 ul li .name {
+  height: 38px;
+  width: 140px;
+  text-overflow: clip;
+  display: block;
+  overflow: hidden;
+  margin: 15px 0 0 19px;
+  transition: all .2s linear;
+}
+#benlai .main1200 .index15_origin .index15_sku2 ul li .name a {
+  font: 400 14px/18px "Microsoft YaHei";
+  font-size: 14px;
+  color: #3e4141;
+}
+#benlai .main1200 .index15_origin .index15_sku2 ul li .price {
+  font: 400 17px/25px "Microsoft YaHei";
+  color: #ff6900;
+  margin: 7px 0 0 19px;
+  transition: all .2s linear;
+}
+#benlai .main1200 .index15_origin .index15_sku2 ul li .price span {
+  font: 400 12px/25px "Microsoft YaHei";
+  color: #686c69;
+  text-decoration: line-through;
+}
+#benlai .main1200 .index15_origin .index15_sku2 ul li .btn {
+  position: absolute;
+  top: 280px;
+  left: 4px;
+  transition: all .2s linear;
+}
+#benlai .main1200 .index15_origin .index15_sku2 ul li .btn a {
+  background: url(img/btn_new_b1771e22.png) no-repeat;
+  width: 178px;
+  height: 33px;
+  display: block;
+}
+#benlai .main1200 .index15_origin .index15_sku2 ul li .btn a.ico00 {
   background-position: center 0;
   cursor: pointer;
 }

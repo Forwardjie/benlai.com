@@ -137,12 +137,86 @@ $(function() {
     /*大轮播图 开始 */
 
     var IndexBanner = document.getElementById('IndexBanner');
-    console.log(IndexBanner);
     var index_control = IndexBanner.getElementsByClassName('index_control')[0];
     var pis = IndexBanner.getElementsByClassName('pis')[0];
     var banner_nav = IndexBanner.getElementsByClassName('banner_nav')[0];
     var picture = IndexBanner.getElementsByClassName('picture')[0];
     RotationChart (IndexBanner,picture,banner_nav,pis);
     /*大轮播图 结束 */
+    /*新品上线 开始 */
+
+    $('#benlai .index_new').on('mouseover','.index15_tab dl',function () {
+        $('dd').css('display','none');
+        $('dt').attr('class','');
+        $(this).find('dt').addClass('on');
+        $(this).find('dd').css('display','block');
+    });
+   
+    $('#benlai .index_new').on('mouseover','.index15_tab dl dd ul li',function () {
+        $(this).find('.btn').css('top','223px');
+        $(this).find('.box').css('border','4px solid #f7f9ec');
+        $(this).find('.box .pic').css('margin-top','11px');
+        $(this).find('.box .name').css('margin-top','4px');
+        $(this).find('.box .price').css('margin-top','2px');
+    });
+    $('#benlai .index_new').on('mouseout','.index15_tab dl dd ul li',function () {
+        $(this).find('.btn').css('top','260px');
+        $(this).find('.box').css('border','4px solid #fff');
+        $(this).find('.box .pic').css('margin-top','15px');
+        $(this).find('.box .name').css('margin-top','15px');
+        $(this).find('.box .price').css('margin-top','7px');
+    });
+    $('#benlai .index_new').on('mouseover','.index15_tab dl dd .name a',function () {
+        $(this).css('color','#ff6801');
+        $(this).find('span').css('color','#ff6801');
+        $(this).css('text-decoration','underline');
+    });
+    $('#benlai .index_new').on('mouseout','.index15_tab dl dd .name a',function () {
+        $(this).css('color','#3e4141');
+        $(this).find('span').css('color','#898989');
+        $(this).css('text-decoration','none');
+    });
+    
+    /*新品上线 结束*/
+    /*公告信息 开始*/
+    $('#benlai .index15_ann').on('mouseover','ul li a',function () {
+        $(this).css('color','#ff6801');
+        $(this).css('text-decoration','underline');
+    });
+    $('#benlai .index15_ann').on('mouseout','ul li a',function () {
+        $(this).css('color','#615a54');
+        $(this).css('text-decoration','none');
+    });
+    /*公告信息 结束*/
+    /*产地直销 开始*/
+    $('#benlai .index15_origin').on('mouseover','.index15_sku2 ul li',function () {
+        $(this).find('.btn').css('top','242px');
+        $(this).css('background','#fff');
+        $(this).css('box-shadow','1px 1px 3px rgba(0,0,0,.2),-1px 1px 3px rgba(0,0,0,.2)');
+        // $(this).find('.box').css('border','4px solid #f7f9ec');
+        // $(this).find('.pic').css('margin-top','11px');
+        // $(this).find('.name').css('margin-top','4px');
+        // $(this).find('.price').css('margin-top','2px');
+    });
+    $('#benlai .index15_origin').on('mouseout','.index15_sku2 ul li',function () {
+        $(this).find('.btn').css('top','280px');
+        $(this).css('background','');
+        $(this).css('box-shadow','');
+        // $(this).find('.box').css('border','4px solid #fff');
+        // $(this).find('.pic').css('margin-top','15px');
+        // $(this).find('.name').css('margin-top','15px');
+        // $(this).find('.price').css('margin-top','7px');
+    });
+    $('#benlai .index15_origin').on('mouseover','.index15_sku2 ul li .name a',function () {
+        $(this).css('color','#ff6801');
+        $(this).find('span').css('color','#ff6801');
+        $(this).css('text-decoration','underline');
+    });
+    $('#benlai .index15_origin').on('mouseout','.index15_sku2 ul li .name a',function () {
+        $(this).css('color','#2d322e');
+        $(this).find('span').css('color','#2d322e');
+        $(this).css('text-decoration','none');
+    });
+    /*产地直销 结束*/
 });
    

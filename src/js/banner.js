@@ -16,19 +16,18 @@
 
 
 function  RotationChart (slideimg,ul,light,pis){
-    console.log(ul);
-	// var ul = getid('ul');
+
     var alis = ul.children;
-    console.log(alis);
+
 	var iW = alis[0].offsetWidth;
 	// var light = getid('light');
 	var aspans = light.children;
 	var prevBtn = pis.children[0];
     var nextBtn = pis.children[1];
-    console.log(prevBtn);
+    // console.log(prevBtn);
 	// var slideimg = getid('slideimg');
 	
-	console.log(iW);
+	// console.log(iW);
 	
 	//1.所有的图片放在右侧，第一张放在可视区
 	// for(var i = 0; i < alis.length; i++) {
@@ -130,7 +129,7 @@ function  RotationChart (slideimg,ul,light,pis){
 	for(var i = 0; i < aspans.length; i++) {
 		aspans[i].index = i;
 		aspans[i].onmouseover = function() {
-			console.log(this.index);
+			// console.log(this.index);
 			for(var j = 0; j < alis.length; j++) {
 				css(alis[j], 'z-index', '-1');
 				css(alis[j], 'opacity', '0');

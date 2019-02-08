@@ -5,6 +5,12 @@
     padding: 0;
     margin: 0;
 }
+a{
+    color: #666;
+    text-decoration: none;
+    outline: 0;
+    cursor: pointer;
+}
 input:-ms-input-placeholder {
     color: #3e4141;
     font-size: 12px;
@@ -341,7 +347,7 @@ input::-webkit-input-placeholder {
                 width: 210px;
                 float: left;
                 position: relative;
-                z-index: 39px;
+                z-index: 3900;
                 .tit_all{
                     a{
                         display: inline-block;
@@ -454,7 +460,7 @@ input::-webkit-input-placeholder {
                             position: absolute;
                             left: 208px;
                             top: -2px;
-                            z-index: 36;
+                            z-index: 3600;
                             width: 600px;
                             // height: auto!important;
                             // height: 399px;
@@ -723,6 +729,7 @@ input::-webkit-input-placeholder {
                         top: 0;
                         left: 0;
                         text-align: center;
+                        // transition: all .1s linear;
                         a{
                             font: 400 16px/44px "Microsoft YaHei";
                             color: #626252;
@@ -731,8 +738,10 @@ input::-webkit-input-placeholder {
                             height: 44px;
                             width: 123px;
                             border-bottom: 1px solid #e5e5e5;
+                            // transition: all .1s linear;
                         }
                     }
+                    
                     dd{
                         border-top: 1px solid #c2d58f;
                         position: absolute;
@@ -741,7 +750,7 @@ input::-webkit-input-placeholder {
                         z-index: 4;
                         width: 885px;
                         height: 265px;
-                        // display: none;
+                        display: none;
                         .index_sku{
                             width: 885px;
                             height: 265px;
@@ -763,6 +772,7 @@ input::-webkit-input-placeholder {
                                     padding: 0 14px;
                                     position: relative;
                                     transition: all .2s linear;
+                                    // padding-bottom: 15px;
                                     .pic{
                                         margin-top: 15px;
                                         transition: all .2s linear;
@@ -817,7 +827,7 @@ input::-webkit-input-placeholder {
                                         left: 0;
                                         transition: all .2s linear;
                                         a{
-                                            // background: url(//image.benlailife.com/webStatic/images/btn_new_b1771e22.png) no-repeat;
+                                            background: url(img/btn_new_b1771e22.png) no-repeat;
                                             width: 168px;
                                             height: 33px;
                                             display: block;
@@ -828,6 +838,241 @@ input::-webkit-input-placeholder {
                                         }
                                     }
                                 }
+                            }
+                        }
+                    }  
+                }
+            }
+        }
+        .index15_ann{
+            width: 177px;
+            height: 266px;
+            box-sizing: border-box;
+            border: 1px solid #c9cdb2;
+            float: right;
+            padding: 0 10px;
+            position: relative;
+            overflow: hidden;
+            .tit{
+                font-size: 18px;
+                line-height: 38px;
+                margin-top: 10px;
+                color: #615a54;
+                text-align: center;
+            }
+            ul{
+                margin-top: 4px;
+                li{
+                    font-size: 14px;
+                    line-height: 28px;
+                    text-overflow: clip;
+                    width: 145px;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    a{
+                        color: #615a54;
+                    }
+                }
+            }
+            a{
+                img{
+                    // margin-top: 17px;
+                    position: absolute;
+                    bottom: 17px;
+                    left: 0; 
+                }
+            }
+        }
+        .index15_origin{
+            float: left;
+            width: 1200px;
+            height: 470px;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+            background: url(img/ae3b7884-e071-4c9b-8362-6396fe069568.jpg) no-repeat;
+            .origin_tit{
+                width: 74px;
+                height: 45px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 9;
+                font: 400 16px/45px "Microsoft YaHei";
+                color: #fff;
+                padding-left: 49px;
+                background: url(img/n_bg_be18aeea.png) 0 -84px no-repeat;
+            }
+            .index15_path{
+                float: left;
+                width: 1200px;
+                height: 170px;
+                background: url(img/n_path_c5a3e09b.png) no-repeat;
+                position: relative;
+                z-index: 8;
+                dl{
+                    dt{
+                        position: absolute;
+                        width: 25px;
+                        z-index: 7;
+                        .ico01{
+                            margin-bottom: 9px;
+                            background: url(img/n_bg_be18aeea.png) 0 -50px no-repeat;
+                            width: 25px;
+                            height: 33px;
+                        }
+                        .ico02{
+                            top: 48px;
+                            left: 7px;
+                            position: absolute;
+                            z-index: 7;
+                            background: url(img/n_bg_be18aeea.png) -35px -50px no-repeat;
+                            width: 10px;
+                            height: 10px;
+                        }
+                        .ico03{
+                            margin: 8px 0 0 1px;
+                            *margin: 15px 0 0 1px;
+                            background: url(img/n_bg_be18aeea.png) -55px -50px no-repeat;
+                            width: 22px;
+                            height: 22px;
+                            -webkit-animation: twinkle 1s ease-out infinite normal;
+                            -moz-animation: twinkle 1s ease-out infinite normal;
+                            -ms-animation: twinkle 1s ease-out infinite normal;
+                            -o-animation: twinkle 1s ease-out infinite normal;
+                            animation: twinkle 1s ease-out infinite normal;
+                        }
+                        @keyframes twinkle {
+                            0% {
+                                transform: scale(0.45);
+                            }
+                            100% {
+                                -webkit-transform: scale(1.59);
+                                transform: scale(1.59);
+                                opacity: 0;
+                                filter: alpha(opacity=0);
+                            } 
+                        }
+                        
+                    }
+                    dd{
+                        position: absolute;
+                        z-index: 8;
+                        a{
+                            font: 400 16px/45px "Microsoft YaHei";
+                            color: #1e301d;
+                            width: 90px;
+                            height: 45px;
+                            text-overflow: clip;
+                            display: block;
+                            overflow: hidden;
+                            text-align: center;
+                            padding-top: 60px;
+                        }
+                    }
+                    .country01{
+                        top: 30px;
+                        left: 196px;
+                    }
+                    .country02{
+                        top: 16px;
+                        left: 390px;
+                    }
+                    .country03{
+                        top: 44px;
+                        left: 582px;
+                    }
+                    .country04{
+                        top: 19px;
+                        left: 771px;
+                    }
+                    .country05{
+                        top: 33px;
+                        left: 984px;
+                    }
+                }
+            }
+            .index15_sku2{
+                width: 1160px;
+                height: 280px;
+                float: left;
+                position: relative;
+                z-index: 9;
+                margin-left: 20px;
+                .sku_bg{
+                    background-color: #fff;
+                    opacity: .9;
+                    filter: alpha(opacity=91);
+                    box-shadow: 3px 1px 9px rgba(0,0,0,.2);
+                    width: 1160px;
+                    height: 280px;
+                    position: absolute;
+                    z-index: 5;
+                    top: 0;
+                    left: 0;
+                }
+                ul{
+                    padding: 0 22px;
+                    float: left;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: 7;
+                    overflow: hidden;
+                    li{
+                        width: 178px;
+                        float: left;
+                        height: 272px;
+                        padding: 4px;
+                        position: relative;
+                        transition: all .2s linear;
+                        .pic{
+                            margin: 25px 0 0 19px;
+                            transition: all .2s linear;
+                            img{
+                                width: 140px;
+                                height: 140px;
+                            }
+                        }
+                        .name{
+                            height: 38px;
+                            width: 140px;
+                            text-overflow: clip;
+                            display: block;
+                            overflow: hidden;
+                            margin: 15px 0 0 19px;
+                            transition: all .2s linear;
+                            a{
+                                font: 400 14px/18px "Microsoft YaHei";
+                                font-size: 14px;
+                                color: #3e4141;
+                            }
+                        }
+                        .price{
+                            font: 400 17px/25px "Microsoft YaHei";
+                            color: #ff6900;
+                            margin: 7px 0 0 19px;
+                            transition: all .2s linear;
+                            span{
+                                font: 400 12px/25px "Microsoft YaHei";
+                                color: #686c69;
+                                text-decoration: line-through;
+                            }
+                        }
+                        .btn{
+                            position: absolute;
+                            top: 280px;
+                            left: 4px;
+                            transition: all .2s linear;
+                            a{
+                                background: url(img/btn_new_b1771e22.png) no-repeat;
+                                width: 178px;
+                                height: 33px;
+                                display: block;
+                            }
+                            a.ico00{
+                                background-position: center 0;
+                                cursor: pointer;
                             }
                         }
                     }
