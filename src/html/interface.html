@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../css/interface.css">
     <script src="../js/common.js"></script>
     <script src="../js/jquery-1.10.1.min.js"></script>
-    <script src="../js/goods.js"></script>
+    <script src="../js/interface.js"></script>
 </head>
 <body>
     <!-- 注册页 -->
@@ -1102,11 +1102,11 @@
                                 <p class="ico01">账号注册</p>
                             </div>
                             <ul class="register_box">
-                                <li class="phone">
+                                <li class="name">
                                     <s class="yes"></s>
                                     <p>用户名</p>
-                                    <input type="text" id="phoneTxt" name="txtCustomerID" placeholder="请输入手机号" class="cl999" maxlength="11">
-                                    <div class="prompt" id="phoneMes"></div>
+                                    <input type="text" id="username1" name="txtCustomerID" placeholder="请输入用户名" class="cl999" maxlength="11">
+                                    <div class="prompt" id="username1Mes"></div>
                                 </li>
                                 <div class="verification">
                                     <div class="v_tit">验证</div>
@@ -1116,10 +1116,8 @@
                                         <div class="btn"></div>
                                     </div>
                                 </div>
-                                <dl class="code" data-type="smsCode">                    
-                                    <dt>                        
-                                        <p>验证码</p>                        
-                                        <input type="text" id="smsCodeTxt" name="smsCode" placeholder="请输入验证码" class="cl999">                        
+                                <dl class="code" data-type="smsCode">              <dt>                  
+                                        <p>验证码</p>           <input type="text" id="smsCodeTxt" name="smsCode" placeholder="请输入验证码" class="cl999">                        
                                         <div class="prompt" id="smsCodeMes"></div>                    
                                     </dt>                    
                                     <dd>
@@ -1152,7 +1150,7 @@
                                 </div>
                                 <div class="word">
                                     已注册？
-                                    <a href="javascript:;">立即登录</a>
+                                    <a href="login.html">立即登录</a>
                                 </div>
                             </ul>
                             <ul class="other">
@@ -1304,58 +1302,58 @@
         <!-- 页尾 结束-->
     </div>
     <script>
-        var box = document.getElementById("v_slide");
-        var bg = document.querySelector(".bg");
-        var text = document.querySelector(".text");
-        var btn = document.querySelector(".btn");
-        console.log(btn);
-        var success = false;
-        var distance = box.offsetWidth - btn.offsetWidth;
-        btn.onmousedown = function (ev){
-            btn.style.transition = '';
-            bg.style.transition = '';
-            var ev = ev || window.event;
-            var downX = ev.clientX;
-            document.onmousemove = function (ev) {
-                // ev.preventDefault();
-                var ev = ev || window.event;
-                var moveX = ev.clientX;
-                var offsetX = moveX - downX;
-                if(offsetX >= distance){
-                offsetX = distance;
-                }else if(offsetX < 0){
-                    offsetX = 0;
-                }
-                btn.style.left = offsetX + 'px';
-                bg.style.width = offsetX + 'px';
-                if(offsetX >= distance){
-                    text.innerHTML = '验证通过';
-                    text.style.color = '#fff';
-                    // btn.innerHTML = '&radic;';
-                    btn.style.color = '#8ab800';
-                    btn.style.background = 'url(../css/img/interface/login_ico_ec3070b7.png) 13px -94px no-repeat #fff';
-                    bg.style.backgroundColor = '#8ab800';
-                    success = true;
-                    btn.onmousedown = null;
-                    document.onmousemove = null;  
-                    // setTimeout(function(){
-                    //     alert('验证成功!');
-                    // },100);  
-                }
-            }
-            document.onmouseup = function () {
-                if(success){
-                    return;
-                }else{
-                    btn.style.left = 0;
-                    bg.style.width = 0;
-                    btn.style.transition = 'left 1s ease';
-                    bg.style.transition = 'width 1s ease';
-                }
-                document.onmousemove = null;
-                document.onmouseup = null;
-            }
-        }
+        // var box = document.getElementById("v_slide");
+        // var bg = document.querySelector(".bg");
+        // var text = document.querySelector(".text");
+        // var btn = document.querySelector(".btn");
+        // // console.log(btn);
+        // var success = false;
+        // var distance = box.offsetWidth - btn.offsetWidth;
+        // btn.onmousedown = function (ev){
+        //     btn.style.transition = '';
+        //     bg.style.transition = '';
+        //     var ev = ev || window.event;
+        //     var downX = ev.clientX;
+        //     document.onmousemove = function (ev) {
+        //         // ev.preventDefault();
+        //         var ev = ev || window.event;
+        //         var moveX = ev.clientX;
+        //         var offsetX = moveX - downX;
+        //         if(offsetX >= distance){
+        //         offsetX = distance;
+        //         }else if(offsetX < 0){
+        //             offsetX = 0;
+        //         }
+        //         btn.style.left = offsetX + 'px';
+        //         bg.style.width = offsetX + 'px';
+        //         if(offsetX >= distance){
+        //             text.innerHTML = '验证通过';
+        //             text.style.color = '#fff';
+        //             // btn.innerHTML = '&radic;';
+        //             btn.style.color = '#8ab800';
+        //             btn.style.background = 'url(../css/img/interface/login_ico_ec3070b7.png) 13px -94px no-repeat #fff';
+        //             bg.style.backgroundColor = '#8ab800';
+        //             success = true;
+        //             btn.onmousedown = null;
+        //             document.onmousemove = null;  
+        //             // setTimeout(function(){
+        //             //     alert('验证成功!');
+        //             // },100);  
+        //         }
+        //     }
+        //     document.onmouseup = function () {
+        //         if(success){
+        //             return;
+        //         }else{
+        //             btn.style.left = 0;
+        //             bg.style.width = 0;
+        //             btn.style.transition = 'left 1s ease';
+        //             bg.style.transition = 'width 1s ease';
+        //         }
+        //         document.onmousemove = null;
+        //         document.onmouseup = null;
+        //     }
+        // }
         // console.log("3");
     </script>
 </body>

@@ -3,7 +3,7 @@ $(function() {
     var OnlineHomePage = document.getElementById('OnlineHomePage');
 
     function show1(arr) {
-        var res = arr.map(function(item,index) {//遍历所有的留言
+        var res = arr.map(function(item,index) {//遍历所有的li
             return `<li>
                         <div class="box">
                             <p class="pic"><a href="javascript:;">
@@ -175,7 +175,7 @@ $(function() {
                 show('module=厨房用品');
                 console.log(html)
                 console.log(html.join(','))
-                // OnlineHomePage.innerHTML = html.join('');
+                OnlineHomePage.innerHTML = html.join('');
                 // console.log(html)
             }
             
@@ -421,8 +421,8 @@ $(function() {
         $(this).find('a').css('color','#78a000');
     });
     $('#OnlineHomePage').on('mouseover','.index_tab2 dl',function () {
-        $('dd').css('display','none');
-        $('dt').attr('class','');
+        $(this).parent().find('dd').css('display','none');
+        $(this).parent().find('dt').attr('class','');
         $(this).find('dt').addClass('on');
         $(this).find('dd').css('display','block');
     });

@@ -117,10 +117,6 @@
 #benlai .banner .picture a:nth-child(6) {
   background: url(img/index/banner/sjnr23.jpg) center top no-repeat;
 }
-#benlai .main1200 {
-  height: 3000px;
-  overflow: hidden;
-}
 #benlai .main1200 .left_menu {
   position: absolute;
   left: -60px;
@@ -267,6 +263,15 @@
   z-index: 4;
   width: 885px;
   height: 265px;
+  display: block;
+}
+#benlai .main1200 .index_new .index15_tab dl dd.dd:nth-child(2) {
+  display: none;
+}
+#benlai .main1200 .index_new .index15_tab dl dd.dd:nth-child(3) {
+  display: none;
+}
+#benlai .main1200 .index_new .index15_tab dl dd.dd:nth-child(4) {
   display: none;
 }
 #benlai .main1200 .index_new .index15_tab dl dd .index_sku {

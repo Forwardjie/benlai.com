@@ -134,8 +134,8 @@
     .main1200{
         // height: 8251px;
         // background: #58bc58;
-        height: 3000px;
-        overflow: hidden;
+        // height: 3000px;
+        // overflow: hidden;
         .left_menu{
             position: absolute;
             left: -60px;
@@ -284,7 +284,16 @@
                         z-index: 4;
                         width: 885px;
                         height: 265px;
-                        display: none;
+                        display: block;
+                        &.dd:nth-child(2){
+                            display: none;
+                        }
+                        &.dd:nth-child(3){
+                            display: none;
+                        }
+                        &.dd:nth-child(4){
+                            display: none;
+                        }
                         .index_sku{
                             width: 885px;
                             height: 265px;

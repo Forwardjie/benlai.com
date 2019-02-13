@@ -17,6 +17,7 @@
   height: 630px;
   float: left;
   border: 1px solid #ddd;
+  margin-bottom: 50px;
 }
 #RegisterTmpl .registerDiv .register15 .tit {
   padding: 0 30px;
@@ -64,7 +65,7 @@
   height: 25px;
   background: url(img/interface/login_ico_ec3070b7.png) no-repeat;
 }
-#RegisterTmpl .registerDiv .register15 .register_box li s.yes {
+#RegisterTmpl .registerDiv .register15 .register_box li s.no {
   background-position: 0 -137px;
 }
 #RegisterTmpl .registerDiv .register15 .register_box li s.yes {
@@ -85,98 +86,9 @@
   font-size: 14px;
   color: #999;
 }
-#RegisterTmpl .registerDiv .register15 .register_box .verification {
-  float: left;
-  width: 400px;
-  margin-bottom: 30px;
-  margin-top: -15px;
-}
-#RegisterTmpl .registerDiv .register15 .register_box .verification .v_tit {
-  float: left;
-  width: 88px;
-  text-align: center;
-  border: 1px solid #ddd;
-  font: 400 14px/42px "Microsoft YaHei";
-}
-#RegisterTmpl .registerDiv .register15 .register_box .verification #v_slide {
-  float: right;
-  position: relative;
-  z-index: 1;
-  height: 44px;
-  width: 300px;
-  background-color: #dcdcdc;
-}
-#RegisterTmpl .registerDiv .register15 .register_box .verification #v_slide .btn {
-  position: absolute;
-  z-index: 11;
-  top: 0;
-  width: 50px;
-  height: 42px;
-  border: 1px solid #8ab800;
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-  background: url(img/interface/login_ico_ec3070b7.png) 12px -567px no-repeat #fff;
-  cursor: move;
-  user-select: none;
-}
-#RegisterTmpl .registerDiv .register15 .register_box .verification #v_slide .bg {
-  width: 0;
-  height: 100%;
-  position: absolute;
-  text-align: center;
-  background-color: #8ab800;
-}
-#RegisterTmpl .registerDiv .register15 .register_box .verification #v_slide .text {
-  position: absolute;
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  user-select: none;
-  line-height: 42px;
-  color: #fff;
-  font-size: 14px;
-}
-#RegisterTmpl .registerDiv .register15 .register_box dl {
-  float: right;
-  position: relative;
-  z-index: 1;
-  height: 44px;
-  width: 400px;
-  margin-bottom: 30px;
-}
-#RegisterTmpl .registerDiv .register15 .register_box dl dt {
-  float: left;
-  width: 258px;
-  border: 1px solid #ddd;
-  padding: 7px 0;
-}
-#RegisterTmpl .registerDiv .register15 .register_box dl dt p {
-  float: left;
-  width: 100px;
-  text-align: center;
-  border-right: 1px solid #ddd;
-  font: 400 14px/28px "Microsoft YaHei";
-  margin-right: 10px;
-}
-#RegisterTmpl .registerDiv .register15 .register_box dl dt input {
-  font: 400 14px/28px "Microsoft YaHei";
-  width: 135px;
-  height: 28px;
-  border: 0;
-}
-#RegisterTmpl .registerDiv .register15 .register_box dl dd {
-  float: right;
-  width: 130px;
-}
-#RegisterTmpl .registerDiv .register15 .register_box dl dd a {
-  border: 1px solid #8ab700;
-  color: #8ab700;
-  display: block;
-  font: 400 14px/42px "Microsoft YaHei";
-  text-align: center;
-}
 #RegisterTmpl .registerDiv .register15 .register_box .choose {
   width: 400px;
-  height: 40px;
+  height: 20px;
   margin-bottom: 20px;
   float: left;
   font-size: 14px;
@@ -204,9 +116,6 @@
   color: #fff;
   background-color: #ff6900;
   margin-bottom: 20px;
-}
-#RegisterTmpl .registerDiv .register15 .register_box .btn_choose a.no {
-  background-color: #bbb;
 }
 #RegisterTmpl .registerDiv .register15 .register_box .word {
   width: 400px;

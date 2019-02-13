@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../css/login.css">
     <script src="../js/common.js"></script>
     <script src="../js/jquery-1.10.1.min.js"></script>
-    <script src="../js/goods.js"></script>
+    <script src="../js/login.js"></script>
 </head>
 <body>
     <!-- 登录页 -->
@@ -1102,11 +1102,11 @@
                                 <p class="ico01">本来会员登录</p>
                             </div>
                             <ul class="register_box">
-                                <li class="phone">
+                                <li class="name">
                                     <s class="yes"></s>
                                     <p>邮箱/手机</p>
                                     <input type="text" id="phoneTxt" name="txtCustomerID" placeholder="请输入邮箱/手机" class="cl999" maxlength="11">
-                                    <div class="prompt" id="phoneMes"></div>
+                                    <div class="prompt" id="nameMes"></div>
                                 </li>
                                 <li class="password">
                                     <s class="yes"></s>
@@ -1114,13 +1114,19 @@
                                     <input type="password" id="passTxt" placeholder="请输入密码" class="cl999" maxlength="18">
                                     <div class="prompt" id="passMes"></div>
                                 </li>
+                                <div class="choose">
+                                    <input type="checkbox" id="storage_Mes" name="storage_Mes">
+                                        记住我
+                                    <a href="https://www.benlai.com/Account/ResetPasswordMain" class="service">
+                                    忘记密码？</a>
+                                </div>
                                 <div class="btn_choose">
                                     <div class="prompt" style="top: -21px;" id="yinSiMes"></div>
-                                    <a href="javascript:;" id="registerBtn" class="no">立即注册</a>
+                                    <a href="javascript:;" id="loginBtn">立即登录</a>
                                 </div>
                                 <div class="word">
-                                    已注册？
-                                    <a href="javascript:;">立即登录</a>
+                                    还不是本来生活网用户？
+                                    <a href="interface.html">立即注册</a>
                                 </div>
                             </ul>
                             <ul class="other">
@@ -1271,60 +1277,5 @@
         </div>
         <!-- 页尾 结束-->
     </div>
-    <script>
-        var box = document.getElementById("v_slide");
-        var bg = document.querySelector(".bg");
-        var text = document.querySelector(".text");
-        var btn = document.querySelector(".btn");
-        console.log(btn);
-        var success = false;
-        var distance = box.offsetWidth - btn.offsetWidth;
-        btn.onmousedown = function (ev){
-            btn.style.transition = '';
-            bg.style.transition = '';
-            var ev = ev || window.event;
-            var downX = ev.clientX;
-            document.onmousemove = function (ev) {
-                // ev.preventDefault();
-                var ev = ev || window.event;
-                var moveX = ev.clientX;
-                var offsetX = moveX - downX;
-                if(offsetX >= distance){
-                offsetX = distance;
-                }else if(offsetX < 0){
-                    offsetX = 0;
-                }
-                btn.style.left = offsetX + 'px';
-                bg.style.width = offsetX + 'px';
-                if(offsetX >= distance){
-                    text.innerHTML = '验证通过';
-                    text.style.color = '#fff';
-                    // btn.innerHTML = '&radic;';
-                    btn.style.color = '#8ab800';
-                    btn.style.background = 'url(../css/img/interface/login_ico_ec3070b7.png) 13px -94px no-repeat #fff';
-                    bg.style.backgroundColor = '#8ab800';
-                    success = true;
-                    btn.onmousedown = null;
-                    document.onmousemove = null;  
-                    // setTimeout(function(){
-                    //     alert('验证成功!');
-                    // },100);  
-                }
-            }
-            document.onmouseup = function () {
-                if(success){
-                    return;
-                }else{
-                    btn.style.left = 0;
-                    bg.style.width = 0;
-                    btn.style.transition = 'left 1s ease';
-                    bg.style.transition = 'width 1s ease';
-                }
-                document.onmousemove = null;
-                document.onmouseup = null;
-            }
-        }
-        // console.log("3");
-    </script>
 </body>
 </html>

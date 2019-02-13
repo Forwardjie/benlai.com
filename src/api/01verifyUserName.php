@@ -19,7 +19,7 @@
     
 
 
-    $user_name = isset($_POST['user_name']) ? $_POST['user_name'] : '';
+    $user_name = isset($_GET['user_name']) ? $_GET['user_name'] : '';
     // $password = isset($_POST['password']) ? $_POST['password'] : '';
 
     	
@@ -32,7 +32,7 @@
     //SELECT * FROM zhuce1 WHERE user_name = 'qiang1';
 
     $sql = "SELECT * FROM user_info WHERE user_name = '$user_name';";
-    // echo $sql;
+    // echo $user_name;
 
 
 
@@ -44,7 +44,7 @@
     $row = $res->fetch_all(MYSQLI_ASSOC);//对象[{},{},{}]
     $rows = json_encode($row,JSON_UNESCAPED_UNICODE);
     //     echo '9999';
-        // echo $rows;
+        // echo $row;
 
         // if(!$row){
         //     echo 0;

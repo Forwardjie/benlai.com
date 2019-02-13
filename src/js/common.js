@@ -67,9 +67,9 @@ function Verifi_Code(ele){//参数：验证码节点
     for(var i = 0;i < 4;i++){
         res += arr[randomNum(0,61)];
     }
-    ele.value = res;
-    ele.style.letterSpacing='3px';
-    ele.style.fontSize='17px';
+    ele.innerHTML = res;
+    ele.style.letterSpacing='6px';
+    ele.style.fontSize='20px';
 }
 //-------------------------------------------------------------------------------------------
 //过滤敏感的内容
@@ -340,6 +340,7 @@ var cookie = {
 		//prop.path :设置路径
 		if(prop.path) {
 			str += ';path=' + prop.path;
+			// str += ';path=' + escape('/');
 		}
 		//设置访问权限domain
 		if(prop.domain) {

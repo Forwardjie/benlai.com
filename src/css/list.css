@@ -1,0 +1,292 @@
+@charset "UTF-8";
+#listbox .box_left .path {
+  line-height: 40px;
+  height: 40px;
+  color: #959595;
+}
+#listbox .box_left .path a {
+  color: #959595;
+}
+#listbox .box_left .box210 {
+  width: 210px;
+  height: 576px;
+}
+#listbox .box_left .box210 .list15_menu {
+  width: 208px;
+  float: left;
+  border-top: 2px solid #8ab700;
+  border-left: 1px solid #efefe8;
+  border-right: 1px solid #efefe8;
+  margin-bottom: 15px;
+}
+#listbox .box_left .box210 .list15_menu ul {
+  background-color: #fafafa;
+  color: #6b6b56;
+  font: 400 16px/35px "微软雅黑";
+  padding-left: 22px;
+}
+#listbox .box_left .box210 .list15_menu dl {
+  width: 208px;
+  float: left;
+  border-bottom: 1px solid #efefe8;
+}
+#listbox .box_left .box210 .list15_menu dl dt {
+  width: 208px;
+  float: left;
+  height: 35px;
+  background: url(img/list/list_ico_cb3fabd3.png) 22px -32px no-repeat;
+  cursor: pointer;
+}
+#listbox .box_left .box210 .list15_menu dl dt a {
+  font: 800 14px/35px "宋体";
+  color: #78a000;
+  margin-left: 42px;
+}
+#listbox .box_left .box210 .list15_menu dl dd {
+  float: left;
+  padding: 5px 0 5px 34px;
+  width: 174px;
+  display: none;
+}
+#listbox .box_left .box210 .list15_menu dl dd em {
+  width: 174px;
+  float: left;
+}
+#listbox .box_left .box210 .list15_menu dl dd em a {
+  padding: 0 8px;
+  color: #4c4c4c;
+  line-height: 26px;
+  display: inline-block;
+}
+#listbox .box_left .box210 .list15_record {
+  width: 208px;
+  float: left;
+  border-top: 2px solid #8ab700;
+  border-left: 1px solid #efefe8;
+  border-right: 1px solid #efefe8;
+  margin-bottom: 15px;
+}
+#listbox .box_left .box210 .list15_record dl dt {
+  background-color: #fafafa;
+  color: #6b6b56;
+  font: 400 16px/35px "微软雅黑";
+  padding-left: 22px;
+}
+#listbox .box_left .box210 .list15_record dl dt a {
+  float: right;
+  border: 1px solid #8ab700;
+  color: #8ab700;
+  display: block;
+  padding: 0 8px;
+  margin: 7px 10px 0 0;
+  font: 400 12px/18px "微软雅黑";
+}
+#listbox .box_left .box210 .list15_record dl dd {
+  border-bottom: 1px solid #efefe8;
+  padding: 10px;
+  width: 188px;
+}
+#listbox .box_left .box210 .list15_record dl dd .pic img {
+  width: 70px;
+  height: 70px;
+  float: left;
+  margin-right: 5px;
+}
+#listbox .box_left .box210 .list15_record dl dd .name a {
+  float: right;
+  width: 113px;
+  height: 36px;
+  font: 400 12px/18px "Microsoft YaHei";
+  color: #3e4141;
+  text-overflow: clip;
+  display: block;
+  overflow: hidden;
+  margin-top: 5px;
+}
+#listbox .box_left .box210 .list15_record dl dd .price {
+  color: #ff6900;
+  line-height: 26px;
+}
+#listbox .box_right {
+  width: 970px;
+}
+#listbox .box_right .list_name {
+  margin-bottom: 10px;
+  width: 970px;
+}
+#listbox .box_right .list_name h1 {
+  font-size: 20px;
+  font-family: '微软雅黑';
+  height: 35px;
+  line-height: 35px;
+  color: #333;
+}
+#listbox .box_right .list_sequence {
+  height: 32px;
+  margin-bottom: 10px;
+  width: 970px;
+  border-bottom: 1px solid #eee;
+  background-color: #f8f8f6;
+}
+#listbox .box_right .list_sequence ul {
+  width: 460px;
+  padding-left: 10px;
+  float: left;
+}
+#listbox .box_right .list_sequence ul li {
+  padding: 0 25px;
+  float: left;
+}
+#listbox .box_right .list_sequence ul li a {
+  line-height: 33px;
+  color: #626262;
+}
+#listbox .box_right .list_sequence dl {
+  width: 500px;
+  float: right;
+}
+#listbox .box_right .list_sequence dl dt {
+  line-height: 33px;
+  padding: 0 25px;
+  color: #626262;
+  float: right;
+}
+#listbox .box_right .list_sequence dl dt span {
+  color: #ff6900;
+}
+#listbox .box_right .list_sequence dl dd {
+  float: right;
+  padding-top: 8px;
+}
+#listbox .box_right .list_sequence dl dd a {
+  float: left;
+  display: block;
+  padding: 0 6px;
+  border: 1px solid #d2d2d0;
+  color: #626262;
+  line-height: 14px;
+}
+#listbox .box_right .list_sequence dl dd p {
+  float: left;
+  padding: 0 15px;
+  line-height: 16px;
+  color: #626262;
+}
+#listbox .box_right .list_sequence dl dd p span:nth-child(1) {
+  color: #ff6900;
+}
+#listbox .box_right .list_sku {
+  width: 968px;
+  border-top: 1px solid #eee;
+  border-left: 1px solid #eee;
+  margin-bottom: 30px;
+  float: left;
+}
+#listbox .box_right .list_sku dl {
+  width: 242px;
+  height: 395px;
+  float: left;
+  cursor: pointer;
+}
+#listbox .box_right .list_sku dl dd {
+  width: 241px;
+  height: 394px;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  background-color: #fff;
+  overflow: hidden;
+}
+#listbox .box_right .list_sku dl dd .box {
+  border: 4px solid #fff;
+  padding: 0 11px;
+  width: 211px;
+  height: 386px;
+  position: relative;
+  transition: all .2s linear;
+}
+#listbox .box_right .list_sku dl dd .box .pic {
+  margin-top: 26px;
+  width: 211px;
+  text-align: center;
+  transition: all .2s linear;
+}
+#listbox .box_right .list_sku dl dd .box .pic img {
+  width: 201px;
+  height: 201px;
+}
+#listbox .box_right .list_sku dl dd .box .name {
+  height: 48px;
+  width: 211px;
+  margin-top: 20px;
+  text-overflow: clip;
+  display: block;
+  overflow: hidden;
+  transition: all .2s linear;
+}
+#listbox .box_right .list_sku dl dd .box .name a {
+  font: 400 14px/24px "Microsoft YaHei";
+  color: #1b1b15;
+  text-decoration: none;
+}
+#listbox .box_right .list_sku dl dd .box .name a font {
+  text-overflow: clip;
+  display: block;
+  overflow: hidden;
+  font-size: 14px;
+  transition: all .2s linear;
+  cursor: pointer;
+}
+#listbox .box_right .list_sku dl dd .box .name a span {
+  font: 400 12px/24px "Microsoft YaHei";
+  color: #929292;
+  text-overflow: clip;
+  display: block;
+  overflow: hidden;
+  font-size: 14px;
+  height: 24px;
+  cursor: pointer;
+}
+#listbox .box_right .list_sku dl dd .box .price {
+  font: 400 20px/25px "Microsoft YaHei";
+  color: #ff6900;
+  margin-top: 5px;
+  transition: all .2s linear;
+}
+#listbox .box_right .list_sku dl dd .box .quantity {
+  float: right;
+  margin: 4px 0 0;
+  display: none;
+}
+#listbox .box_right .list_sku dl dd .box .quantity a {
+  width: 18px;
+  height: 24px;
+  display: block;
+  float: left;
+}
+#listbox .box_right .list_sku dl dd .box .quantity a.jian {
+  background: url(img/list/list_ico_cb3fabd3.png) 0 0 no-repeat;
+}
+#listbox .box_right .list_sku dl dd .box .quantity a.jia {
+  background: url(img/list/list_ico_cb3fabd3.png) -19px 0 no-repeat;
+}
+#listbox .box_right .list_sku dl dd .box .quantity input {
+  border: 1px solid #eeeee7;
+  width: 32px;
+  height: 22px;
+  float: left;
+  text-align: center;
+  font: 400 14px/22px "Microsoft YaHei";
+  color: #626252;
+}
+#listbox .box_right .list_sku dl dd .box .CartBtn {
+  position: absolute;
+  top: 390px;
+  left: 0;
+  transition: all .2s linear;
+}
+#listbox .box_right .list_sku dl dd .box .CartBtn a {
+  width: 233px;
+  height: 32px;
+}
+
+/*# sourceMappingURL=list.css.map */

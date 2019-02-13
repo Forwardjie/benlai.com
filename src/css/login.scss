@@ -21,6 +21,7 @@
             height: 630px;
             float: left;
             border: 1px solid #ddd;
+            margin-bottom: 50px;
             .tit{
                 padding: 0 30px;
                 float: left;
@@ -64,7 +65,7 @@
                         width: 25px;
                         height: 25px;
                         background: url(img/interface/login_ico_ec3070b7.png) no-repeat;
-                        &.yes{
+                        &.no{
                             background-position: 0 -137px;
                         }
                         &.yes{
@@ -87,99 +88,10 @@
                         color: #999;
                     }
                 }
-                .verification{
-                    float: left;
-                    width: 400px;
-                    margin-bottom: 30px;
-                    margin-top: -15px;
-                    .v_tit{
-                        float: left;
-                        width: 88px;
-                        text-align: center;
-                        border: 1px solid #ddd;
-                        font: 400 14px/42px "Microsoft YaHei";
-                        // display: inline;
-                    }
-                    #v_slide{
-                        float: right;
-                        position: relative;
-                        z-index: 1;
-                        height: 44px;
-                        width: 300px;
-                        background-color: #dcdcdc;
-                        .btn{
-                            position: absolute;
-                            z-index: 11;
-                            top: 0;
-                            width: 50px;
-                            height: 42px;
-                            border: 1px solid #8ab800;
-                            box-shadow: 1px 1px 2px rgba(0,0,0,.2);
-                            background: url(img/interface/login_ico_ec3070b7.png) 12px -567px no-repeat #fff;
-                            cursor: move;
-                            user-select: none;
-                        }
-                        .bg{
-                            width: 0;
-                            height: 100%;
-                            position: absolute;
-                            text-align: center;
-                            background-color: #8ab800;
-                        }
-                        .text{
-                            position: absolute;
-                            text-align: center;
-                            width: 100%;
-                            height: 100%;
-                            user-select: none;
-                            line-height: 42px;
-                            color: #fff;
-                            font-size: 14px;
-                        }
-                    }
-                }
-                dl{
-                    float: right;
-                    position: relative;
-                    z-index: 1;
-                    height: 44px;
-                    width: 400px;
-                    margin-bottom: 30px;
-                    dt{
-                        float: left;
-                        width: 258px;
-                        border: 1px solid #ddd;
-                        padding: 7px 0;
-                        p{
-                            float: left;
-                            width: 100px;
-                            text-align: center;
-                            border-right: 1px solid #ddd;
-                            font: 400 14px/28px "Microsoft YaHei";
-                            margin-right: 10px;
-                        }
-                        input{
-                            font: 400 14px/28px "Microsoft YaHei";
-                            width: 135px;
-                            height: 28px;
-                            border: 0;
-                        }
-                    }
-                    dd{
-                        float: right;
-                        width: 130px;
-                        a{
-                            border: 1px solid #8ab700;
-                            color: #8ab700;
-                            display: block;
-                            font: 400 14px/42px "Microsoft YaHei";
-                            text-align: center;
-                        }
-                    }
-                }
+
                 .choose{
                     width: 400px;
-                    height: 40px;
+                    height: 20px;
                     margin-bottom: 20px;
                     float: left;
                     font-size: 14px;
@@ -206,9 +118,7 @@
                         color: #fff;
                         background-color: #ff6900;
                         margin-bottom: 20px;
-                        &.no{
-                            background-color: #bbb;
-                        }
+                       
                     }
                 }
                 .word{
