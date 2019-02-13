@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>本来生活网 - 中国家庭的优质食品购买平台，冷链配送、安全检测、基地直供</title>
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/index.css">
-    <script src="js/jquery-1.10.1.min.js"></script>
-    <script src="js/common.js"></script>
-    <script src="js/banner.js"></script>
-    <script src="js/index.js"></script>
-    
-
+    <title>注册页</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/interface.css">
+    <script src="../js/common.js"></script>
+    <script src="../js/jquery-1.10.1.min.js"></script>
+    <script src="../js/goods.js"></script>
 </head>
 <body>
-    <div id="benlai">
+    <!-- 注册页 -->
+    <div id="interface">
+        <!-- 头部 开始 -->
         <div class="header" id="headerView">
             <div class="head_top">
                 <div class="container">
@@ -51,7 +51,7 @@
                                             <div class="head_bg"></div>
                                         </dt>
                                         <dd>
-                                            <img src="img/head/App_QR_Code_3de39ad3.png" alt="">
+                                            <img src="../img/head/App_QR_Code_3de39ad3.png" alt="">
                                             <p>扫描下载客户端</p>
                                         </dd>
                                     </dl>
@@ -87,7 +87,7 @@
                     <div class="fl">
                         <h1>
                             <a href="javascript:;">
-                                <img src="img/head/n_logo_b20f2ffe.gif" alt="">
+                                <img src="../img/head/n_logo_b20f2ffe.gif" alt="">
                             </a>
                         </h1>
                     </div>
@@ -119,7 +119,8 @@
                     <!-- 搜索 开始 -->
                     <div class="head_search fr">
                         <div class="search_box">
-                            <input type="text" benlai-id="searchkeyword" class="fl" value="褚橙特级果168元10斤">
+                            <!-- <input type="text" benlai-id="searchkeyword" filter="off" value="红颜草莓99元3盒"> -->
+                            <input type="text" benlai-id="searchkeyword" class="fl" placeholder="褚橙特级果168元10斤">
                             <a href="javascript:;" id="btnsearch" class="fl"></a>
                         </div>
                         <div class="search_word">
@@ -151,7 +152,7 @@
                             <div class="tit_all fl">
                                 <a href="javascript:;">所有商品分类</a>
                             </div>
-                            <div class="tit_sort" style="display: block">
+                            <div class="tit_sort" style="display: none">
                                 <dl>
                                     <dt class="sort_bg01">
                                         <a href="javascript:;">镇店之宝</a>
@@ -1070,12 +1071,12 @@
                                 <li><a href="javascript:;">台湾特产</a></li>
                                 <li><a href="javascript:;">台创园</a></li>
                                 <li>
-                                    <img src="img/head/9ed01b8a-b2dd-4388-9504-777728f6556d.jpg" style="left: 59px" alt="">
+                                    <img src="../img/head/9ed01b8a-b2dd-4388-9504-777728f6556d.jpg" style="left: 59px" alt="">
                                     <a href="javascript:;">韩国馆</a>
                                 </li>
                                 <li><a href="javascript:;">全国配</a></li>
                                 <li>
-                                    <img src="img/head/9ed01b8a-b2dd-4388-9504-777728f6556d.jpg" style="left: 42px" alt="">
+                                    <img src="../img/head/9ed01b8a-b2dd-4388-9504-777728f6556d.jpg" style="left: 42px" alt="">
                                     <a href="javascript:;">充值</a>
                                 </li>
                                 <li><a href="javascript:;">本来礼品</a></li>
@@ -1086,423 +1087,276 @@
                 </div>
             </div>
         </div>
-        <!-- 大轮播图 开始-->
-        <div class="banner" id="IndexBanner">
-            <div class="index_control">
-                <div class="pis">
-                    <div class="prev">
-                        <a href="javascript:;"></a>
-                    </div>
-                    <div class="next">
-                        <a href="javascript:;"></a>
-                    </div>
-                </div>
-                <ul class="banner_nav">
-                    <li class="on"><a href="javascript:;">褚橙优级果168元10斤</a></li>
-                    <li><a href="javascript:;">本来年货大街</a></li>
-                    <li><a href="javascript:;">泰国青椰79元9个</a></li>
-                    <li><a href="javascript:;">新春年货礼包上线</a></li>
-                    <li><a href="javascript:;">韩国馆周周有新品</a></li>
-                    <li><a href="javascript:;">休眠清远鸡59.9元一只</a></li>
-                </ul>
-            </div>
-            <div class="picture">
-                <a href="javascript:;"></a>
-                <a href="javascript:;"></a>
-                <a href="javascript:;"></a>
-                <a href="javascript:;"></a>
-                <a href="javascript:;"></a>
-                <a href="javascript:;"></a>
-            </div>
-        </div>
-        <!-- 大轮播图 结束-->
-        <!-- 主体内容 开始-->
-        <div class="main1200">
+        <!-- 头部 结束 -->
+        <!-- 主体内容 开始 -->
+        <div class="box1200" id="RegisterTmpl">
             <div class="container">
-                <!--首页滚动广告位 开始-->
-                <div class="index15_ad">
-                    <ul>
-                        <li>
-                            <a href="javascript:;">
-                                <img src="img/sltomato.jpg" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:;">
-                                <img src="img/slnmc39.8.jpg" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:;">
-                                <img src="img/sllys129.jpg" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript:;">
-                                <img src="img/slds8.jpg" alt="">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <!--首页滚动广告位 结束-->
-                <!--新品上线 开始-->
-                <div class="index_new">
-                    <div class="index15_tab">
-                        <dl>
-                            <dt class="on">
-                                <a href="javascript:;">好评如潮</a>
-                            </dt>
-                            <dd style="display: block">
-                                <div class="index_sku">
-                                    <ul>
-                                        <li>
-                                            <div class="box">
-                                                <p class="pic"><a href="javascript:;">
-                                                    <img src="img/55809142-ab6d-422f-b419-45da9911f4ec.webp" alt="">
-                                                </a></p>
-                                                <p class="name"><a href="javascript:;">
-                                                    <font>家佳康香脆炸猪排200g</font>
-                                                    <span>外香脆，内松软</span>
-                                                </a></p>
-                                                <p class="price">
-                                                    ￥19.90
-                                                    <span>￥49.90</span>
-                                                </p>
-                                                <p class="btn"><a class="ico00" href="javascript:;">
-                                                </a></p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="box">
-                                                <p class="pic"><a href="javascript:;">
-                                                    <img src="img/0c708b01-8822-4c95-b784-eb72f6993fc6.webp" alt="">
-                                                </a></p>
-                                                <p class="name"><a href="javascript:;">
-                                                    <font>渔天下真鳕颈肉（宝宝鳕鱼）180g（内含3小袋）</font>
-                                                    <span>手工去刺，富含宝宝成长需要的营养</span>
-                                                </a></p>
-                                                <p class="price">
-                                                    ￥25.80
-                                                    <span>￥28.80</span>
-                                                </p>
-                                                <p class="btn"><a class="ico00" href="javascript:;">
-                                                </a></p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="box">
-                                                <p class="pic"><a href="javascript:;">
-                                                    <img src="img/0d77116b-4d61-405a-b4ad-1bda4dedf687.webp" alt="">
-                                                </a></p>
-                                                <p class="name"><a href="javascript:;">
-                                                    <font>澳洲牛腱子500g</font>
-                                                    <span>筋肉交错 爽口鲜香</span>
-                                                </a></p>
-                                                <p class="price">
-                                                    ￥49.90
-                                                    <span>￥88.90</span>
-                                                </p>
-                                                <p class="btn"><a class="ico00" href="javascript:;">
-                                                </a></p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="box">
-                                                <p class="pic"><a href="javascript:;">
-                                                    <img src="img/146a829a-3d6c-47cd-ae6b-2caec379a591.webp" alt="">
-                                                </a></p>
-                                                <p class="name"><a href="javascript:;">
-                                                    <font>原味手抓饼800g(80g*10片)</font>
-                                                    <span>台湾风味，百般搭配</span>
-                                                </a></p>
-                                                <p class="price">
-                                                    ￥23.80
-                                                    <!-- <span>￥49.90</span> -->
-                                                </p>
-                                                <p class="btn"><a class="ico00" href="javascript:;">
-                                                </a></p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="box">
-                                                <p class="pic"><a href="javascript:;">
-                                                    <img src="img/0413473f-6c45-42cc-aaab-be5bff250e55.webp" alt="">
-                                                </a></p>
-                                                <p class="name"><a href="javascript:;">
-                                                    <font>国联金鲳鱼原条两条装 300/400 700g</font>
-                                                    <span>产自南海之滨，深海养殖确保肉质纯净</span>
-                                                </a></p>
-                                                <p class="price">
-                                                        ￥54.90
-                                                    <span>￥78.00</span>
-                                                </p>
-                                                <p class="btn"><a class="ico00" href="javascript:;">
-                                                </a></p>
-                                            </div>
-                                        </li>
-                                    </ul>
+                <div class="registerDiv">
+                    <div class="path15">
+                        <a href="../01.html">首页</a> 
+                        &gt; 注册
+                    </div>
+                    <form id="formReg" action="" method="post">
+                        <div class="register15">
+                            <div class="tit">
+                                <p class="ico01">账号注册</p>
+                            </div>
+                            <ul class="register_box">
+                                <li class="phone">
+                                    <s class="yes"></s>
+                                    <p>用户名</p>
+                                    <input type="text" id="phoneTxt" name="txtCustomerID" placeholder="请输入手机号" class="cl999" maxlength="11">
+                                    <div class="prompt" id="phoneMes"></div>
+                                </li>
+                                <div class="verification">
+                                    <div class="v_tit">验证</div>
+                                    <div id="v_slide">
+                                        <div class="bg"></div>
+                                        <div class="text">请按住滑块,拖动到最右边</div>
+                                        <div class="btn"></div>
+                                    </div>
                                 </div>
-                            </dd>
-                        </dl>
-                        <dl>
-                            <dt>
-                                <a href="javascript:;">新品上线</a>
-                            </dt>
-                            <dd>
-                                <div class="index_sku">
-                                    <ul>
-                                        <li>
-                                            <div class="box">
-                                                <p class="pic"><a href="javascript:;">
-                                                    <img src="img/2e1e251e-2302-460a-a2be-33eb695cece0.webp" alt="">
-                                                </a></p>
-                                                <p class="name"><a href="javascript:;">
-                                                    <font>金龙鱼软香稻大米5kg</font>
-                                                    <span>柔韧甘甜 颗颗饱满</span>
-                                                </a></p>
-                                                <p class="price">
-                                                    ￥39.90
-                                                    <!-- <span>￥49.90</span> -->
-                                                </p>
-                                                <p class="btn"><a class="ico00" href="javascript:;">
-                                                </a></p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="box">
-                                                <p class="pic"><a href="javascript:;">
-                                                    <img src="img/f969be46-9edd-41fc-a42e-acf6edc9d228.webp" alt="">
-                                                </a></p>
-                                                <p class="name"><a href="javascript:;">
-                                                    <font>泰国进口龙眼500g</font>
-                                                    <span>质地细腻，营养多汁</span>
-                                                </a></p>
-                                                <p class="price">
-                                                    ￥12.80
-                                                    <!-- <span>￥28.80</span> -->
-                                                </p>
-                                                <p class="btn"><a class="ico00" href="javascript:;">
-                                                </a></p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="box">
-                                                <p class="pic"><a href="javascript:;">
-                                                    <img src="img/4f52117e-b6d8-40fb-84ab-85933a7a9cdf.webp" alt="">
-                                                </a></p>
-                                                <p class="name"><a href="javascript:;">
-                                                    <font>澳洲牛仔骨200g</font>
-                                                    <span>品质保证 肉嫩味香</span>
-                                                </a></p>
-                                                <p class="price">
-                                                    ￥45.90
-                                                    <span>￥79.80</span>
-                                                </p>
-                                                <p class="btn"><a class="ico00" href="javascript:;">
-                                                </a></p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="box">
-                                                <p class="pic"><a href="javascript:;">
-                                                    <img src="img/58e1f2c0-2250-4fa0-ad77-dae468e557a7.webp" alt="">
-                                                </a></p>
-                                                <p class="name"><a href="javascript:;">
-                                                    <font>海买阿根廷鱿鱼（去脏） 350g/袋</font>
-                                                    <span>去肚清洁，切成圈</span>
-                                                </a></p>
-                                                <p class="price">
-                                                    ￥35.90
-                                                    <span>￥39.00</span>
-                                                </p>
-                                                <p class="btn"><a class="ico00" href="javascript:;">
-                                                </a></p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="box">
-                                                <p class="pic"><a href="javascript:;">
-                                                    <img src="img/eb673903-3c1e-445d-b4c5-17c7393a9bbd.webp" alt="">
-                                                </a></p>
-                                                <p class="name"><a href="javascript:;">
-                                                    <font>九阳K15-F626电热水</font>
-                                                    <span>品质厨电 全国联保 售后无忧</span>
-                                                </a></p>
-                                                <p class="price">
-                                                    ￥105.00
-                                                    <span>￥169.00</span>
-                                                </p>
-                                                <p class="btn"><a class="ico00" href="javascript:;">
-                                                </a></p>
-                                            </div>
-                                        </li>
-                                    </ul>
+                                <dl class="code" data-type="smsCode">                    
+                                    <dt>                        
+                                        <p>验证码</p>                        
+                                        <input type="text" id="smsCodeTxt" name="smsCode" placeholder="请输入验证码" class="cl999">                        
+                                        <div class="prompt" id="smsCodeMes"></div>                    
+                                    </dt>                    
+                                    <dd>
+                                        <a href="javascript:void(0);" id="smsCodeBtn" class="phone">获取验证码</a>
+                                    </dd>                
+                                </dl>
+                                <li class="password">
+                                    <s class="yes"></s>
+                                    <p>密码</p>
+                                    <input type="password" id="passTxt" placeholder="请输入密码" class="cl999" maxlength="18">
+                                    <div class="prompt" id="passMes"></div>
+                                </li>
+                                <li class="passSure">
+                                    <s class="yes"></s>
+                                    <p>确认密码</p>
+                                    <input type="password" id="passSureTxt" placeholder="请再次输入密码" class="cl999" maxlength="18">
+                                    <div class="prompt" id="passSureMes"></div>
+                                </li>
+                                <div class="choose">
+                                    <input type="checkbox" id="checkboxUserRegisterContentPage" name="checkboxUserRegisterContent">
+                                    我已阅读并同意
+                                    <a href="https://www.benlai.com/help-8.html" class="service">
+                                    《本来生活网用户协议》</a>
+                                    以及                    
+                                    <a href="https://www.benlai.com/help-41.html" class="service">《隐私政策》</a>
                                 </div>
-                            </dd>
-                        </dl>
-                    </div>
+                                <div class="btn_choose">
+                                    <div class="prompt" style="top: -21px;" id="yinSiMes"></div>
+                                    <a href="javascript:;" id="registerBtn" class="no">立即注册</a>
+                                </div>
+                                <div class="word">
+                                    已注册？
+                                    <a href="javascript:;">立即登录</a>
+                                </div>
+                            </ul>
+                            <ul class="other">
+                                <li class="text">其他方式：</li>
+                                <li><em>
+                                    <a href="javascript:;" class="icon01">新浪微博</a>
+                                </em></li>
+                                <li><em>
+                                    <a href="javascript:;" class="icon02">QQ登录</a>
+                                </em></li>
+                                <li><em>
+                                    <a href="javascript:;" class="icon03">支付宝</a>
+                                </em></li>
+                                <li><em>
+                                    <a href="javascript:;" class="icon04">微信登录</a>
+                                </em></li>
+                                <li><em>
+                                    <a href="javascript:;" class="icon05">联通</a>
+                                </em></li>
+                                <li><em>
+                                    <a href="javascript:;" class="icon06">兜礼登录</a>
+                                </em></li>
+                            </ul>
+                        </div>
+                    </form>
                 </div>
-                <!--新品上线 结束-->
-                <!--公告信息 开始-->
-                <div class="index15_ann">
-                    <div class="tit">公告信息</div>
-                    <ul>
-                        <li><a href="javascript:;">2月11日0点启动分温免邮 运费下调至10元起</a></li>
-                        <li><a href="javascript:;">春节期间物流配送通知</a></li>
-                        <li><a href="javascript:;">1.25-2.19北京、上海今夜达业务暂停通知</a></li>
-                    </ul>
-                    <a href="javascript:;"><img src="img/ggpf.jpg" alt=""></a>
+                <div class="register15_banner">
+                    <p>
+                        <a href="javascript:;">
+                            <img src="../img/interface/dlppg.jpg" alt="">
+                        </a>
+                    </p>
                 </div>
-                <!--公告信息 结束-->
-                <!--产地直销 开始-->
-                <div class="index15_origin">
-                    <div class="origin_tit">买手力荐</div>
-                    <div class="index15_path">
-                        <dl>
-                            <dt data-type="CDpoint" style="top:31px;left:229px;">
-                                <div class="ico01"></div>
-                                <div class="ico02"></div>
-                                <div class="ico03"></div>
-                            </dt>
-                            <dd class="country01">
-                                <a href="javascript:void(0)" no="1" class="on">尖货优选</a>
-                            </dd>
-                            <dd class="country02">
-                                <a href="javascript:void(0)" no="2" class="">产地直供</a>
-                            </dd>
-                            <dd class="country03">
-                                <a href="javascript:void(0)" no="3" class="">家庭购</a>
-                            </dd>
-                            <dd class="country04">
-                                <a href="javascript:void(0)" no="4" class="">健康有机</a>
-                            </dd>
-                            <dd class="country05">
-                                <a href="javascript:void(0)" no="5" class="">进口精选</a>
-                            </dd>
-                        </dl>
-                    </div>
-                    <div class="index15_sku2">
-                        <div class="sku_bg"></div>
-                        <ul>
-                            <li>
-                                <p class="pic"><a href="javascript:;">
-                                    <img style="display: inline; opacity: 1;" src="img/ec9ff852-c766-4d77-a62b-1318f15815ef.webp">
-                                </a></p>
-                                <p class="name">
-                                    <a data-type="productlink" href="//www.benlai.com/items-90217.html?sysno=372412&amp;benlaiSource=1&amp;benlaiLocation=0-1-1" target="_blank">
-                                        <font>西藏日喀则  珠峰饮用天然矿泉水566ml*24</font>
-                                        <span>天然冰川矿泉水水源，低钠、小分子弱碱性水、天然超低氙含量</span>
-                                    </a>
-                                </p>
-                                <p class="price">
-                                        ￥96.00
-                                    <span></span>
-                                </p>
-                                <p class="btn">
-                                    <a class="ico00" btn-type="addCart" btn-product="372412" btn-status="0"></a>
-                                </p>
-                            </li>
-                            <li>
-                                <p class="pic"><a href="javascript:;">
-                                    <img style="display: inline; opacity: 1;" src="img/f41bce07-7487-4169-beb5-13d147a0e381.webp">
-                                </a></p>
-                                <p class="name">
-                                    <a data-type="productlink" href="//www.benlai.com/items-90217.html?sysno=372412&amp;benlaiSource=1&amp;benlaiLocation=0-1-1" target="_blank">
-                                        <font>多力葵花籽油5L</font>
-                                        <span>滴滴精华 压榨工艺</span>
-                                    </a>
-                                </p>
-                                <p class="price">
-                                    ￥82.00
-                                    <span></span>
-                                </p>
-                                <p class="btn">
-                                    <a class="ico00" btn-type="addCart" btn-product="372412" btn-status="0"></a>
-                                </p>
-                            </li>
-                            <li>
-                                <p class="pic"><a href="javascript:;">
-                                    <img style="display: inline; opacity: 1;" src="img/635543d1-5786-41c0-b3b7-54446dca5642.webp">
-                                </a></p>
-                                <p class="name">
-                                    <a data-type="productlink" href="" target="_blank">
-                                        <font>PESCANOVA冷冻阿根廷船冻红虾2kg 20-40只/盒</font>
-                                        <span>红虾不适合清蒸白灼，建议油焖、焗等方式</span>
-                                    </a>
-                                </p>
-                                <p class="price">
-                                        ￥168.00
-                                    <span>￥258.00</span>
-                                </p>
-                                <p class="btn">
-                                    <a class="ico00" btn-type="addCart" btn-product="372412" btn-status="0"></a>
-                                </p>
-                            </li>
-                            <li>
-                                <p class="pic"><a href="javascript:;">
-                                    <img style="display: inline; opacity: 1;" src="img/b5cd6ff8-30f1-4f0e-a98b-ac73a43affee.webp">
-                                </a></p>
-                                <p class="name">
-                                    <a data-type="productlink" href="" target="_blank">
-                                        <font>生态粉瓤番茄1kg（6粒）</font>
-                                        <span>沙瓤番茄 凉拌、熟吃皆宜</span>
-                                    </a>
-                                </p>
-                                <p class="price">
-                                        ￥23.80
-                                    <span></span>
-                                </p>
-                                <p class="btn">
-                                    <a class="ico00" btn-type="addCart" btn-product="372412" btn-status="0"></a>
-                                </p>
-                            </li>
-                            <li>
-                                <p class="pic"><a href="javascript:;">
-                                    <img style="display: inline; opacity: 1;" src="img/f275e246-3aa2-41a6-9a29-1edd3f308632.webp">
-                                </a></p>
-                                <p class="name">
-                                    <a data-type="productlink" href="" target="_blank">
-                                        <font>明治鲜牛奶950ml</font>
-                                        <span>日本技术 严格管理</span>
-                                    </a>
-                                </p>
-                                <p class="price">
-                                        ￥24.00
-                                    <span>￥25.10</span>
-                                </p>
-                                <p class="btn">
-                                    <a class="ico00" btn-type="addCart" btn-product="372412" btn-status="0"></a>
-                                </p>
-                            </li>
-                            <li>
-                                <p class="pic"><a href="javascript:;">
-                                    <img style="display: inline; opacity: 1;" src="img/4978b8e6-a825-455c-b138-5e0a95c3e03b.webp">
-                                </a></p>
-                                <p class="name">
-                                    <a data-type="productlink" href="" target="_blank">
-                                        <font>海南蜜宝红心火龙果2个装（大果800g以上）</font>
-                                        <span>每天一颗，花青素满满</span>
-                                    </a>
-                                </p>
-                                <p class="price">
-                                    ￥39.90
-                                    <span></span>
-                                </p>
-                                <p class="btn">
-                                    <a class="ico00" btn-type="addCart" btn-product="372412" btn-status="0"></a>
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <!--产地直销 结束-->
             </div>
         </div>
-        <!-- 主体内容 结束-->
-        <!-- 页尾 开始-->
-        <div class="footer" id="footers"></div>
+        <!-- 主体内容 结束 -->
+                <!-- 页尾 开始-->
+        <div class="footer" id="footers">
+            <div class="bar">
+                    <div class="explain">
+                        <dl>
+                            <dt class="ico01"></dt>
+                            <dd><span>18小时低温</span>全程冷链配送</dd>
+                        </dl>
+                        <dl>
+                            <dt class="ico02"></dt>
+                            <dd><span>0时差基地直供</span>农田到餐桌</dd>
+                        </dl>
+                        <dl>
+                            <dt class="ico03"></dt>
+                            <dd><span>48项检测</span>安全无农残</dd>
+                        </dl>
+                        <dl>
+                            <dt class="ico04"></dt>
+                            <dd><span>7*24小时营业</span>全年无休</dd>
+                        </dl>
+                    </div>
+            </div>
+            <div class="footert">
+                <dl>
+                    <dt class="xs">新手指南</dt>
+                    <dd><a href="javascript:;">购物流程</a></dd>
+                    <dd><a href="javascript:;">会员政策</a></dd>
+                    <dd><a href="javascript:;">联系客服</a></dd>
+                    <dd><a href="javascript:;">积分政策</a></dd>
+                    <dd><a href="javascript:;">加入我们</a></dd>
+                </dl>
+                <dl>
+                    <dt class="ps">配送方式</dt>
+                    <dd><a href="javascript:;">全程冷链</a></dd>
+                    <dd><a href="javascript:;">配送时间</a></dd>
+                    <dd><a href="javascript:;">配送范围</a></dd>
+                    <dd><a href="javascript:;">配送收费标准</a></dd>
+                    <dd><a href="javascript:;">关于我们</a></dd>
+                </dl>
+                <dl>
+                    <dt class="zf">支付方式</dt>
+                    <dd><a href="javascript:;">在线支付</a></dd>
+                    <dd><a href="javascript:;">其他支付方式</a></dd>
+                    <dd><a href="javascript:;">优惠券使用</a></dd>
+                    <dd><a href="javascript:;">礼金卡使用</a></dd>
+                </dl>
+                <dl>
+                    <dt class="sh">售后服务</dt>            
+                    <dd><a href="javascript:;">退换货政策</a></dd>
+                    <dd><a href="javascript:;">退换货流程</a></dd>
+                    <dd><a href="javascript:;">退款流程</a></dd>
+                    <dd><a href="javascript:;">发票制度</a></dd>
+                </dl>    
+            </div>
+            <div class="info">
+                <dl>
+                    <dt><img src="../img/footer/tel_f3c65362.gif" width="17" height="13"/>客服热线：4006-917-917（周一至周日 8:00-20:00）</dt>
+                    <dd>
+                        <em><a href="javascript:;">加入我们</a></em>
+                        <em><a href="javascript:;">联系我们</a></em>
+                        <em><a href="javascript:;">关于我们</a></em>
+                        <em><a href="javascript:;">友情链接</a></em>
+                        <em><a href="javascript:;">品牌食材</a></em>
+                        <em><a href="javascript:;">食品经营许可证</a></em>
+                        <em class="b0"><a href="javascript:;">营业执照</a></em>
+                    </dd>
+                    <dd>
+                        <em><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502022386"><img src="../img/footer/beian_d0289dc0.png" />京公网安备 11010502022386号</a></em>
+                        <em><a href="http://www.miitbeian.gov.cn/" target="_blank">京ICP证120338号</a></em>
+                        <em class="b0"><a href="javascript:;" target="_blank">京B2-20180980</a></em>
+                    </dd>
+                    <dd class="copy">&copy; 2012-2019 Benlai.com. All Rights Reserved. 北京本来工坊科技有限公司</dd>
+                    <dd><a href="https://ss.knet.cn/verifyseal.dll?sn=e12111611010037041000000&amp;ct=df&amp;a=1&amp;pa=870245" target="_blank" style="display: inline-block; position: relative; width: 102px; height: 37px;" id="urlknet" rel="nofollow"><img src="../img/footer/verifyseal.jpg" alt="可信网站" name="CNNIC_seal" style="left: -13px; position: absolute; border: none; width:102px;height:37px" oncontextmenu="return false;" onclick="CNNIC_change('urlknet')" ;=""></a></dd>
+                </dl>
+            </div>
+            <!--右侧浮动-->
+            <div id="goTop">
+                <a href="javascript:;" hidefocus="true" id="go_top" title="回到顶部" style="display: none;"></a>
+                <a href="/cart.html" id="right_cart" class="cart_buy" title="前往购物车">0</a>
+                <a href="javascript:;" class="zhiCustomBtn service" data-type="easemob">&nbsp;</a>
+                <a id="two_code" href="javascript:;" hidefocus="true" class="two_code" title="点击查看二维码">&nbsp;</a>
+            </div>
+            <div class="pop_cart">
+                <div class="pop_buy">
+                    <ul id="item_added"></ul>
+                </div>
+            </div>
+            <div style="display: none" id="twocodeParent">
+                <div class="pop_code">
+                    <div class="code_con">
+                        <span>
+                            <img src="../img/footer/code_blog_0e5b9984.gif" width="186" height="186" alt="本来微博 二维码" /></span>
+                        <b>本来微博 二维码</b>
+                    </div>
+                </div>
+                <div class="pop_code2">
+                    <div class="code_con">
+                        <span>
+                            <img src="../img/footer/code_weixin_65412aa1.gif" width="186" height="186" alt="本来微信 二维码" /></span>
+                        <b>本来微信 二维码</b>
+                    </div>
+                </div>
+                <div class="pop_code3">
+                    <div class="code_con">
+                        <span>
+                            <img src="../img/footer/App_QR_Code_3de39ad3.png" width="186" height="186" alt="扫描下载客户端" /></span>
+                        <b>扫描下载客户端</b>
+                    </div>
+                </div>
+            </div>
+            <!--右侧浮动-->
+        </div>
         <!-- 页尾 结束-->
     </div>
-    
+    <script>
+        var box = document.getElementById("v_slide");
+        var bg = document.querySelector(".bg");
+        var text = document.querySelector(".text");
+        var btn = document.querySelector(".btn");
+        console.log(btn);
+        var success = false;
+        var distance = box.offsetWidth - btn.offsetWidth;
+        btn.onmousedown = function (ev){
+            btn.style.transition = '';
+            bg.style.transition = '';
+            var ev = ev || window.event;
+            var downX = ev.clientX;
+            document.onmousemove = function (ev) {
+                // ev.preventDefault();
+                var ev = ev || window.event;
+                var moveX = ev.clientX;
+                var offsetX = moveX - downX;
+                if(offsetX >= distance){
+                offsetX = distance;
+                }else if(offsetX < 0){
+                    offsetX = 0;
+                }
+                btn.style.left = offsetX + 'px';
+                bg.style.width = offsetX + 'px';
+                if(offsetX >= distance){
+                    text.innerHTML = '验证通过';
+                    text.style.color = '#fff';
+                    // btn.innerHTML = '&radic;';
+                    btn.style.color = '#8ab800';
+                    btn.style.background = 'url(../css/img/interface/login_ico_ec3070b7.png) 13px -94px no-repeat #fff';
+                    bg.style.backgroundColor = '#8ab800';
+                    success = true;
+                    btn.onmousedown = null;
+                    document.onmousemove = null;  
+                    // setTimeout(function(){
+                    //     alert('验证成功!');
+                    // },100);  
+                }
+            }
+            document.onmouseup = function () {
+                if(success){
+                    return;
+                }else{
+                    btn.style.left = 0;
+                    bg.style.width = 0;
+                    btn.style.transition = 'left 1s ease';
+                    bg.style.transition = 'width 1s ease';
+                }
+                document.onmousemove = null;
+                document.onmouseup = null;
+            }
+        }
+        // console.log("3");
+    </script>
 </body>
 </html>

@@ -523,3 +523,4 @@ function ajax(method, url, data, fn) {
 	}
 	
 }
+
