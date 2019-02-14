@@ -166,20 +166,22 @@
                 dd{
                     float: right;
                     padding-top: 8px;
-                    a{
+                    span{
                         float: left;
                         display: block;
                         padding: 0 6px;
                         border: 1px solid #d2d2d0;
                         color: #626262;
                         line-height: 14px;
+                        cursor: pointer;
+                        user-select: none;
                     }
                     p{
                         float: left;
                         padding: 0 15px;
                         line-height: 16px;
                         color: #626262;
-                        span:nth-child(1){
+                        s:nth-child(1){
                             color: #ff6900;
                         }
                     }
@@ -299,6 +301,79 @@
                                 height: 32px;
                             }
                         }
+                    }
+                }
+            }
+        }
+        .pageNum{
+            width: 600px;
+            margin-bottom: 40px;
+            float: right;
+            dl{
+                dt{
+                    float: right;
+                    width: 150px;
+                    p{
+                        line-height: 24px;
+                        float: left;
+                    }
+                    input{
+                        border: 1px solid #d8d8d8;
+                        width: 18px;
+                        height: 22px;
+                        line-height: 22px;
+                        text-align: center;
+                        color: #626262;
+                        margin: 0 8px 0 3px;
+                        float: left;
+                    }
+                    a{
+                        background-color: #8ab700;
+                        color: #fff;
+                        border: 1px solid #657437;
+                        padding: 0 10px;
+                        display: block;
+                        line-height: 22px;
+                        float: left;
+                        margin-left: 10px;
+                    }
+                }
+                dd{
+                    float: right;
+                    margin-right: 10px;
+                    border-left: 1px solid #d8d8d8;
+                    span{
+                        cursor: pointer;
+                    }
+                    span,a{
+                        float: left;
+                        border-right: 1px solid #d8d8d8;
+                        border-top: 1px solid #d8d8d8;
+                        border-bottom: 1px solid #d8d8d8;
+                        padding: 0 6px;
+                        display: block;
+                        line-height: 22px;
+                        color: #626262;
+                        user-select: none;
+                    }
+                    span.link_none {
+                        background-color: #fafafa;
+                        color: #959595;
+                    }
+                    a.active{
+                        background: #8ab700;
+                        color: #fff;
+                    }
+        
+                    p{
+                        float: left;
+                        border-right: 1px solid #d8d8d8;
+                        border-top: 1px solid #d8d8d8;
+                        border-bottom: 1px solid #d8d8d8;
+                        padding: 0 6px;
+    
+                        line-height: 22px;
+                        color: #626262;
                     }
                 }
             }

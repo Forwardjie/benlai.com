@@ -28,54 +28,6 @@
             .good15_box{
                 width: 596px;
                 float: left;
-                // .good15_pic{
-                //     width: 596px;
-                //     float: left;
-                //     dl{
-                //         width: 84px;
-                //         float: left;
-                //         dt{
-                //             a{
-                                // width: 82px;
-                                // height: 15px;
-                                // float: left;
-                                // text-align: center;
-                                // border: 1px solid #c9c9c9;
-                //                 &.up{
-                //                     background: url(img/goods/detail_ico2_aee48cd9.png) 33px 5px no-repeat;
-                //                 }
-                //                 &.down {
-                //                     background: url(img/goods/detail_ico2_aee48cd9.png) 33px -21px no-repeat;
-                //                 }
-                //             }
-                //         }
-                //         dd{
-                            // width: 84px;
-                            // float: left;
-                            // margin-top: 8px;
-                            // height: 460px;
-                            // overflow: hidden;
-                //             a{
-                                // border: 1px solid #c9c9c9;
-                                // display: block;
-                                // margin-bottom: 8px;
-                //                 img{
-                                    // width: 82px;
-                                    // height: 82px;
-                //                 }
-                //             }
-                //         }
-                //     }
-                //     .jqzoom {
-                //         float: left;
-                //         position: relative;
-                //         padding: 0;
-                //         cursor: pointer;
-                //         img{
-                //             float: left;
-                //         }
-                //     }
-                // }
                 .good15_number {
                     float: left;
                     width: 270px;
@@ -535,10 +487,153 @@
                             color: #ff6900;
                             line-height: 26px;
                         }
+                        .pic{
+                            img{
+                                width: 70px;
+                                height: 70px;
+                                float: left;
+                                margin-right: 5px;
+                            }
+                        }
                     }
                 }
             }
             /*经常看过的--浏览记录 结束*/
+            .box980{
+                width: 980px;
+                .good15_compose{
+                    width: 980px;
+                    padding-bottom: 15px;
+                    dl{
+                        dt{
+                            background-color: #fafafa;
+                            border-bottom: 1px solid #efefe7;
+                            border-left: 1px solid #efefe7;
+                            border-right: 1px solid #efefe7;
+                            border-top: 2px solid #8ab700;
+                            height: 33px;
+                            em{
+                                width: 122px;
+                                height: 34px;
+                                position: relative;
+                                z-index: 60;
+                                a{
+                                    line-height: 44px;
+                                    display: block;
+                                    text-align: center;
+                                    height: 44px;
+                                    width: 118px;
+                                    background: url(img/goods/detail_ico2_aee48cd9.png) right -194px no-repeat;
+                                    color: #fff;
+                                    font-size: 14px;
+                                    position: absolute;
+                                    top: -6px;
+                                    left: -1px;
+                                }
+                            }
+                        }
+                        dd{
+                            width: 978px;
+                            border-left: 1px solid #e7e7e7;
+                            border-right: 1px solid #e7e7e7;
+                            border-bottom: 1px solid #e7e7e7;
+                            .sku_box{
+                                width: 640px;
+                                height: 230px;
+                                margin: 20px 0 20px 20px;
+                                overflow: hidden;
+                                overflow-x: auto;
+                                overflow-y: hidden;
+                                float: left;
+                            }
+                        }
+                    }
+                    ul{
+                        float: left;
+                        height: 230px;
+                        .plus{
+                            float: left;
+                            width: 14px;
+                            height: 14px;
+                            text-align: center;
+                            margin: 45px 18px 0;
+                            background: url(img/goods/detail_ico_e7eb6dd1.gif) 0 -204px no-repeat;
+                        }
+                        li{
+                            width: 120px;
+                            float: left;
+                            .pic{
+                                width: 120px;
+                                text-align: center;
+                                img{
+                                    width: 97px;
+                                    height: 97px;
+                                }
+                            }
+                            .name{
+                                width: 120px;
+                                height: 36px;
+                                overflow: hidden;
+                                text-overflow: clip;
+                                display: block;
+                                margin-top: 15px;
+                                a{
+                                    color: #1b1b15;
+                                    line-height: 18px;
+                                    font{
+                                        color: #eb6100!important;
+                                        margin-left: 5px;
+                                    }
+                                }
+                            }
+                            .price{
+                                width: 120px;
+                                line-height: 28px;
+                                text-align: center;
+                                color: #ff6900;
+                            }
+                            .digital{
+                                text-align: center;
+                                width: 120px;
+                                margin-top: 5px;
+                                color: #999;
+                                font-weight: 700;
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                    ol{
+                        float: right;
+                        width: 280px;
+                        height: 200px;
+                        padding-top: 30px;
+                        margin: 20px 0;
+                        border-left: 1px solid #e7e7e7;
+                        li{
+                            height:120px;
+                            margin-left: 50px;
+                            p{
+                                line-height: 18px;
+                                span{
+                                    color: #ff6900;
+                                    font-weight: 700;
+                                }
+                            }
+                        }
+                        .good15_buy_btn{
+                            width: 122px;
+                            height: 30px;
+                            float: left;
+                            a{
+                            width: 122px;
+                            height: 30px;
+                            display: block;
+                            background: url(img/goods/detailsp_btn_c8171162.gif) 0 -212px  no-repeat;
+                           }
+                        }
+                    }
+                }
+            }
         }
         .good15_detail{
             float: left;
@@ -551,6 +646,306 @@
             border-right: 1px solid #efefe7;
             border-top: 2px solid #8ab700;
             height: 41px;
+            dl{
+                dt{
+                    width: 672px;
+                    float: left;
+                    em{
+                        width: 112px;
+                        height: 34px;
+                        float: left;
+                        position: relative;
+                        z-index: 70;
+                        a{
+                            color: #79a000;
+                            line-height: 34px;
+                            padding: 10px 4px 0 0;
+                            display: block;
+                            position: absolute;
+                            top: -6px;
+                            left: -1px;
+                            width: 108px;
+                            text-align: center;
+                            height: 34px;
+                            overflow: hidden;
+                            text-overflow: clip;
+                            font-weight: 400;
+                            font-family: "宋体";
+                            font-size: 12px;
+                            &.on,&:hover{
+                                background: url(img/goods/detail_ico2_aee48cd9.png) right -194px no-repeat;
+                                color: #fff;
+                                font-size: 14px;
+                                text-decoration: none;
+                                padding-top: 5px;
+                                height: 39px;
+                            }
+                        }
+                    }
+                }
+                dd{
+                    float: right;
+                    margin: 7px 13px 0 0;
+                    p{
+                        line-height: 30px;
+                        font-size: 18px;
+                        float: left;
+                        margin-right:25px;
+                        color: #ff6900;
+                        font-weight: 800; 
+                        font-family: 'Microsoft YaHei';
+                    }
+                    .good15_buy_btn{
+                        float: left;
+                        height: 30px!important;
+                        width: 122px;
+                        a{
+                            width: 122px;
+                            height: 30px;
+                            display: block;
+                            background: url(img/goods/detailsp_btn_c8171162.gif) 0 -212px no-repeat;
+                        }
+                    }
+                }
+            }
+        }
+        .box980{
+            width: 980px;
+            .good15_all{
+                width: 980px;
+                margin: 20px 0;
+                float: left;
+                dl{
+                    dt{
+                        width: 980px;
+                        margin-bottom: 15px;
+                    }
+                    dd{
+                        width: 980px;
+                        img{
+                            width: 980px;
+                        }
+                    }
+                }
+            }
+        }
+        .commentContent{
+            .good15_review{
+                width: 980px;
+                float: left;
+                .mb20{
+                    margin-bottom: 20px;
+                }
+                ul{
+                    width: 979px;
+                    margin-bottom: 10px;
+                    border-left: 1px solid #eeeee6;
+                    border-top: 1px solid #eeeee6;
+                    border-bottom: 1px solid #eeeee6;
+                    li{
+                        float: left;
+                        border-right: 1px solid #eeeee6;
+                        height: 125px;
+                    }
+                    .proportion{
+                        width: 125px;
+                        padding: 0 45px;
+                        text-align: center;
+                        line-height: 32px;
+                        color: #ff6900;
+                        font-size: 14px;
+                        p{
+                            background: url(img/goods/detail_ico_e7eb6dd1.gif) 0 -238px no-repeat;
+                            height: 67px;
+                            margin-top: 18px;
+                            color: #fff;
+                            font: 800 36px/57px "Microsoft YaHei";
+                        }
+                    }
+                    .sublist{
+                        width: 732px;
+                        padding: 20px 10px 0 20px;
+                        height: 105px;
+                        em{
+                            float: left;
+                            max-width: 400px;
+                            margin: 0 10px 10px 0;
+                            a{
+                                color: #666;
+                                white-space: nowrap;
+                                width: auto;
+                                border: 1px solid #ddd;
+                                display: block;
+                                line-height: 20px;
+                                padding: 0 5px 0 10px;
+                            }
+                        }
+                    }
+                }
+            }
+            .good15_comment{
+                width: 980px;
+                float: left;
+                .comment_tab{
+                    float: left;
+                    width: 980px;
+                    margin-bottom: 15px;
+                    background: url(//image.benlailife.com/webStatic/images/n_detail/detail_ico22_e1628c22.gif) left bottom repeat-x;
+                    a{
+                        line-height: 22px;
+                        padding: 0 20px;
+                        border-right: 1px solid #e7e7e7;
+                        display: block;
+                        color: #707062;
+                        font-size: 14px;
+                    }
+                    p{
+                        float: left;
+                        margin: 10px 0;
+                    }
+                    .selectp{
+                        background: url(//image.benlailife.com/webStatic/images/n_detail/detail_ico18_c0b41931.png) center bottom no-repeat;
+                        a{
+                            color: #91be16;
+                        }
+                    }
+                }
+                .review16_box{
+                    float: left;
+                    margin-top: 10px;
+                    width: 980px;
+                    .review16_box980{
+                        width: 980px;
+                        float: left;
+                        margin-bottom: 20px;
+                        border-bottom: 1px solid #ddd;
+                        .review16_head{
+                            float: left;
+                            width: 120px;
+                            text-align: center;
+                            img{
+                                width: 40px;
+                                height: 40px;
+                                border-radius: 50%;
+                            }
+                            p{
+                                color: #333;
+                                line-height: 20px;
+                            }
+                        }
+                        .good16_dialogue{
+                            float: right;
+                            width: 850px;
+                            padding-bottom: 10px;
+                            dl{
+                                dt{
+                                    width: 850px;
+                                    height: 25px;
+                                    position: relative;
+                                    z-index: 0;
+                                    p{
+                                        height: 12px;
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        background: url(img/goods/newstar02_63656382.png) 0 0 no-repeat;
+                                    }
+                                }
+                                dd{
+                                    width: 850px;
+                                    margin-bottom: 10px;
+                                    .word{
+                                        line-height: 24px;
+                                        border-bottom: 10px;
+                                        color: #333;
+                                    }
+                                    .time{
+                                        line-height: 30px;
+                                        float: right;
+                                        color: #666666;
+                                        span{
+                                            padding-right: 10px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .page15{
+                    float: right;
+                    margin-bottom: 40px;
+                    width: 600px;
+                    dl{
+                        dt{
+                            float: right;
+                            width: 150px;
+                            p{
+                                line-height: 24px;
+                                float: left;
+                            }
+                            input{
+                                border: 1px solid #d8d8d8;
+                                width: 18px;
+                                height: 22px;
+                                line-height: 22px;
+                                text-align: center;
+                                color: #626262;
+                                margin: 0 8px 0 3px;
+                                float: left;
+                            }
+                            a{
+                                background-color: #8ab700;
+                                color: #fff;
+                                border: 1px solid #657437;
+                                padding: 0 10px;
+                                display: block;
+                                line-height: 22px;
+                                float: left;
+                                margin-left: 10px;
+                            }
+                        }
+                        dd{
+                            float: right;
+                            margin-right: 10px;
+                            border-left: 1px solid #d8d8d8;
+                            span{
+                                cursor: pointer;
+                            }
+                            span,a{
+                                float: left;
+                                border-right: 1px solid #d8d8d8;
+                                border-top: 1px solid #d8d8d8;
+                                border-bottom: 1px solid #d8d8d8;
+                                padding: 0 6px;
+                                display: block;
+                                line-height: 22px;
+                                color: #626262;
+                                user-select: none;
+                            }
+                            span.link_none {
+                                background-color: #fafafa;
+                                color: #959595;
+                            }
+                            a.active{
+                                background: #8ab700;
+                                color: #fff;
+                            }
+                
+                            p{
+                                float: left;
+                                border-right: 1px solid #d8d8d8;
+                                border-top: 1px solid #d8d8d8;
+                                border-bottom: 1px solid #d8d8d8;
+                                padding: 0 6px;
+            
+                                line-height: 22px;
+                                color: #626262;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

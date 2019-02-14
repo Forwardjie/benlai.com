@@ -474,6 +474,145 @@
   color: #ff6900;
   line-height: 26px;
 }
+#benlai_goods .box1200 #_ProductDetails .list15_record dl dd .pic img {
+  width: 70px;
+  height: 70px;
+  float: left;
+  margin-right: 5px;
+}
+#benlai_goods .box1200 #_ProductDetails .box980 {
+  width: 980px;
+}
+#benlai_goods .box1200 #_ProductDetails .box980 .good15_compose {
+  width: 980px;
+  padding-bottom: 15px;
+}
+#benlai_goods .box1200 #_ProductDetails .box980 .good15_compose dl dt {
+  background-color: #fafafa;
+  border-bottom: 1px solid #efefe7;
+  border-left: 1px solid #efefe7;
+  border-right: 1px solid #efefe7;
+  border-top: 2px solid #8ab700;
+  height: 33px;
+}
+#benlai_goods .box1200 #_ProductDetails .box980 .good15_compose dl dt em {
+  width: 122px;
+  height: 34px;
+  position: relative;
+  z-index: 60;
+}
+#benlai_goods .box1200 #_ProductDetails .box980 .good15_compose dl dt em a {
+  line-height: 44px;
+  display: block;
+  text-align: center;
+  height: 44px;
+  width: 118px;
+  background: url(img/goods/detail_ico2_aee48cd9.png) right -194px no-repeat;
+  color: #fff;
+  font-size: 14px;
+  position: absolute;
+  top: -6px;
+  left: -1px;
+}
+#benlai_goods .box1200 #_ProductDetails .box980 .good15_compose dl dd {
+  width: 978px;
+  border-left: 1px solid #e7e7e7;
+  border-right: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
+}
+#benlai_goods .box1200 #_ProductDetails .box980 .good15_compose dl dd .sku_box {
+  width: 640px;
+  height: 230px;
+  margin: 20px 0 20px 20px;
+  overflow: hidden;
+  overflow-x: auto;
+  overflow-y: hidden;
+  float: left;
+}
+#benlai_goods .box1200 #_ProductDetails .box980 .good15_compose ul {
+  float: left;
+  height: 230px;
+}
+#benlai_goods .box1200 #_ProductDetails .box980 .good15_compose ul .plus {
+  float: left;
+  width: 14px;
+  height: 14px;
+  text-align: center;
+  margin: 45px 18px 0;
+  background: url(img/goods/detail_ico_e7eb6dd1.gif) 0 -204px no-repeat;
+}
+#benlai_goods .box1200 #_ProductDetails .box980 .good15_compose ul li {
+  width: 120px;
+  float: left;
+}
+#benlai_goods .box1200 #_ProductDetails .box980 .good15_compose ul li .pic {
+  width: 120px;
+  text-align: center;
+}
+#benlai_goods .box1200 #_ProductDetails .box980 .good15_compose ul li .pic img {
+  width: 97px;
+  height: 97px;
+}
+#benlai_goods .box1200 #_ProductDetails .box980 .good15_compose ul li .name {
+  width: 120px;
+  height: 36px;
+  overflow: hidden;
+  text-overflow: clip;
+  display: block;
+  margin-top: 15px;
+}
+#benlai_goods .box1200 #_ProductDetails .box980 .good15_compose ul li .name a {
+  color: #1b1b15;
+  line-height: 18px;
+}
+#benlai_goods .box1200 #_ProductDetails .box980 .good15_compose ul li .name a font {
+  color: #eb6100 !important;
+  margin-left: 5px;
+}
+#benlai_goods .box1200 #_ProductDetails .box980 .good15_compose ul li .price {
+  width: 120px;
+  line-height: 28px;
+  text-align: center;
+  color: #ff6900;
+}
+#benlai_goods .box1200 #_ProductDetails .box980 .good15_compose ul li .digital {
+  text-align: center;
+  width: 120px;
+  margin-top: 5px;
+  color: #999;
+  font-weight: 700;
+  font-size: 16px;
+}
+#benlai_goods .box1200 #_ProductDetails .box980 .good15_compose ol {
+  float: right;
+  width: 280px;
+  height: 200px;
+  padding-top: 30px;
+  margin: 20px 0;
+  border-left: 1px solid #e7e7e7;
+}
+#benlai_goods .box1200 #_ProductDetails .box980 .good15_compose ol li {
+  height: 120px;
+  margin-left: 50px;
+}
+#benlai_goods .box1200 #_ProductDetails .box980 .good15_compose ol li p {
+  line-height: 18px;
+}
+#benlai_goods .box1200 #_ProductDetails .box980 .good15_compose ol li p span {
+  color: #ff6900;
+  font-weight: 700;
+}
+#benlai_goods .box1200 #_ProductDetails .box980 .good15_compose ol .good15_buy_btn {
+  width: 122px;
+  height: 30px;
+  float: left;
+}
+#benlai_goods .box1200 #_ProductDetails .box980 .good15_compose ol .good15_buy_btn a {
+  width: 122px;
+  height: 30px;
+  display: block;
+  background: url(img/goods/detailsp_btn_c8171162.gif) 0 -212px no-repeat;
+}
 #benlai_goods .box1200 .good15_detail {
   float: left;
   width: 980px;
@@ -485,6 +624,294 @@
   border-right: 1px solid #efefe7;
   border-top: 2px solid #8ab700;
   height: 41px;
+}
+#benlai_goods .box1200 .good15_detail dl dt {
+  width: 672px;
+  float: left;
+}
+#benlai_goods .box1200 .good15_detail dl dt em {
+  width: 112px;
+  height: 34px;
+  float: left;
+  position: relative;
+  z-index: 70;
+}
+#benlai_goods .box1200 .good15_detail dl dt em a {
+  color: #79a000;
+  line-height: 34px;
+  padding: 10px 4px 0 0;
+  display: block;
+  position: absolute;
+  top: -6px;
+  left: -1px;
+  width: 108px;
+  text-align: center;
+  height: 34px;
+  overflow: hidden;
+  text-overflow: clip;
+  font-weight: 400;
+  font-family: "宋体";
+  font-size: 12px;
+}
+#benlai_goods .box1200 .good15_detail dl dt em a.on, #benlai_goods .box1200 .good15_detail dl dt em a:hover {
+  background: url(img/goods/detail_ico2_aee48cd9.png) right -194px no-repeat;
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+  padding-top: 5px;
+  height: 39px;
+}
+#benlai_goods .box1200 .good15_detail dl dd {
+  float: right;
+  margin: 7px 13px 0 0;
+}
+#benlai_goods .box1200 .good15_detail dl dd p {
+  line-height: 30px;
+  font-size: 18px;
+  float: left;
+  margin-right: 25px;
+  color: #ff6900;
+  font-weight: 800;
+  font-family: 'Microsoft YaHei';
+}
+#benlai_goods .box1200 .good15_detail dl dd .good15_buy_btn {
+  float: left;
+  height: 30px !important;
+  width: 122px;
+}
+#benlai_goods .box1200 .good15_detail dl dd .good15_buy_btn a {
+  width: 122px;
+  height: 30px;
+  display: block;
+  background: url(img/goods/detailsp_btn_c8171162.gif) 0 -212px no-repeat;
+}
+#benlai_goods .box1200 .box980 {
+  width: 980px;
+}
+#benlai_goods .box1200 .box980 .good15_all {
+  width: 980px;
+  margin: 20px 0;
+  float: left;
+}
+#benlai_goods .box1200 .box980 .good15_all dl dt {
+  width: 980px;
+  margin-bottom: 15px;
+}
+#benlai_goods .box1200 .box980 .good15_all dl dd {
+  width: 980px;
+}
+#benlai_goods .box1200 .box980 .good15_all dl dd img {
+  width: 980px;
+}
+#benlai_goods .box1200 .commentContent .good15_review {
+  width: 980px;
+  float: left;
+}
+#benlai_goods .box1200 .commentContent .good15_review .mb20 {
+  margin-bottom: 20px;
+}
+#benlai_goods .box1200 .commentContent .good15_review ul {
+  width: 979px;
+  margin-bottom: 10px;
+  border-left: 1px solid #eeeee6;
+  border-top: 1px solid #eeeee6;
+  border-bottom: 1px solid #eeeee6;
+}
+#benlai_goods .box1200 .commentContent .good15_review ul li {
+  float: left;
+  border-right: 1px solid #eeeee6;
+  height: 125px;
+}
+#benlai_goods .box1200 .commentContent .good15_review ul .proportion {
+  width: 125px;
+  padding: 0 45px;
+  text-align: center;
+  line-height: 32px;
+  color: #ff6900;
+  font-size: 14px;
+}
+#benlai_goods .box1200 .commentContent .good15_review ul .proportion p {
+  background: url(img/goods/detail_ico_e7eb6dd1.gif) 0 -238px no-repeat;
+  height: 67px;
+  margin-top: 18px;
+  color: #fff;
+  font: 800 36px/57px "Microsoft YaHei";
+}
+#benlai_goods .box1200 .commentContent .good15_review ul .sublist {
+  width: 732px;
+  padding: 20px 10px 0 20px;
+  height: 105px;
+}
+#benlai_goods .box1200 .commentContent .good15_review ul .sublist em {
+  float: left;
+  max-width: 400px;
+  margin: 0 10px 10px 0;
+}
+#benlai_goods .box1200 .commentContent .good15_review ul .sublist em a {
+  color: #666;
+  white-space: nowrap;
+  width: auto;
+  border: 1px solid #ddd;
+  display: block;
+  line-height: 20px;
+  padding: 0 5px 0 10px;
+}
+#benlai_goods .box1200 .commentContent .good15_comment {
+  width: 980px;
+  float: left;
+}
+#benlai_goods .box1200 .commentContent .good15_comment .comment_tab {
+  float: left;
+  width: 980px;
+  margin-bottom: 15px;
+  background: url(//image.benlailife.com/webStatic/images/n_detail/detail_ico22_e1628c22.gif) left bottom repeat-x;
+}
+#benlai_goods .box1200 .commentContent .good15_comment .comment_tab a {
+  line-height: 22px;
+  padding: 0 20px;
+  border-right: 1px solid #e7e7e7;
+  display: block;
+  color: #707062;
+  font-size: 14px;
+}
+#benlai_goods .box1200 .commentContent .good15_comment .comment_tab p {
+  float: left;
+  margin: 10px 0;
+}
+#benlai_goods .box1200 .commentContent .good15_comment .comment_tab .selectp {
+  background: url(//image.benlailife.com/webStatic/images/n_detail/detail_ico18_c0b41931.png) center bottom no-repeat;
+}
+#benlai_goods .box1200 .commentContent .good15_comment .comment_tab .selectp a {
+  color: #91be16;
+}
+#benlai_goods .box1200 .commentContent .good15_comment .review16_box {
+  float: left;
+  margin-top: 10px;
+  width: 980px;
+}
+#benlai_goods .box1200 .commentContent .good15_comment .review16_box .review16_box980 {
+  width: 980px;
+  float: left;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+#benlai_goods .box1200 .commentContent .good15_comment .review16_box .review16_box980 .review16_head {
+  float: left;
+  width: 120px;
+  text-align: center;
+}
+#benlai_goods .box1200 .commentContent .good15_comment .review16_box .review16_box980 .review16_head img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+#benlai_goods .box1200 .commentContent .good15_comment .review16_box .review16_box980 .review16_head p {
+  color: #333;
+  line-height: 20px;
+}
+#benlai_goods .box1200 .commentContent .good15_comment .review16_box .review16_box980 .good16_dialogue {
+  float: right;
+  width: 850px;
+  padding-bottom: 10px;
+}
+#benlai_goods .box1200 .commentContent .good15_comment .review16_box .review16_box980 .good16_dialogue dl dt {
+  width: 850px;
+  height: 25px;
+  position: relative;
+  z-index: 0;
+}
+#benlai_goods .box1200 .commentContent .good15_comment .review16_box .review16_box980 .good16_dialogue dl dt p {
+  height: 12px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(img/goods/newstar02_63656382.png) 0 0 no-repeat;
+}
+#benlai_goods .box1200 .commentContent .good15_comment .review16_box .review16_box980 .good16_dialogue dl dd {
+  width: 850px;
+  margin-bottom: 10px;
+}
+#benlai_goods .box1200 .commentContent .good15_comment .review16_box .review16_box980 .good16_dialogue dl dd .word {
+  line-height: 24px;
+  border-bottom: 10px;
+  color: #333;
+}
+#benlai_goods .box1200 .commentContent .good15_comment .review16_box .review16_box980 .good16_dialogue dl dd .time {
+  line-height: 30px;
+  float: right;
+  color: #666666;
+}
+#benlai_goods .box1200 .commentContent .good15_comment .review16_box .review16_box980 .good16_dialogue dl dd .time span {
+  padding-right: 10px;
+}
+#benlai_goods .box1200 .commentContent .good15_comment .page15 {
+  float: right;
+  margin-bottom: 40px;
+  width: 600px;
+}
+#benlai_goods .box1200 .commentContent .good15_comment .page15 dl dt {
+  float: right;
+  width: 150px;
+}
+#benlai_goods .box1200 .commentContent .good15_comment .page15 dl dt p {
+  line-height: 24px;
+  float: left;
+}
+#benlai_goods .box1200 .commentContent .good15_comment .page15 dl dt input {
+  border: 1px solid #d8d8d8;
+  width: 18px;
+  height: 22px;
+  line-height: 22px;
+  text-align: center;
+  color: #626262;
+  margin: 0 8px 0 3px;
+  float: left;
+}
+#benlai_goods .box1200 .commentContent .good15_comment .page15 dl dt a {
+  background-color: #8ab700;
+  color: #fff;
+  border: 1px solid #657437;
+  padding: 0 10px;
+  display: block;
+  line-height: 22px;
+  float: left;
+  margin-left: 10px;
+}
+#benlai_goods .box1200 .commentContent .good15_comment .page15 dl dd {
+  float: right;
+  margin-right: 10px;
+  border-left: 1px solid #d8d8d8;
+}
+#benlai_goods .box1200 .commentContent .good15_comment .page15 dl dd span {
+  cursor: pointer;
+}
+#benlai_goods .box1200 .commentContent .good15_comment .page15 dl dd span, #benlai_goods .box1200 .commentContent .good15_comment .page15 dl dd a {
+  float: left;
+  border-right: 1px solid #d8d8d8;
+  border-top: 1px solid #d8d8d8;
+  border-bottom: 1px solid #d8d8d8;
+  padding: 0 6px;
+  display: block;
+  line-height: 22px;
+  color: #626262;
+  user-select: none;
+}
+#benlai_goods .box1200 .commentContent .good15_comment .page15 dl dd span.link_none {
+  background-color: #fafafa;
+  color: #959595;
+}
+#benlai_goods .box1200 .commentContent .good15_comment .page15 dl dd a.active {
+  background: #8ab700;
+  color: #fff;
+}
+#benlai_goods .box1200 .commentContent .good15_comment .page15 dl dd p {
+  float: left;
+  border-right: 1px solid #d8d8d8;
+  border-top: 1px solid #d8d8d8;
+  border-bottom: 1px solid #d8d8d8;
+  padding: 0 6px;
+  line-height: 22px;
+  color: #626262;
 }
 
 /*# sourceMappingURL=goods.css.map */

@@ -158,13 +158,15 @@
   float: right;
   padding-top: 8px;
 }
-#listbox .box_right .list_sequence dl dd a {
+#listbox .box_right .list_sequence dl dd span {
   float: left;
   display: block;
   padding: 0 6px;
   border: 1px solid #d2d2d0;
   color: #626262;
   line-height: 14px;
+  cursor: pointer;
+  user-select: none;
 }
 #listbox .box_right .list_sequence dl dd p {
   float: left;
@@ -172,7 +174,7 @@
   line-height: 16px;
   color: #626262;
 }
-#listbox .box_right .list_sequence dl dd p span:nth-child(1) {
+#listbox .box_right .list_sequence dl dd p s:nth-child(1) {
   color: #ff6900;
 }
 #listbox .box_right .list_sku {
@@ -287,6 +289,75 @@
 #listbox .box_right .list_sku dl dd .box .CartBtn a {
   width: 233px;
   height: 32px;
+}
+#listbox .box_right .pageNum {
+  width: 600px;
+  margin-bottom: 40px;
+  float: right;
+}
+#listbox .box_right .pageNum dl dt {
+  float: right;
+  width: 150px;
+}
+#listbox .box_right .pageNum dl dt p {
+  line-height: 24px;
+  float: left;
+}
+#listbox .box_right .pageNum dl dt input {
+  border: 1px solid #d8d8d8;
+  width: 18px;
+  height: 22px;
+  line-height: 22px;
+  text-align: center;
+  color: #626262;
+  margin: 0 8px 0 3px;
+  float: left;
+}
+#listbox .box_right .pageNum dl dt a {
+  background-color: #8ab700;
+  color: #fff;
+  border: 1px solid #657437;
+  padding: 0 10px;
+  display: block;
+  line-height: 22px;
+  float: left;
+  margin-left: 10px;
+}
+#listbox .box_right .pageNum dl dd {
+  float: right;
+  margin-right: 10px;
+  border-left: 1px solid #d8d8d8;
+}
+#listbox .box_right .pageNum dl dd span {
+  cursor: pointer;
+}
+#listbox .box_right .pageNum dl dd span, #listbox .box_right .pageNum dl dd a {
+  float: left;
+  border-right: 1px solid #d8d8d8;
+  border-top: 1px solid #d8d8d8;
+  border-bottom: 1px solid #d8d8d8;
+  padding: 0 6px;
+  display: block;
+  line-height: 22px;
+  color: #626262;
+  user-select: none;
+}
+#listbox .box_right .pageNum dl dd span.link_none {
+  background-color: #fafafa;
+  color: #959595;
+}
+#listbox .box_right .pageNum dl dd a.active {
+  background: #8ab700;
+  color: #fff;
+}
+#listbox .box_right .pageNum dl dd p {
+  float: left;
+  border-right: 1px solid #d8d8d8;
+  border-top: 1px solid #d8d8d8;
+  border-bottom: 1px solid #d8d8d8;
+  padding: 0 6px;
+  line-height: 22px;
+  color: #626262;
 }
 
 /*# sourceMappingURL=list.css.map */
