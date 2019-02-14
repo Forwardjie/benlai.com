@@ -190,6 +190,125 @@ $(function() {
 
     /*主体内容部分 开始 */
 
+    var _ProductDetails_0 = document.getElementById('_ProductDetails_0');
+    var url = '../api/06find_id.php';
+    var data = 'id=1';
+    ajax('get',url,data,function (str) {
+        console.log(str);
+        var arr = JSON.parse(str);
+        console.log(arr[0]);
+        var json = arr[0];
+        var html = `<div class="good15_box ">
+                        <div id="MagnifierWrap2">
+                            <div class="MagnifierMain">
+                                <img class="MagTargetImg" src="../${json.img}" data-src="../${json.img}"> 
+                            </div>
+                            <span class="spe_leftBtn"></span>
+                            <span class="spe_rightBtn"></span>
+                            <div class="spec-items"> 
+                                <ul>
+                                    <li class="on"><img src="../${json.img}" data-lsrc="../${json.img}" data-maxSrc="../${json.img}"></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="good15_number">
+                                商品编号：
+                            <span id="Product_ProductID">P0000056212</span>
+                        </div>
+                        <div class="good15_collect">
+                            <a href="javascript:;" class="on">收藏</a>
+                        </div>
+                        <div class="good15_share">
+                            <dl>
+                                <dt><s></s>分享到</dt>
+                                <dd>
+                                    <a href="javascript:;" hidefocus="true" id="site-sina" title="推荐到新浪微博">
+                                        <img src="../img/goods/detail_ico13_bd12b9eb.gif" width="16" height="16" alt="">
+                                    </a>
+                                    <a href="javascript:;" hidefocus="true" onclick="showQQ()" id="site-qq" title="通过QQ发送链接给好友">
+                                        <img src="../img/goods/detail_ico15_2642cae0.gif" width="16" height="16" alt="">
+                                    </a>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="good15_intro">
+                        <div class="intro_name">
+                            <h1 id="Product_ProductDetailsName" title="${json.main_title}">${json.main_title}</h1>
+                            <p>${json.sub_title}</p>
+                        </div>
+                        <div class="intro_sales">
+                            <div class="intro_price">
+                                <div class="drop fl"></div>
+                                <div class="price fl">
+                                ￥${json.new_price}
+                                </div>
+                                <div class="notice fl">
+                                    <a href="javascript:;" class="on">降价通知</a>
+                                </div>
+                            </div>
+                            <div class="intro_app">
+                                <dl>
+                                    <dt>
+                                        <a href="javascript:;">&nbsp;手机购买</a>
+                                    </dt>
+                                    <dd>
+                                        <p>移动下单，惊喜连连</p>
+                                        <img src="../img/goods/App_QR_Code_3de39ad3.png" alt="">
+                                        <em>扫描下载客户端</em>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="good15_norm"></div>
+
+                        <div class="good15_buy">
+                            <div class="bgright fl">
+                                <dl>
+                                    <dt>
+                                        <input type="text" class="textgt_n" id="textgtSum" maxlength="4" value="1" startsalenum="1">
+                                        <a class="up" id="up" href="javascript:void(0);" hidefocus="true"></a>
+                                        <a class="down" id="dow" href="javascript:void(0);" hidefocus="true"></a>
+                                    </dt>
+                                    <dd>
+                                        <div id="AddCartDiv" class="buy_btn"><a class="btn01" id="AddCart" href="javascript:void(0);"> </a></div>
+                                        <div class="buy_evaluate">
+                                            好评率<font id="span_scoreCount">99%</font>
+                                            (<a href="#tabdiv6"><span>1362</span>人评价</a>)
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <ul>
+                                <li id="limitDiv" style="display: none;"></li>
+                            </ul>
+                            <ol>
+                                <li><s></s>该商品不支持使用优惠券</li>
+                            </ol>
+                        </div>
+                        <div class="good15_today">
+                            <dl>
+                                <dt>
+                                    <img src="../img/goods/detail_ico02_n_047cc516.gif" width="25" height="23" alt="">今夜达
+                                </dt>
+                                <dd><span class="ArrivalMsg"><s></s>今夜达：上海市区外环内用户（部分区域除外，以结算页为准）在0:00-11:00下单，可选当日18:00-22:00送达。</span></dd>
+                            </dl>
+                            <dl>
+                                <dt>
+                                    <img src="../img/goods/detail_ico08_d67de15f.gif" width="25" height="23" alt="">常温配
+                                </dt>
+                            </dl>
+                            <dl></dl>
+                            <div class="clear">
+                            </div>
+                        </div>
+                    </div>`;
+                    _ProductDetails_0.innerHTML = html;
+    })
+
+
+
+    /*主体内容部分 结束 */
     /*尾部 开始*/
     $('#footers').on('mouseover','dl dd a',function () {
         $(this).css('color','#ff6801');

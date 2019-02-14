@@ -1,0 +1,84 @@
+.box900 {
+  width: 990px;
+  margin: 0 auto; }
+
+.login {
+  float: left; }
+  .login dl {
+    height: 30px;
+    position: relative; }
+    .login dl dt {
+      border-left: 1px solid #e8e8e8;
+      border-right: 1px solid #e8e8e8;
+      border-bottom: 1px solid #e8e8e8;
+      padding: 0 10px 0 7px;
+      background-color: #fff;
+      width: 123px;
+      height: 29px;
+      position: absolute;
+      z-index: 100; }
+      .login dl dt a {
+        display: block;
+        background: url(img/shoppingCart/n_top_ico_e5a1c5b5.png) 113px 13px no-repeat;
+        padding-right: 19px;
+        line-height: 32px;
+        color: #3e4141;
+        width: 105px;
+        height: 30px;
+        float: left; }
+        .login dl dt a em {
+          color: #ff6900;
+          width: 69px;
+          display: block;
+          text-overflow: clip;
+          word-wrap: break-word;
+          float: right; }
+    .login dl dd {
+      border: 1px solid #e8e8e8;
+      background-color: #fff;
+      box-shadow: 1px 1px 6px rgba(192, 192, 192, 0.5);
+      padding-bottom: 10px;
+      position: absolute;
+      top: 32px;
+      left: 0;
+      z-index: 72;
+      width: 272px;
+      display: none; }
+      .login dl dd .user_login {
+        width: 252px;
+        padding: 0 10px; }
+        .login dl dd .user_login a {
+          line-height: 42px; }
+          .login dl dd .user_login a p {
+            float: left;
+            line-height: 42px;
+            font-weight: 700;
+            font-size: 14px;
+            width: 150px;
+            text-overflow: clip;
+            overflow: hidden;
+            word-wrap: break-word;
+            height: 42px; }
+      .login dl dd em {
+        float: left;
+        border-right: 1px solid #eee;
+        height: 60px;
+        text-align: center;
+        line-height: 20px;
+        color: #3e4141;
+        width: 90px; }
+        .login dl dd em a {
+          color: #3e4141;
+          display: block;
+          text-decoration: none; }
+          .login dl dd em a span {
+            color: #ff6900; }
+          .login dl dd em a .user_lh {
+            line-height: 35px; }
+        .login dl dd em font {
+          color: #8f8f8f;
+          font-size: 12px; }
+  .login p {
+    float: left; }
+
+/*# sourceMappingURL=shoppingCart.css.map */

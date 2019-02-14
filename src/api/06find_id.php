@@ -25,7 +25,7 @@
    /*
    SELECT * FROM goodslist ORDER BY price LIMIT 0,5;排序，取前五条
    */ 
-   $sql = "SELECT * FROM goodslist WHERE id = ${detail_id};";
+   $sql = "SELECT * FROM goodslist WHERE id = '${detail_id}';";
    // echo $sql;
 
    //执行sql语句，得到一个结果集
@@ -35,5 +35,6 @@
    $row = $res->fetch_all(MYSQLI_ASSOC);//对象[{},{},{}]
    // echo $res;
    echo json_encode($row,JSON_UNESCAPED_UNICODE);
+    // echo $detail_id;
 
 ?>
