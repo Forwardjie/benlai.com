@@ -10,21 +10,23 @@
     <link rel="stylesheet" href="../css/shoppingCart.css">
     <script src="../js/common.js"></script>
     <script src="../js/jquery-1.10.1.min.js"></script>
+    <script src="../js/CommonPart.js"></script>
+    <script src="../js/jquery.cookie.js"></script>
     <script src="../js/shoppingCart.js"></script>
 </head>
 <body>
     <!-- 购物车 -->
-    <div id="benlai_shoppingCart">
+    <div id="benlai">
         <!-- 头部 开始 -->
-        <div class="header" id="headerView">
+        <div class="header header2" id="headerView">
             <div class="head_top">
-                <div class="box900">
-                    <div class="login" id="welcome_login">
-                        <!-- 您好，请
-                        <a href="javascript:;">[登录]</a>
-                        <a href="javascript:;">[注册]</a>
-                        <a href="javascript:;">[机构会员]</a> -->
-                        <dl>
+                <div class="box990">
+                    <div class="login accountNumber" id="welcome_login">
+                        您好，请
+                        <a href="login.html">[登录]</a>
+                        <a href="interface.html">[注册]</a>
+                        <a href="javascript:;">[机构会员]</a>
+                        <!-- <dl>
                             <dt>
                                 <a href="javascript:;">
                                     <p>您好，</p>
@@ -54,7 +56,7 @@
                                     <span class="user_lh">0张</span>
                                 </a></em>
                             </dd>
-                        </dl>
+                        </dl> -->
                     </div>
                     <div class="head_menu">
                         <ul>
@@ -101,8 +103,106 @@
         </div>
         <!-- 头部 结束 -->
         <!-- 主体内容 开始 -->
-        <div class="box1200" id="layoutContent">
-
+        <div class="box990" id="layoutContent">
+            <div class="cart_top">
+                <div class="mt25">
+                    <a href="javascript:;">
+                        <img src="../css/img/shoppingCart/logo_new_d634af2f.gif" style="width: 136px;height: 54px;" alt="">
+                    </a>
+                </div>
+                <div class="mt30 fr mr15">
+                    <img src="../css/img/shoppingCart/cart08.gif" style="width: 550px;height: 46px;" alt="">
+                </div>
+            </div>
+            <div class="cart_tit_n">
+                <div class="cart_word">我的购物车</div>
+            </div>
+            <div class="min_all" id="myCart">
+                <div class="cart_none"><img src="../img/shoppingCart/cart_none.png"><p>您还没有购买过商品，<a href="../index.html">去逛逛吧</a></p></div>
+                <!-- <div class="cart_alltit" style="margin-top: 10px;" data-type="CartGroup" data-freeshipdiffprice="0" data-shipprice="0">        
+                    <p>常温配</p>        
+                    <em>已包邮</em>    
+                </div>
+                <div class="cart_n">
+                    <div class="cart_tit">
+                        <input type="checkbox" id="cbxGroupSelectAll" data-type="GroupSelectAll">
+                        <span style="width: 75px;">全选</span>
+                        <span style="width: 390px;">商品</span>
+                        <span style="width: 120px;">单价</span>
+                        <span style="width: 100px;">购买数量</span>
+                        <span style="width: 120px;">小计</span>操作
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="check good_check">
+                                <input type="checkbox" id="cbxSelectProduct">
+                            </div>
+                            <div class="pic">
+                                <a href="javascript:;">
+                                    <img src="../img/OnlineHomePage/fruit/02/4ed3bb89-c8f0-432e-b31e-6b38b6f7fc30.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="name good_name">
+                                <a href="javascript:;">【产地直发】福建六鳌沙地红蜜薯2.5kg</a>
+                            </div>
+                            <div class="price good_price">￥34.90</div>
+                            <div class="c_quantity">
+                                <p>
+                                    <a href="javascript:;" class="cutnum">
+                                        <img src="../img/shoppingCart/dey_03_0c4d2417.gif" alt="">
+                                    </a>
+                                </p>
+                                <p class="mt0">
+                                    <input type="text" class="textgt_n nownum" value="1">
+                                </p>
+                                <p>
+                                    <a href="javascript:;" class="addnum">
+                                        <img src="../img/shoppingCart/dey_04_0e745786.gif" alt="" >
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="subtotal">￥34.90</div>
+                            <div class="operating">
+                                <a href="javascript:;">收藏</a>
+                                <a href="javascript:;" class="mt5 good_del">删除</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hzcart">
+                    <div class="del_all">
+                        <div class="check allchecked">
+                            <input type="checkbox">
+                        </div>
+                        <a href="javascript:;" class="select">全选</a>
+                        <a href="javascript:;" class="delete">
+                            <img src="../img/shoppingCart/dele_859bd7ec.gif" alt="" style="width: 13px;height: 15px;">
+                        </a>
+                    </div>
+                    <div class="details">
+                        <span>
+                            运费<font>￥10.00</font>
+                        </span>
+                        <span>
+                            商品金额：<font   id="totalprice">￥0.00</font>
+                        </span>
+                        <span>
+                            促销抵扣金额：<font>￥0.00</font>
+                        </span>
+                        <span>
+                            优惠券抵扣金额：<font>￥0.00</font> 元
+                        </span>
+                    </div>
+                    <div class="all_price">
+                        已选择 <em  id="allnum">0</em> 件商品，金额（包含运费）= 
+                        <span id="Payment">¥0.00</span>
+                    </div>
+                    <div class="butn">
+                        <input type="button" class="fr butn19" data-type="Pay" title="去结算">
+                        <a class="continue" href="javascript:history.back(-1);'">继续购物</a>
+                    </div>
+                </div> -->
+            </div>
         </div>
         <!-- 主体内容 结束 -->
                 <!-- 页尾 开始-->
@@ -183,11 +283,11 @@
             <!--右侧浮动-->
             <div id="goTop">
                 <a href="javascript:;" hidefocus="true" id="go_top" title="回到顶部" style="display: none;"></a>
-                <a href="/cart.html" id="right_cart" class="cart_buy" title="前往购物车">0</a>
+                <a href="javascript:;" id="right_cart" class="cart_buy" title="前往购物车">0</a>
                 <a href="javascript:;" class="zhiCustomBtn service" data-type="easemob">&nbsp;</a>
                 <a id="two_code" href="javascript:;" hidefocus="true" class="two_code" title="点击查看二维码">&nbsp;</a>
             </div>
-            <div class="pop_cart">
+            <div class="pop_cart"  style="right: 52px; display: none">
                 <div class="pop_buy">
                     <ul id="item_added"></ul>
                 </div>

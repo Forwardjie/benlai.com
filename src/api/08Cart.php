@@ -23,28 +23,38 @@
     header("content-type:text/html;charset=utf-8");
 
     //1.接收参数
-    $detail_id = isset($_GET['id']) ? $_GET['id'] : '';
-    $add = isset($_GET['a']) ? $_GET['a'] : '';
-    $reduce = isset($_GET['m']) ? $_GET['m'] : '';
-    $delete = isset($_GET['d']) ? $_GET['d'] : '';
+    // $detail_id = isset($_GET['id']) ? $_GET['id'] : '';
+    $goods_id = isset($_POST['id']) ? $_POST['id'] : '';
+    $user_id = isset($_POST['user_id']) ? $_POST['user_id'] : '';
+
+
+    $add = isset($_POST['a']) ? $_POST['a'] : '';
+    $reduce = isset($_POST['m']) ? $_POST['m'] : '';
+    $delete = isset($_POST['d']) ? $_POST['d'] : '';
+    $allDel = isset($_POST['allDel']) ? $_POST['allDel'] : '';
     // echo $add;
     if($add){
         // echo $detail_id;
-        $sql = "UPDATE shoppingcart SET good_num=good_num+1 WHERE good_id=$detail_id";
+        $sql = "UPDATE shoppingcart SET goods_num=goods_num+1 WHERE goods_id=$goods_id  AND user_id = $user_id";
         $res = $conn->query($sql);
     }
     if($reduce){
         // echo $reduce;
-        $sql = "UPDATE shoppingcart SET good_num=good_num-1 WHERE good_id=$detail_id";
+        $sql = "UPDATE shoppingcart SET goods_num=goods_num-1 WHERE goods_id=$goods_id  AND user_id = $user_id";
         $res = $conn->query($sql);
     }
     if($delete){
         // echo $delete;
-        $sql = "DELETE FROM shoppingcart WHERE good_id=$detail_id"; 
+        $sql = "DELETE FROM shoppingcart WHERE goods_id=$goods_id  AND user_id = $user_id"; 
+        $res = $conn->query($sql);
+    }
+    if($allDel){
+        // echo $delete;
+        $sql = "DELETE FROM shoppingcart WHERE user_id = $user_id"; 
         $res = $conn->query($sql);
     }
     // echo $delete;
-    $sql = "SELECT * FROM shoppingcart WHERE good_id = $detail_id";
+    $sql = "SELECT * FROM shoppingcart WHERE goods_id = $goods_id  AND user_id = $user_id";
     //执行sql语句，得到一个结果集
     $res = $conn->query($sql);
 

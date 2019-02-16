@@ -205,9 +205,13 @@ $(function(){
                 var arr = JSON.parse(str);
                 console.log(arr);
                 if(!arr.code){
-                    alert(arr.message);
+                    // alert(arr.message);
                     // true1 = false;
-                    window.location.href = 'login.html';
+                    // window.location.href = 'login.html';
+                    var id = arr.content[0].user_id;
+                    $.cookie('id',id, { expires: 7, path: '/' });
+                    // decodeURIComponent();
+                    window.location.href = '../01.html';
                 }else{
                     alert(arr.message);
                 }

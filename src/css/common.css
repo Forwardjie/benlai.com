@@ -55,6 +55,109 @@ input::-webkit-input-placeholder {
   margin: 0 auto;
 }
 
+.box990 {
+  width: 990px;
+  margin: 0 auto;
+}
+
+.header2 {
+  height: 31px;
+}
+
+.accountNumber {
+  float: left;
+}
+.accountNumber dl {
+  height: 30px;
+  position: relative;
+}
+.accountNumber dl dt {
+  border-left: 1px solid #e8e8e8;
+  border-right: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 0 10px 0 7px;
+  background-color: #fff;
+  width: 123px;
+  height: 29px;
+  position: absolute;
+  z-index: 9900;
+}
+.accountNumber dl dt a {
+  display: block;
+  background: url(img/shoppingCart/n_top_ico_e5a1c5b5.png) 114px 13px no-repeat;
+  padding-right: 19px;
+  line-height: 32px;
+  color: #3e4141;
+  width: 105px;
+  height: 30px;
+  float: left;
+}
+.accountNumber dl dt a em {
+  color: #ff6900;
+  width: 69px;
+  display: block;
+  text-overflow: clip;
+  word-wrap: break-word;
+  float: right;
+}
+.accountNumber dl dd {
+  border: 1px solid #e8e8e8;
+  background-color: #fff;
+  box-shadow: 1px 1px 6px rgba(192, 192, 192, 0.5);
+  padding-bottom: 10px;
+  position: absolute;
+  top: 32px;
+  left: 0;
+  z-index: 9000;
+  width: 272px;
+  display: none;
+}
+.accountNumber dl dd .user_login {
+  width: 252px;
+  padding: 0 10px;
+}
+.accountNumber dl dd .user_login a {
+  line-height: 42px;
+}
+.accountNumber dl dd .user_login a p {
+  float: left;
+  line-height: 42px;
+  font-weight: 700;
+  font-size: 14px;
+  width: 150px;
+  text-overflow: clip;
+  overflow: hidden;
+  word-wrap: break-word;
+  height: 42px;
+}
+.accountNumber dl dd em {
+  float: left;
+  border-right: 1px solid #eee;
+  height: 60px;
+  text-align: center;
+  line-height: 20px;
+  color: #3e4141;
+  width: 90px;
+}
+.accountNumber dl dd em a {
+  color: #3e4141;
+  display: block;
+  text-decoration: none;
+}
+.accountNumber dl dd em a span {
+  color: #ff6900;
+}
+.accountNumber dl dd em a .user_lh {
+  line-height: 35px;
+}
+.accountNumber dl dd em font {
+  color: #8f8f8f;
+  font-size: 12px;
+}
+.accountNumber p {
+  float: left;
+}
+
 /*头部样式 开始*/
 .header {
   height: 237px;
@@ -373,7 +476,7 @@ input::-webkit-input-placeholder {
   line-height: 31px;
   width: 154px;
   position: relative;
-  z-index: 100;
+  z-index: 9000;
   top: 0;
   left: 0;
   padding: 1px 0 1px 50px;
@@ -622,5 +725,155 @@ input::-webkit-input-placeholder {
 }
 
 /*页面尾部 结束*/
+#goTop #go_top, #goTop #go_top:hover, #goTop .collect, #goTop .two_code, #goTop .collect {
+  background: #fff url(img/index/footer/gotop_399f0c23.gif) no-repeat;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  float: left;
+  overflow: hidden;
+  padding: 5px;
+  margin-left: 11px;
+}
+
+#goTop {
+  bottom: 10px;
+  right: 0;
+  width: 61px;
+  position: fixed;
+  z-index: 9;
+}
+#goTop #go_top {
+  width: 44px;
+  height: 30px;
+  background-position: -43px -43px;
+}
+#goTop .cart_buy {
+  background: url(img/index/footer/cart_pop02_21375019.gif) no-repeat;
+  width: 46px;
+  height: 70px;
+  display: block;
+  float: left;
+  overflow: hidden;
+  margin-top: 10px;
+  padding: 0 0 0 15px;
+  text-align: center;
+  font: 400 12px/38px "Microsoft YaHei";
+  color: #fff;
+}
+#goTop .service {
+  background: url(img/index/footer/gotop_service_d114e897.gif) 0 0 no-repeat;
+  height: 70px;
+  width: 50px;
+  margin-top: 10px;
+  display: block;
+  float: left;
+  overflow: hidden;
+  margin-left: 11px;
+}
+#goTop .two_code {
+  background-position: -96px -46px;
+  height: 38px;
+  width: 44px;
+  margin-top: 10px;
+}
+
+.pop_cart {
+  width: 300px;
+  padding: 10px;
+  bottom: 124px;
+  right: 52px;
+  _right: 56px;
+  position: fixed;
+  z-index: 8;
+}
+.pop_cart .b0 {
+  border: 0 !important;
+}
+.pop_cart .pop_buy {
+  border: 1px solid #649a2b;
+  background-color: #fff;
+  width: 275px;
+  float: left;
+  padding: 0 15px 0 10px;
+}
+.pop_cart .pop_buy li {
+  padding: 12px 0;
+  border-bottom: 1px dotted #659a2c;
+  width: 275px;
+  float: left;
+}
+.pop_cart .pop_buy li .pic {
+  width: 70px;
+  float: left;
+}
+.pop_cart .pop_buy li .pic img {
+  width: 60px;
+  height: 60px;
+}
+.pop_cart .pop_buy li .name {
+  width: 125px;
+  float: left;
+  font: 400 12px/18px "Microsoft YaHei";
+  color: #3e4141;
+  padding-top: 3px;
+}
+.pop_cart .pop_buy li .name span {
+  font: 400 12px/18px "Microsoft YaHei";
+  color: #ff6900;
+}
+.pop_cart .pop_buy li .price {
+  width: 75px;
+  float: right;
+  font: 800 14px/58px "Microsoft YaHei";
+  color: #ff6900;
+}
+
+.pop_code .code_con, .pop_code2 .code_con, .pop_code3 .code_con {
+  background: #fff;
+  box-shadow: 0 0 1px rgba(34, 25, 25, 0.1);
+  -webkit-box-shadow: rgba(34, 25, 25, 0.1) 0 0 1px;
+  border: 1px solid #E6E4E4;
+  text-align: center;
+  padding: 7px;
+}
+
+.pop_code .code_con span, .pop_code2 .code_con span, .pop_code3 .code_con span {
+  display: block;
+  height: 186px;
+}
+
+.pop_code .code_con b, .pop_code2 .code_con b, .pop_code3 .code_con b {
+  display: block;
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+#twocodeParent .pop_code {
+  bottom: 14px;
+  right: 54px;
+  _right: 59px;
+  height: 222px;
+  width: 200px;
+  position: fixed;
+  z-index: 9;
+}
+#twocodeParent .pop_code2 {
+  bottom: 14px;
+  right: 260px;
+  _right: 265px;
+  height: 222px;
+  width: 200px;
+  position: fixed;
+  z-index: 9;
+}
+#twocodeParent .pop_code3 {
+  bottom: 14px;
+  right: 466px;
+  _right: 471px;
+  height: 222px;
+  width: 200px;
+  position: fixed;
+  z-index: 9;
+}
 
 /*# sourceMappingURL=common.css.map */

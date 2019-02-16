@@ -19,13 +19,13 @@
 
 
    //1.接收参数
-   $detail_id = isset($_GET['id']) ? $_GET['id'] : '';
+   $user_id = isset($_GET['user_id']) ? $_GET['user_id'] : '';
 
    //写一个sql语句，查询zhuce1内所有的内容
    /*
    SELECT * FROM goodslist ORDER BY price LIMIT 0,5;排序，取前五条
    */ 
-   $sql = "SELECT * FROM goodslist WHERE goods_id = '${detail_id}';";
+   $sql = "SELECT * FROM shoppingcart WHERE user_id = '$user_id';";
    // echo $sql;
 
    //执行sql语句，得到一个结果集

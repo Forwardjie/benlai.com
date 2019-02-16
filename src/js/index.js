@@ -1,15 +1,116 @@
 
 $(function() {
+
+    if($.cookie('id')){
+        var url = 'api/11update.php';
+        var id = $.cookie('id')
+        var data = 'user_id='+ id;
+        // console.log(data);
+        ajax('get',url,data,function (str) {
+            // console.log(str);
+            var arr = JSON.parse(str);
+            var head_top = document.getElementsByClassName('head_top')[0];
+            var html = `<div class="box990">
+                            <div class="login accountNumber" id="welcome_login">
+                                <dl>
+                                    <dt>
+                                        <a href="javascript:;">
+                                            <p>您好，</p>
+                                            <em>${arr[0].user_name}</em>
+                                        </a>
+                                    </dt>
+                                    <dd>
+                                        <div class="user_login">
+                                            <a href="javascript:;" class="fl">
+                                                <p>${arr[0].user_name}</p>   
+                                            </a>
+                                            <a href="javascript:;" class="fr"  style="color: #78a000">[退出登录]</a>
+                                        </div>
+                                        <em><a href="javascript:;">
+                                            级别<br>
+                                            <span class="user_lh">注册会员</span>
+                                        </a></em>
+                                        <em><a href="javascript:;">
+                                            积分<br>
+                                            <span>0分</span>
+                                            <br>
+                                            <font>(0.0元)</font>
+                                        </a></em>
+                                        <em style="border-right: none"><a href="javascript:;">
+                                            优惠券
+                                            <br>
+                                            <span class="user_lh">0张</span>
+                                        </a></em>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="head_menu">
+                                <ul>
+                                    <li>
+                                        <div class="menu_word">
+                                            <a href="html/shoppingCart.html">我的订单</a>
+                                        </div>
+                                    </li>
+                                    
+                                    <li>
+                                        <div class="towcode">
+                                            <dl>
+                                                <dt>
+                                                    <a href="javascript:;">掌上本来</a>
+                                                    <div class="head_bg"></div>
+                                                </dt>
+                                                <dd>
+                                                    <img src="img/head/App_QR_Code_3de39ad3.png" alt="">
+                                                    <p>扫描下载客户端</p>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="head_service">
+                                            <dl>
+                                                <dt>
+                                                    <a href="javascript:;">客户服务</a>
+                                                    <div class="head_bg"></div>
+                                                </dt>
+                                                <dd>
+                                                    <p><a href="javascript:;">在线客服</a></p>
+                                                    <p><a href="javascript:;">联系客服</a></p>
+                                                    <p><a href="javascript:;">销售热线</a></p>
+                                                    <p><a href="javascript:;">帮助中心</a></p>
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>`;
+            head_top.innerHTML = html;
+        });
+    }
+
+
+
+
+
+
+
     var OnlineHomePage = document.getElementById('OnlineHomePage');
 
     function show1(arr) {
         var res = arr.map(function(item,index) {//遍历所有的li
+            if(!item.sub_title){
+                item.sub_title = '';
+            }
+            if(!item.old_price){
+                item.old_price = '';
+            }
             return `<li>
                         <div class="box">
-                            <p class="pic"><a href="javascript:;">
+                            <p class="pic"><a href="html/details.html?id=${item.goods_id}">
                                 <img src="${item.img}" alt="">
                             </a></p>
-                            <p class="name"><a href="javascript:;">
+                            <p class="name"><a href="html/details.html?id=${item.goods_id}">
                                 <font>${item.main_title}</font>
                                 <span>${item.sub_title}</span>
                             </a></p>
@@ -17,7 +118,7 @@ $(function() {
                             ${item.new_price}
                                 <span>${item.old_price}</span>
                             </p>
-                            <p class="btn"><a class="ico00" href="javascript:;">
+                            <p class="btn"><a class="ico00"  data-id="${item.goods_id}" href="javascript:;">
                             </a></p>
                         </div>
                     </li>`;
@@ -34,7 +135,7 @@ $(function() {
         // var data = 'module=时令鲜果';
         
         ajax('post','api/09chaxun.php',data,function(str) {
-            console.log(111)
+            // console.log(111)
             moduleNum+=1;
             run = false;
             var arr = JSON.parse(str);
@@ -153,29 +254,29 @@ $(function() {
             // console.log(html)            
             // OnlineHomePage.innerHTML = html;
             if(moduleNum ==2){
-                console.log(2)
+                // console.log(2)
                 show('module=蔬菜菌菇');
             }else if(moduleNum ==3){
-                console.log(3)
+                // console.log(3)
                 show('module=水产海鲜');
             }else if(moduleNum ==4){
-                console.log(4)
+                // console.log(4)
                 show('module=肉禽蛋品');
             }else if(moduleNum ==5){
-                console.log(5)
+                // console.log(5)
                 show('module=居家优选');
             }else if(moduleNum ==6){
-                console.log(6)
+                // console.log(6)
                 show('module=熟食面点');
             }else if(moduleNum ==7){
-                console.log(7)
+                // console.log(7)
                 show('module=休闲零食');
             }else if(moduleNum ==8){
-                console.log(8)
+                // console.log(8)
                 show('module=厨房用品');
-                console.log(html)
-                console.log(html.join(','))
-                OnlineHomePage.innerHTML = html.join('');
+                // console.log(html)
+                // console.log(html.join(','))
+                OnlineHomePage.innerHTML = html;
                 // console.log(html)
             }
             
@@ -192,8 +293,123 @@ $(function() {
     // show('module=休闲零食');
     // show('module=厨房用品');
 
+    /*添加购物车 开始*/
+    // var CartNum = 0;
+    $('#OnlineHomePage').on('click','.ico00',function () {
+        // $(this).attr('data-id');
+        // console.log($(this).attr('data-id'));
+        var url = 'api/06find_id.php';
+        var data = 'id='+ $(this).attr('data-id');
+        $('.pop_cart').css('display','block');
+        $('#right_cart').css('background','url(css/img/index/footer/cart_pop01_bf3d2d55.gif) 0 0 no-repeat');
+        ajax('get',url,data,function (str) {
+            
+            var arr = JSON.parse(str);
+            // console.log(arr);
+            var item_added = document.getElementById('item_added');
+            // console.log(item_added)
+            var html = `<li class="b0">
+                            <div class="pic">
+                                <img src="${arr[0].img}" alt="">
+                            </div>
+                            <div class="name">
+                            ${arr[0].main_title}
+                                <br>
+                                <span>X 1 加入成功</span>
+                            </div>
+                            <div class="price">￥${arr[0].new_price}</div>
+                        </li>`;
+            item_added.innerHTML = html;
+            // console.log(item_added);
+            // ++ CartNum;
+            // $('#right_cart').text(CartNum);
+            var url2 = 'api/07ShoppingCart.php';
+            console.log(data);
+            var user_id = $.cookie('id');
+            var data4 = data +'&user_id='+ user_id;
+            console.log(data4);
+            ajax('post',url2,data4,function (str) {
+                console.log(str);
+            })
+            // shoppingCartNums();
+            // $('#right_cart').css('background','url(css/img/index/footer/cart_pop01_bf3d2d55.gif) 0 0 no-repeat');
+            /*渲染购物车数量 开始*/
+            var url3 = 'api/13user_id_shoppingcart.php';
+            var user_id = $.cookie('id');
+            var data5 = 'user_id='+ user_id;
+            ajax('get',url3,data5,function (str) {
+                // console.log(str);
+                var arr = JSON.parse(str);
+                var nums = 0;
+                for(i = 0;i < arr.length;i++){
+                    nums += arr[i].goods_num * 1
+                }
+                console.log(nums);
+                // var nums = arr.length;
+                var HeadCartcount = document.getElementById('HeadCartcount');
+                var right_cart = document.getElementById('right_cart');
+                HeadCartcount.innerHTML = nums;
+                right_cart.innerHTML = nums;
+            
+            });
+            /*清除购物车卡片 开始*/
+            setTimeout(() => {
+                $('.pop_cart').css('display','none');
+                $('#right_cart').css('background','url(css/img/index/footer/cart_pop04_7d8dece4.gif) 0 0 no-repeat');
+            }, 2000);
+            
+            
+        })
+    });
+    /*购物车数量 开始*/
+    function shoppingCartNums() {
+        var url3 = 'api/13user_id_shoppingcart.php';
+        var user_id = $.cookie('id');
+        var data5 = 'user_id='+ user_id;
+        ajax('get',url3,data5,function (str) {
+            // console.log(str);
+            var arr = JSON.parse(str);
+            var nums = 0;
+            for(i = 0;i < arr.length;i++){
+                nums += arr[i].goods_num * 1
+            }
+            console.log(nums);
+            // var nums = arr.length;
+            var HeadCartcount = document.getElementById('HeadCartcount');
+            var right_cart = document.getElementById('right_cart');
+            HeadCartcount.innerHTML = nums;
+            right_cart.innerHTML = nums;
+            if(nums != 0){
+                $('#right_cart').css('background','url(css/img/index/footer/cart_pop04_7d8dece4.gif) 0 0 no-repeat');
+            }
+        });
+    }
+    shoppingCartNums();
+    /*添加购物车 结束*/
 
     /*头部顶 开始*/
+    $('#headerView').on('mouseover','#welcome_login dl',function () {
+        $(this).find('dd').css('display','block');
+        $(this).find('dt').css('paddingBottom','5px');
+        $(this).find('dt').css('borderBottom','none');
+        $(this).find('dt a').css('background','url(css/img/shoppingCart/n_top_ico_e5a1c5b5.png) 114px -12px no-repeat');
+    });
+    $('#headerView').on('mouseout','#welcome_login dl',function () {
+        $(this).find('dd').css('display','none');
+        $(this).find('dt').css('paddingBottom','0');
+        $(this).find('dt').css('borderBottom','1px solid #e8e8e8');
+        $(this).find('dt a').css('background','url(css/img/shoppingCart/n_top_ico_e5a1c5b5.png) 114px 13px no-repeat');
+    });
+    $('#headerView').on('mouseover','#welcome_login dl dd .user_login .fr',function () {
+        $(this).css('color','#ff6801');
+        $(this).css('text-decoration','underline');
+    });
+    $('#headerView').on('mouseout','#welcome_login dl dd .user_login .fr',function () {
+        $(this).css('color','#78a000');
+        $(this).css('text-decoration','none');
+    });
+
+
     $('#benlai .head_top').on('mouseover','.login a',function () {
         $(this).css('text-decoration','underline');
     });
@@ -206,6 +422,12 @@ $(function() {
     $('#benlai .head_top').on('mouseout','.head_city a',function () {
         $(this).css('border','1px solid #eeeee7');
     });
+
+
+
+
+
+
     $('#benlai .head_top').on('mouseover','.head_menu .menu_word a',function () {
         $(this).css('color','#ff6801');
         $(this).css('text-decoration','underline');
@@ -222,6 +444,7 @@ $(function() {
         $(this).find('dd').css('display','none');
         $(this).find('dt a').css('background','url(css/img/index/header/top_ipico01_708559df.gif) 11px 4px no-repeat');
     });
+
     $('#benlai .head_top').on('mouseover','.head_menu .head_service dl',function () {
         $(this).find('dd').css('display','block');
         $(this).find('dt').css('background','url(css/img/index/header/n_top_ico_e5a1c5b5.png) 65px -12px no-repeat');
@@ -471,5 +694,15 @@ $(function() {
         $(this).css('text-decoration','none');
     });
     /*尾部 结束*/
+
+
+
+    /*客服 开始*/
+    $('#goTop').on('mouseover','.zhiCustomBtn',function () {
+        $(this).css('background','url(css/img/index/footer/gotop_service_d114e897.gif) -60px 0 no-repeat');
+    });
+    $('#goTop').on('mouseout','.zhiCustomBtn',function () {
+        $(this).css('background','url(css/img/index/footer/gotop_service_d114e897.gif) 0 0 no-repeat');
+    });
 });
    

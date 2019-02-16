@@ -43,7 +43,11 @@
     // echo $res;
 
     if($res){
-        $code = array('code'=>0,'message'=>'恭喜你注册成功！');
+        // $code = array('code'=>0,'message'=>'恭喜你注册成功！');
+        $sql2 = "SELECT * FROM user_info WHERE user_name = '$user_name' AND user_password = '$user_password'";
+        $res2 = $conn->query($sql2);
+        $row2 = $res2->fetch_all(MYSQLI_ASSOC);
+        $code = array('code'=>0,'content'=>$row2,'message'=>'注册成功！');
     }else{
         $code = array('code'=>1,'message'=>'注册失败！');
     }

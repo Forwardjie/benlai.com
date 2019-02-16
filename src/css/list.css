@@ -256,7 +256,7 @@
 }
 #listbox .box_right .list_sku dl dd .box .quantity {
   float: right;
-  margin: 4px 0 0;
+  margin: -3px 0 0;
   display: none;
 }
 #listbox .box_right .list_sku dl dd .box .quantity a {

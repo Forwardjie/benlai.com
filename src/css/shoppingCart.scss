@@ -1,10 +1,13 @@
 @charset "utf-8";//设置编码
 
-.box900{
+.box990{
     width: 990px;
     margin: 0 auto;
 }
-.login{
+.header2{
+    height: 31px;
+}
+.accountNumber{
     float: left;
     dl{
         height: 30px;
@@ -21,7 +24,7 @@
             z-index: 100;
             a{
                 display: block;
-                background: url(img/shoppingCart/n_top_ico_e5a1c5b5.png) 113px 13px no-repeat;
+                background: url(img/shoppingCart/n_top_ico_e5a1c5b5.png) 114px 13px no-repeat;
                 padding-right: 19px;
                 line-height: 32px;
                 color: #3e4141;
@@ -96,5 +99,244 @@
     }
     p{
         float: left;
+    }
+}
+.cart_none{
+    width: 990px;
+    text-align: center;
+    padding: 100px 0;
+    img{
+        width: 80px;
+    }
+    p{
+        font: 400 14px/60px "Microsoft YaHei";
+    }
+    a{
+        color: #abd13e;
+        text-decoration: underline;
+    }
+}
+.cart_top{
+    width: 990px;
+    height: 120px;
+    float: left;
+    .mt25{
+        margin-top: 25px;
+        float: left;
+    }
+    .mt30{
+        margin-top: 30px;
+    }
+    .mt15{
+        margin-top: 15px;
+    }
+}
+.cart_tit_n{
+    height: 35px;
+    width: 990px;
+    overflow: hidden;
+    .cart_word{
+        font: 400 16px/35px "Microsoft YaHei";
+        float: left;
+    }
+}
+.min_all{
+    width: 990px;
+    .cart_alltit{
+        width: 100%;
+        margin: 50px 0 0;
+        background-color: #ff9000;
+        overflow: hidden;
+        p{
+            float: left;
+            font-size: 14px;
+            color: #fff;
+            font-weight: 700;
+            line-height: 36px;
+            padding: 0 10px;
+        }
+        em{
+            line-height: 36px;
+            margin-left: 10px;
+            color: #fff;
+        }
+    }
+    .cart_n{
+        width: 990px;
+        .cart_tit{
+            height: 40px;
+            background-color: #fafbf8;
+            border-top: 1px solid #edecec;
+            border-bottom: 1px solid #edecec;
+            font: 400 12px/40px "宋体";
+            input{
+                margin: 13px 27px 0 35px;
+            }
+            span{
+                display: inline-block;
+            }
+        }
+        ul{
+            li{
+                width: 990px;
+                padding: 20px 0;
+                border: 1px dotted #e1e1e1;
+                overflow: hidden;
+                .check{
+                    width: 40px;
+                    margin: 22px 0 0 35px;
+                    float: left;
+                }
+                .pic{
+                    width: 75px;
+                    float: left;
+                    img{
+                        width: 60px;
+                        height: 60px;
+                    }
+                }
+                .name{
+                    float: left;
+                    width: 350px;
+                    margin-left: 40px;
+                    a{
+                        display: block;
+                        height: 44px;
+                        line-height: 22px;
+                        text-overflow: clip;
+                        overflow: hidden;
+                    }
+                }
+                .price{
+                    width: 115px;
+                    float: left;
+                    font: 400 18px/22px "MicroSoft YaHei";
+                }
+                .c_quantity{
+                    width: 84px;
+                    float: left;
+                    margin-left: 5px;
+                    p{
+                        float: left;
+                        line-height: 16px;
+                        margin-top: 3px;
+                    }
+                    .mt0{
+                        margin-top: 0;
+                        .textgt_n{
+                            width: 36px;
+                            height: 14px;
+                            border: 1px solid #dadada;
+                            font-size: 14px;
+                            padding: 3px;
+                            line-height: 14px;
+                            display: block;
+                            text-align: center;
+                            margin: 0 5px;
+                            float: left;
+                        }
+                    }
+                }
+                .subtotal{
+                    float: left;
+                    width: 115px;
+                    margin-left: 30px;
+                    font: 400 20px/22px "Microsoft YaHei";
+                    color: #ff9000;
+                }
+                .operating{
+                    width: 80px;
+                    float: right;
+                    // line-height: 22px;
+                    a{
+                        color: #333;
+                        display: block;
+                        // height: 12px;
+                        font-size: 12px;
+
+                    }
+                    .mt5{
+                        margin-top: 5px;
+                    }
+                }
+            }
+        }
+    }
+    .hzcart{
+        width: 990px;
+        // line-height: 30px;
+        text-align: right;
+        .del_all{
+            float: left;
+            width: 200px;
+            margin: 25px 0 0 22px;
+            .check{
+                width: 40px;
+                float: left;
+                text-align: center;
+                // height: 13px;
+                input{
+                    font-family: "宋体","Arial Narrow",HELVETICA;
+                    font-size: 12px;
+                    color: #333;
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+            a.select{
+                float: left;
+                line-height: normal;
+                *line-height: 22px;
+                color: #333;
+                margin-right: 30px;
+            }
+            a.delete{
+                float: left;
+                // *margin-top: 2px;
+            }
+        }
+        .details{
+            text-align: right;
+            span{
+                margin-left: 20px;
+                color: #333;
+                font: 400 14px/60px "Microsoft YaHei";
+                font{
+                    color: #eb6100;
+                    font: 400 16px/60px "Microsoft YaHei";
+                    margin-right: 5px;
+                }
+            }
+        }
+        .all_price{
+            font: 400 14px/26px "Microsoft YaHei";
+            span{
+                font: 800 24px/26px "Microsoft YaHei";
+                color: #eb6100;
+            }
+        }
+        .butn{
+            width: 990px;
+            height: 45px;
+            margin-bottom: 50px;
+            float: right;
+            .butn19{
+                width: 140px;
+                height: 38px;
+                background-position: 0 0;
+                background: url(img/shoppingCart/App_QR_Code_3de39ad3.png) no-repeat;
+                border: 0;
+                cursor: pointer;
+            }
+            a.continue{
+                font-family: "Microsoft YaHei";
+                font-size: 18px;
+                padding: 0 25px 0 15px;
+                line-height: 38px;
+                float: right;
+                color: #669934;
+                background: url(img/shoppingCart/goonbuy02_cfc9dde6.gif) no-repeat 0 13px;
+            }
+        }
     }
 }

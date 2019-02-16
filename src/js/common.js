@@ -525,3 +525,25 @@ function ajax(method, url, data, fn) {
 	
 }
 
+
+/*回到顶部
+	ele:点击的节点
+
+*/
+function GoTop(ele) {
+	window.onscroll = function() {
+		var scrollTop = window.scrollY;
+		console.log(scrollTop);
+		if(scrollTop >= 300){
+			ele.style.display = 'block';
+		}else{
+			ele.style.display = 'none';
+		}
+	}
+	
+	//2.点击回到顶部，能快速的回到顶部
+	ele.onclick = function() {
+		window.scrollTo(0, 0);
+	}
+}
+

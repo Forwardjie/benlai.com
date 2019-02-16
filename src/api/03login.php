@@ -31,7 +31,7 @@
     //写一个sql语句，查询zhuce1内所有的内容
     //SELECT * FROM user_info WHERE user_name = 'jingjing' AND user_password = '123456';
 
-    $sql = "SELECT * FROM user_info WHERE user_name = '$user_name' AND user_password = '$user_password';";
+    $sql = "SELECT * FROM user_info WHERE user_name = '$user_name' AND user_password = '$user_password'";
     // echo $sql;
 
 
@@ -53,12 +53,13 @@
         // }
     // echo $row;
     if($row){
-        $code = array('code'=>0,'message'=>'登陆成功！');
+        $code = array('code'=>0,'content'=>$row,'message'=>'登陆成功！');
         // setcookie('uid', $rs['user_id'], time() + 3600*60, '/');
 		// setcookie('user_name', $rs['user_name'], time() + 3600*60, '/');
 		// $code = array('code'=>0,'message'=>'登陆成功！');
     }else{
-        $code = array('code'=>1,'message'=>'登陆失败！');
+        // echo $row;
+        $code = array('code'=>1,'content'=>$row,'message'=>'登陆失败！');
     }
 
     // var_dump($row);

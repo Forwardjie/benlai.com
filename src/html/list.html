@@ -10,21 +10,22 @@
     <link rel="stylesheet" href="../css/list.css">
     <script src="../js/common.js"></script>
     <script src="../js/jquery-1.10.1.min.js"></script>
+    <script src="../js/jquery.cookie.js"></script>
     <script src="../js/CommonPart.js"></script>
     <script src="../js/list.js"></script>
 </head>
 <body>
     <!-- 列表页 -->
-    <div id="benlai_goods">
+    <div id="benlai">
         <!-- 头部 开始 -->
-        <div class="header" id="headerView">
+        <div class="header header2" id="headerView">
             <div class="head_top">
                 <div class="container">
                     <div class="login" id="welcome_login">
                         您好，请
-                        <a href="javascript:;">[登录]</a>
-                        <a href="javascript:;">[注册]</a>
-                        <a href="javascript:;">[机构会员]</a>
+                        <a href="login.html">[登录]</a>
+                        <a href="login.html">[注册]</a>
+                        <a href="https://www.benlai.com/Account/ExclusiveEntrance">[机构会员]</a>
                     </div>
                     <div class="head_city" id="local">
                         <a href="javascript:;">
@@ -36,7 +37,7 @@
                         <ul>
                             <li>
                                 <div class="menu_word">
-                                    <a href="javascript:;">我的订单</a>
+                                    <a href="shoppingCart.html">我的订单</a>
                                 </div>
                             </li>
                             <li>
@@ -97,7 +98,7 @@
                         <dl>
                             <dt>
                                 <div id="HeadCartcount" class="buy_quantity">0</div>
-                                <a href="javascript:;">
+                                <a href="shoppingCart.html">
                                     <s></s>购物车
                                 </a>
                             </dt>
@@ -1393,11 +1394,11 @@
             <!--右侧浮动-->
             <div id="goTop">
                 <a href="javascript:;" hidefocus="true" id="go_top" title="回到顶部" style="display: none;"></a>
-                <a href="/cart.html" id="right_cart" class="cart_buy" title="前往购物车">0</a>
+                <a href="shoppingCart.html" id="right_cart" class="cart_buy" title="前往购物车">0</a>
                 <a href="javascript:;" class="zhiCustomBtn service" data-type="easemob">&nbsp;</a>
                 <a id="two_code" href="javascript:;" hidefocus="true" class="two_code" title="点击查看二维码">&nbsp;</a>
             </div>
-            <div class="pop_cart">
+            <div class="pop_cart"  style="right: 52px; display: none">
                 <div class="pop_buy">
                     <ul id="item_added"></ul>
                 </div>
