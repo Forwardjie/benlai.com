@@ -211,6 +211,8 @@ $(function() {
                             <div class="spec-items"> 
                                 <ul>
                                     <li class="on"><img src="../${json.img}" data-lsrc="../${json.img}" data-maxSrc="../${json.img}"></li>
+                                    <li class="on"><img src="../${json.img}" data-lsrc="../${json.img}" data-maxSrc="../${json.img}"></li>
+                                    <li class="on"><img src="../${json.img}" data-lsrc="../${json.img}" data-maxSrc="../${json.img}"></li>
                                 </ul>
                             </div>
                         </div>
@@ -274,7 +276,7 @@ $(function() {
                                         <a class="down" id="dow" href="javascript:void(0);" hidefocus="true"></a>
                                     </dt>
                                     <dd>
-                                        <div id="AddCartDiv" class="buy_btn"><a class="btn01" id="AddCart" href="javascript:void(0);" data-id="${json.goods_id}"> </a></div>
+                                        <div id="AddCartDiv" class="buy_btn"><a class="btn01 ico00" id="AddCart" href="javascript:void(0);" data-id="${json.goods_id}"> </a></div>
                                         <div class="buy_evaluate">
                                             好评率<font id="span_scoreCount">99%</font>
                                             (<a href="#tabdiv6"><span>1362</span>人评价</a>)
@@ -329,7 +331,7 @@ $(function() {
      /*添加购物车 开始*/
     // var CartNum = 0;
     console.log(999);
-    $('#_ProductDetails_0').on('click','#AddCart',function () {
+    $('#benlai').on('click','.ico00',function () {
         // $(this).attr('data-id');
         console.log($(this).attr('data-id'));
         var url = '../api/06find_id.php';

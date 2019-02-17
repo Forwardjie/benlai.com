@@ -263,15 +263,6 @@
   z-index: 4;
   width: 885px;
   height: 265px;
-  display: block;
-}
-#benlai .main1200 .index_new .index15_tab dl dd.dd:nth-child(2) {
-  display: none;
-}
-#benlai .main1200 .index_new .index15_tab dl dd.dd:nth-child(3) {
-  display: none;
-}
-#benlai .main1200 .index_new .index15_tab dl dd.dd:nth-child(4) {
   display: none;
 }
 #benlai .main1200 .index_new .index15_tab dl dd .index_sku {

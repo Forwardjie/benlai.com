@@ -74,12 +74,13 @@ $(function () {
         function checkname(str){
             console.log(str);
             var arr = JSON.parse(str);
-            // console.log(arr.code);
-            var id = arr.content[0].user_id;
-            console.log(id);
+            console.log(arr.code);
+            
+            // console.log(id);
             console.log(!arr.code);
             console.log(istrue);
             if(!arr.code){
+                var id = arr.content[0].user_id;
                 // if(istrue){
                     // var name = $('#phoneTxt').val().trim();
                     // var pswVal = $('#passTxt').val().trim();
@@ -98,7 +99,7 @@ $(function () {
                     // decodeURIComponent();
                 // }
                 // alert('登录成功！');
-                window.location.href = '../01.html';
+                window.location.href = '../index.html';
 
             }else{
                 alert('登录失败！');

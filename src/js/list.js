@@ -124,7 +124,7 @@ $(function () {
                                     </a>
                                 </div>
                                 <div class="name">
-                                    <a href="details.html">
+                                    <a href="details.html?id=${item.goods_id}">
                                         <font>${item.main_title}</font>
                                         <span>${item.sub_title}</span>
                                     </a>
@@ -411,72 +411,78 @@ $(function () {
      /*添加购物车 开始*/
     // var CartNum = 0;
     $('#content').on('click','.CartBtn',function () {
-        // $(this).attr('data-id');
-        console.log($(this).attr('data-id'));
-        var url = '../api/06find_id.php';
-        var data = 'id='+ $(this).attr('data-id');
+        if($.cookie('id')){
+            // $(this).attr('data-id');
+            console.log($(this).attr('data-id'));
+            var url = '../api/06find_id.php';
+            var data = 'id='+ $(this).attr('data-id');
 
-        $('.pop_cart').css('display','block');
-        $('#right_cart').css('background','url(../css/img/index/footer/cart_pop01_bf3d2d55.gif) 0 0 no-repeat');
-        ajax('get',url,data,function (str) {
-            
-            var arr = JSON.parse(str);
-            console.log(arr);
-            var item_added = document.getElementById('item_added');
-            // console.log(item_added)
-            var html = `<li class="b0">
-                            <div class="pic">
-                                <img src="../${arr[0].img}" alt="">
-                            </div>
-                            <div class="name">
-                            ${arr[0].main_title}
-                                <br>
-                                <span>X 1 加入成功</span>
-                            </div>
-                            <div class="price">￥${arr[0].new_price}</div>
-                        </li>`;
-            item_added.innerHTML = html;
-            // console.log(item_added);
-            // ++ CartNum;
-            // $('#right_cart').text(CartNum);
-            var url2 = '../api/07ShoppingCart.php';
-            // console.log(data);
-            var user_id = $.cookie('id');
-            var data4 = data +'&user_id='+ user_id;
-            console.log(data4);
-            ajax('post',url2,data4,function (str) {
-                console.log(str);
-            })
-            // shoppingCartNums();
-            // $('#right_cart').css('background','url(css/img/index/footer/cart_pop01_bf3d2d55.gif) 0 0 no-repeat');
-            /*渲染购物车数量 开始*/
-            var url3 = '../api/13user_id_shoppingcart.php';
-            var user_id = $.cookie('id');
-            var data5 = 'user_id='+ user_id;
-            ajax('get',url3,data5,function (str) {
-                // console.log(str);
-  
+            $('.pop_cart').css('display','block');
+            $('#right_cart').css('background','url(../css/img/index/footer/cart_pop01_bf3d2d55.gif) 0 0 no-repeat');
+            ajax('get',url,data,function (str) {
+                
                 var arr = JSON.parse(str);
-                var nums = 0;
-                for(i = 0;i < arr.length;i++){
-                    nums += arr[i].goods_num * 1
-                }
-                console.log(nums);
-                // var nums = arr.length;
-                var HeadCartcount = document.getElementById('HeadCartcount');
-                var right_cart = document.getElementById('right_cart');
-                HeadCartcount.innerHTML = nums;
-                right_cart.innerHTML = nums;
-            
-            });
-            /*清除购物车卡片 开始*/
-            setTimeout(() => {
-                $('.pop_cart').css('display','none');
-                $('#right_cart').css('background','url(../css/img/index/footer/cart_pop04_7d8dece4.gif) 0 0 no-repeat');
-            }, 2000);
-            
-            
-        })
+                console.log(arr);
+                var item_added = document.getElementById('item_added');
+                // console.log(item_added)
+                var html = `<li class="b0">
+                                <div class="pic">
+                                    <img src="../${arr[0].img}" alt="">
+                                </div>
+                                <div class="name">
+                                ${arr[0].main_title}
+                                    <br>
+                                    <span>X 1 加入成功</span>
+                                </div>
+                                <div class="price">￥${arr[0].new_price}</div>
+                            </li>`;
+                item_added.innerHTML = html;
+                // console.log(item_added);
+                // ++ CartNum;
+                // $('#right_cart').text(CartNum);
+                var url2 = '../api/07ShoppingCart.php';
+                // console.log(data);
+                var user_id = $.cookie('id');
+                var data4 = data +'&user_id='+ user_id;
+                console.log(data4);
+                ajax('post',url2,data4,function (str) {
+                    console.log(str);
+                })
+                // shoppingCartNums();
+                // $('#right_cart').css('background','url(css/img/index/footer/cart_pop01_bf3d2d55.gif) 0 0 no-repeat');
+                /*渲染购物车数量 开始*/
+                var url3 = '../api/13user_id_shoppingcart.php';
+                var user_id = $.cookie('id');
+                var data5 = 'user_id='+ user_id;
+                ajax('get',url3,data5,function (str) {
+                    // console.log(str);
+
+                    var arr = JSON.parse(str);
+                    var nums = 0;
+                    for(i = 0;i < arr.length;i++){
+                        nums += arr[i].goods_num * 1
+                    }
+                    console.log(nums);
+                    // var nums = arr.length;
+                    var HeadCartcount = document.getElementById('HeadCartcount');
+                    var right_cart = document.getElementById('right_cart');
+                    HeadCartcount.innerHTML = nums;
+                    right_cart.innerHTML = nums;
+                
+                });
+                /*清除购物车卡片 开始*/
+                setTimeout(() => {
+                    $('.pop_cart').css('display','none');
+                    $('#right_cart').css('background','url(../css/img/index/footer/cart_pop04_7d8dece4.gif) 0 0 no-repeat');
+                }, 2000);
+                
+                
+            })
+        }else {
+            window.location.href = 'login.html';
+		    alert('温馨提示：请您先登录账号');
+        }
+        
     });
     /*购物车数量 开始*/
     function shoppingCartNums() {

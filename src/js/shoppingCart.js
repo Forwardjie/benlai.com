@@ -189,7 +189,7 @@ $(function () {
 				if($('.good_del').size() == 0){
 					// $('#myCart').css('display','none');
 					var myCart = document.getElementById('myCart');
-					myCart.innerHTML = ` <div class="cart_none"><img src="../img/shoppingCart/cart_none.png"><p>您还没有购买过商品，<a href="../index.html">去逛逛吧</a></p></div>`;
+					myCart.innerHTML = ` <div class="cart_none"><img src="../img/shoppingCart/cart_none.png"><p>您还没有购买过商品，<a href="list.html">去逛逛吧</a></p></div>`;
 				}
 			}
 			//5.选中单行

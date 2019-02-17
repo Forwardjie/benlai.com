@@ -89,14 +89,19 @@ $(function() {
                         </div>`;
             head_top.innerHTML = html;
             // $.cookie('id',null, { expires: -7, path: '/' });
-            // $('#SignOut').on('click',function () {
-                // $.cookie('id',null, { expires: -7, path: '/' });
-            // });
+            $('#benlai').on('click','#SignOut',function () {
+                $.cookie('id',null, { expires: -7, path: '/' });
+                window.location.href = 'html/login.html';
+                alert('温馨提示：请您先登录账号');
+            });
         });
     }
 
-
-
+    /*退出登录 开始*/
+    // $('#benlai').on('click','#SignOut',function () {
+    //     $.cookie('id',null, { expires: -7, path: '/' });
+    //     window.location.reload();
+    // });
     /*头部顶 开始*/
     $('#benlai').on('mouseover','.head_top .login a',function () {
         $(this).css('text-decoration','underline');

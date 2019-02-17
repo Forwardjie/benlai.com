@@ -24,7 +24,7 @@ $(function() {
                                             <a href="javascript:;" class="fl">
                                                 <p>${arr[0].user_name}</p>   
                                             </a>
-                                            <a href="javascript:;" class="fr"  style="color: #78a000">[退出登录]</a>
+                                            <a href="javascript:;" id="SignOut" class="fr"  style="color: #78a000">[退出登录]</a>
                                         </div>
                                         <em><a href="javascript:;">
                                             级别<br>
@@ -86,17 +86,354 @@ $(function() {
                             </div>
                         </div>`;
             head_top.innerHTML = html;
+            /*退出登录 开始*/
+            $('#benlai').on('click','#SignOut',function () {
+                $.cookie('id',null, { expires: -7, path: '/' });
+                window.location.href = 'html/login.html';
+                alert('温馨提示：请您先登录账号');
+            });
         });
     }
+    /*退出登录 开始*/
+    // $('#benlai').on('click','#SignOut',function () {
+    //     $.cookie('id',null, { expires: -7, path: '/' });
+    //     window.location.reload();
+    // });
 
+    /*好评如潮 开始*/
+    var data10 = 'module=居家优选'
+    ajax('post','api/09chaxun.php',data10,function(str) {
+        var arr = JSON.parse(str);
+        var index15_tab = document.getElementsByClassName('index15_tab')[0];
+        for(var i = 0;i < arr.length;i++){
+            if(!arr[i].sub_title){
+                arr[i].sub_title = '';
+            }
+            if(!arr[i].old_price){
+                arr[i].old_price = '';
+            }
+        }
+        
+        index15_tab.innerHTML =`<dl>
+        <dt class="on">
+            <a href="javascript:;">好评如潮</a>
+        </dt>
+        <dd style="display: block">
+            <div class="index_sku">
+                <ul>
+                <li>
+                <div class="box">
+                    <p class="pic"><a href="javascript:;">
+                        <img src="${arr[0].img}" alt="">
+                    </a></p>
+                    <p class="name"><a href="html/details.html?id=${arr[0].goods_id}">
+                        <font>${arr[0].main_title}</font>
+                        <span>${arr[0].sub_title}</span>
+                    </a></p>
+                    <p class="price">
+                    ${arr[0].new_price}
+                        <span>${arr[0].old_price}</span>
+                    </p>
+                    <p class="btn"><a class="ico00" data-id="${arr[0].goods_id}" href="javascript:;">
+                    </a></p>
+                </div>
+            </li>
+                    <li>
+                        <div class="box">
+                            <p class="pic"><a href="javascript:;">
+                                <img src="${arr[1].img}" alt="">
+                            </a></p>
+                            <p class="name"><a href="html/details.html?id=${arr[1].goods_id}">
+                                <font>${arr[1].main_title}</font>
+                                <span>${arr[1].sub_title}</span>
+                            </a></p>
+                            <p class="price">
+                            ${arr[1].new_price}
+                                <span>${arr[1].old_price}</span>
+                            </p>
+                            <p class="btn"><a class="ico00" data-id="${arr[1].goods_id}" href="javascript:;">
+                            </a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box">
+                            <p class="pic"><a href="javascript:;">
+                                <img src="${arr[2].img}" alt="">
+                            </a></p>
+                            <p class="name"><a href="html/details.html?id=${arr[2].goods_id}">
+                                <font>${arr[2].main_title}</font>
+                                <span>${arr[2].sub_title}</span>
+                            </a></p>
+                            <p class="price">
+                            ${arr[2].new_price}
+                                <span>${arr[2].old_price}</span>
+                            </p>
+                            <p class="btn"><a class="ico00" data-id="${arr[2].goods_id}" href="javascript:;">
+                            </a></p>
+                        </div>
+                    </li>
+                    <li>
+                    <div class="box">
+                        <p class="pic"><a href="javascript:;">
+                            <img src="${arr[3].img}" alt="">
+                        </a></p>
+                        <p class="name"><a href="html/details.html?id=${arr[3].goods_id}">
+                            <font>${arr[3].main_title}</font>
+                            <span>${arr[3].sub_title}</span>
+                        </a></p>
+                        <p class="price">
+                        ${arr[3].new_price}
+                            <span>${arr[3].old_price}</span>
+                        </p>
+                        <p class="btn"><a class="ico00" data-id="${arr[3].goods_id}" href="javascript:;">
+                        </a></p>
+                    </div>
+                </li>
+                    <li>
+                    <div class="box">
+                        <p class="pic"><a href="javascript:;">
+                            <img src="${arr[4].img}" alt="">
+                        </a></p>
+                        <p class="name"><a href="html/details.html?id=${arr[4].goods_id}">
+                            <font>${arr[4].main_title}</font>
+                            <span>${arr[4].sub_title}</span>
+                        </a></p>
+                        <p class="price">
+                        ${arr[4].new_price}
+                            <span>${arr[4].old_price}</span>
+                        </p>
+                        <p class="btn"><a class="ico00" data-id="${arr[4].goods_id}" href="javascript:;">
+                        </a></p>
+                    </div>
+                </li>
+                </ul>
+            </div>
+        </dd>
+    </dl>
+    <dl>
+        <dt>
+            <a href="javascript:;">新品上线</a>
+        </dt>
+        <dd>
+            <div class="index_sku">
+                <ul>
+                <li>
+                <div class="box">
+                    <p class="pic"><a href="javascript:;">
+                        <img src="${arr[5].img}" alt="">
+                    </a></p>
+                    <p class="name"><a href="html/details.html?id=${arr[5].goods_id}">
+                        <font>${arr[5].main_title}</font>
+                        <span>${arr[5].sub_title}</span>
+                    </a></p>
+                    <p class="price">
+                    ${arr[5].new_price}
+                        <span>${arr[5].old_price}</span>
+                    </p>
+                    <p class="btn"><a class="ico00" data-id="${arr[5].goods_id}" href="javascript:;">
+                    </a></p>
+                </div>
+            </li>
+                    <li>
+                        <div class="box">
+                            <p class="pic"><a href="javascript:;">
+                                <img src="${arr[6].img}" alt="">
+                            </a></p>
+                            <p class="name"><a href="html/details.html?id=${arr[6].goods_id}">
+                                <font>${arr[6].main_title}</font>
+                                <span>${arr[6].sub_title}</span>
+                            </a></p>
+                            <p class="price">
+                            ${arr[6].new_price}
+                                <span>${arr[6].old_price}</span>
+                            </p>
+                            <p class="btn"><a class="ico00" data-id="${arr[6].goods_id}" href="javascript:;">
+                            </a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box">
+                            <p class="pic"><a href="javascript:;">
+                                <img src="${arr[7].img}" alt="">
+                            </a></p>
+                            <p class="name"><a href="html/details.html?id=${arr[7].goods_id}">
+                                <font>${arr[7].main_title}</font>
+                                <span>${arr[7].sub_title}</span>
+                            </a></p>
+                            <p class="price">
+                            ${arr[7].new_price}
+                                <span>${arr[7].old_price}</span>
+                            </p>
+                            <p class="btn"><a class="ico00" data-id="${arr[7].goods_id}" href="javascript:;">
+                            </a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box">
+                            <p class="pic"><a href="javascript:;">
+                                <img src="${arr[8].img}" alt="">
+                            </a></p>
+                            <p class="name"><a href="html/details.html?id=${arr[8].goods_id}">
+                                <font>${arr[8].main_title}</font>
+                                <span>${arr[8].sub_title}</span>
+                            </a></p>
+                            <p class="price">
+                            ${arr[8].new_price}
+                                <span>${arr[8].old_price}</span>
+                            </p>
+                            <p class="btn"><a class="ico00" data-id="${arr[8].goods_id}" href="javascript:;">
+                            </a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box">
+                            <p class="pic"><a href="javascript:;">
+                                <img src="${arr[9].img}" alt="">
+                            </a></p>
+                            <p class="name"><a href="html/details.html?id=${arr[9].goods_id}">
+                                <font>${arr[9].main_title}</font>
+                                <span>${arr[9].sub_title}</span>
+                            </a></p>
+                            <p class="price">
+                            ${arr[9].new_price}
+                                <span>${arr[9].old_price}</span>
+                            </p>
+                            <p class="btn"><a class="ico00" data-id="${arr[9].goods_id}" href="javascript:;">
+                            </a></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </dd>
+    </dl>`;
 
-
-
-
+    });
+    /*好评如潮 开始*/
+    var data12 = 'module=肉禽蛋品'
+    ajax('post','api/09chaxun.php',data12,function(str) {
+        var arr = JSON.parse(str);
+        var index15_sku2_list = document.getElementsByClassName('index15_sku2_list')[0];
+        for(var i = 0;i < arr.length;i++){
+            if(!arr[i].sub_title){
+                arr[i].sub_title = '';
+            }
+            if(!arr[i].old_price){
+                arr[i].old_price = '';
+            }
+        }
+        // console.log(arr[6].goods_id)
+        index15_sku2_list.innerHTML =`<li>
+        <p class="pic"><a href="javascript:;">
+            <img style="display: inline; opacity: 1;" src="${arr[6].img}">
+        </a></p>
+        <p class="name">
+            <a data-type="productlink" href="html/details.html?id=${arr[6].goods_id}" target="_blank">
+                <font>${arr[6].main_title}</font>
+                <span>${arr[6].sub_title}</span>
+            </a>
+        </p>
+        <p class="price">
+        ${arr[6].new_price}
+            <span>${arr[6].old_price}</span>
+        </p>
+        <p class="btn">
+            <a class="ico00"  data-id="${arr[6].goods_id} btn-type="addCart" btn-product="372412" btn-status="0"></a>
+        </p>
+    </li>
+    <li>
+        <p class="pic"><a href="javascript:;">
+            <img style="display: inline; opacity: 1;" src="${arr[7].img}">
+        </a></p>
+        <p class="name">
+            <a data-type="productlink" href="html/details.html?id=${arr[7].goods_id}" target="_blank">
+                <font>${arr[7].main_title}</font>
+                <span>${arr[7].sub_title}</span>
+            </a>
+        </p>
+        <p class="price">
+        ${arr[7].new_price}
+            <span>${arr[7].old_price}</span>
+        </p>
+        <p class="btn">
+            <a class="ico00"  data-id="${arr[7].goods_id} btn-type="addCart" btn-product="372412" btn-status="0"></a>
+        </p>
+    </li>
+    <li>
+        <p class="pic"><a href="javascript:;">
+            <img style="display: inline; opacity: 1;" src="${arr[8].img}">
+        </a></p>
+        <p class="name">
+            <a data-type="productlink" href="html/details.html?id=${arr[8].goods_id}" target="_blank">
+                <font>${arr[8].main_title}</font>
+                <span>${arr[8].sub_title}</span>
+            </a>
+        </p>
+        <p class="price">
+        ${arr[8].new_price}
+            <span>${arr[8].old_price}</span>
+        </p>
+        <p class="btn">
+            <a class="ico00"  data-id="${arr[8].goods_id} btn-type="addCart" btn-product="372412" btn-status="0"></a>
+        </p>
+    </li>
+    <li>
+        <p class="pic"><a href="javascript:;">
+            <img style="display: inline; opacity: 1;" src="${arr[9].img}">
+        </a></p>
+        <p class="name">
+            <a data-type="productlink" href="html/details.html?id=${arr[9].goods_id}" target="_blank">
+                <font>${arr[9].main_title}</font>
+                <span>${arr[9].sub_title}</span>
+            </a>
+        </p>
+        <p class="price">
+        ${arr[9].new_price}
+            <span>${arr[9].old_price}</span>
+        </p>
+        <p class="btn">
+            <a class="ico00"  data-id="${arr[9].goods_id} btn-type="addCart" btn-product="372412" btn-status="0"></a>
+        </p>
+    </li>
+    <li>
+        <p class="pic"><a href="javascript:;">
+            <img style="display: inline; opacity: 1;" src="${arr[10].img}">
+        </a></p>
+        <p class="name">
+            <a data-type="productlink" href="html/details.html?id=${arr[10].goods_id}" target="_blank">
+                <font>${arr[10].main_title}</font>
+                <span>${arr[10].sub_title}</span>
+            </a>
+        </p>
+        <p class="price">
+        ${arr[10].new_price}
+            <span>${arr[10].old_price}</span>
+        </p>
+        <p class="btn">
+            <a class="ico00"  data-id="${arr[10].goods_id} btn-type="addCart" btn-product="372412" btn-status="0"></a>
+        </p>
+    </li>
+    <li>
+        <p class="pic"><a href="javascript:;">
+            <img style="display: inline; opacity: 1;" src="${arr[11].img}">
+        </a></p>
+        <p class="name">
+            <a data-type="productlink" href="html/details.html?id=${arr[11].goods_id}" target="_blank">
+                <font>${arr[11].main_title}</font>
+                <span>${arr[11].sub_title}</span>
+            </a>
+        </p>
+        <p class="price">
+        ${arr[11].new_price}
+            <span>${arr[11].old_price}</span>
+        </p>
+        <p class="btn">
+            <a class="ico00"  data-id="${arr[11].goods_id} btn-type="addCart" btn-product="372412" btn-status="0"></a>
+        </p>
+    </li>`
+    });
 
 
     var OnlineHomePage = document.getElementById('OnlineHomePage');
-
     function show1(arr) {
         var res = arr.map(function(item,index) {//遍历所有的li
             if(!item.sub_title){
@@ -127,7 +464,7 @@ $(function() {
     }
     var run = false;// 模拟线程锁机制，防止多次请求(是否正在请求)
     var moduleNum = 1;
-    var html = [];
+    var html = '';
     show('module=时令鲜果');
     function show(data) {
        
@@ -135,10 +472,11 @@ $(function() {
         // var data = 'module=时令鲜果';
         
         ajax('post','api/09chaxun.php',data,function(str) {
-            // console.log(111)
+            // console.log(111);
             moduleNum+=1;
             run = false;
             var arr = JSON.parse(str);
+            console.log(arr);
             var arr1 = [];
             var arr2 = [];
             var arr3 = [];
@@ -153,7 +491,6 @@ $(function() {
                 }else if (item.name == '国产水果') {
                     arr4.push(item);
                 }
-
             });
             // list.innerHTML = html.join('') ;  
             // console.log(arr1)
@@ -249,8 +586,8 @@ $(function() {
                             </div>
                         </div>`;
                         // console.log(html)
-            // html+=currentHtml;
-            html.push(currentHtml);
+            html+=currentHtml;
+            
             // console.log(html)            
             // OnlineHomePage.innerHTML = html;
             if(moduleNum ==2){
@@ -295,71 +632,77 @@ $(function() {
 
     /*添加购物车 开始*/
     // var CartNum = 0;
-    $('#OnlineHomePage').on('click','.ico00',function () {
-        // $(this).attr('data-id');
-        // console.log($(this).attr('data-id'));
-        var url = 'api/06find_id.php';
-        var data = 'id='+ $(this).attr('data-id');
-        $('.pop_cart').css('display','block');
-        $('#right_cart').css('background','url(css/img/index/footer/cart_pop01_bf3d2d55.gif) 0 0 no-repeat');
-        ajax('get',url,data,function (str) {
-            
-            var arr = JSON.parse(str);
-            // console.log(arr);
-            var item_added = document.getElementById('item_added');
-            // console.log(item_added)
-            var html = `<li class="b0">
-                            <div class="pic">
-                                <img src="${arr[0].img}" alt="">
-                            </div>
-                            <div class="name">
-                            ${arr[0].main_title}
-                                <br>
-                                <span>X 1 加入成功</span>
-                            </div>
-                            <div class="price">￥${arr[0].new_price}</div>
-                        </li>`;
-            item_added.innerHTML = html;
-            // console.log(item_added);
-            // ++ CartNum;
-            // $('#right_cart').text(CartNum);
-            var url2 = 'api/07ShoppingCart.php';
-            console.log(data);
-            var user_id = $.cookie('id');
-            var data4 = data +'&user_id='+ user_id;
-            console.log(data4);
-            ajax('post',url2,data4,function (str) {
-                console.log(str);
-            })
-            // shoppingCartNums();
-            // $('#right_cart').css('background','url(css/img/index/footer/cart_pop01_bf3d2d55.gif) 0 0 no-repeat');
-            /*渲染购物车数量 开始*/
-            var url3 = 'api/13user_id_shoppingcart.php';
-            var user_id = $.cookie('id');
-            var data5 = 'user_id='+ user_id;
-            ajax('get',url3,data5,function (str) {
-                // console.log(str);
+    $('#benlai').on('click','.ico00',function () {
+        if($.cookie('id')){
+            // $(this).attr('data-id');
+            // console.log($(this).attr('data-id'));
+            var url = 'api/06find_id.php';
+            var data = 'id='+ $(this).attr('data-id');
+            $('.pop_cart').css('display','block');
+            $('#right_cart').css('background','url(css/img/index/footer/cart_pop01_bf3d2d55.gif) 0 0 no-repeat');
+            ajax('get',url,data,function (str) {
+                
                 var arr = JSON.parse(str);
-                var nums = 0;
-                for(i = 0;i < arr.length;i++){
-                    nums += arr[i].goods_num * 1
-                }
-                console.log(nums);
-                // var nums = arr.length;
-                var HeadCartcount = document.getElementById('HeadCartcount');
-                var right_cart = document.getElementById('right_cart');
-                HeadCartcount.innerHTML = nums;
-                right_cart.innerHTML = nums;
-            
-            });
-            /*清除购物车卡片 开始*/
-            setTimeout(() => {
-                $('.pop_cart').css('display','none');
-                $('#right_cart').css('background','url(css/img/index/footer/cart_pop04_7d8dece4.gif) 0 0 no-repeat');
-            }, 2000);
-            
-            
-        })
+                // console.log(arr);
+                var item_added = document.getElementById('item_added');
+                // console.log(item_added)
+                var html = `<li class="b0">
+                                <div class="pic">
+                                    <img src="${arr[0].img}" alt="">
+                                </div>
+                                <div class="name">
+                                ${arr[0].main_title}
+                                    <br>
+                                    <span>X 1 加入成功</span>
+                                </div>
+                                <div class="price">￥${arr[0].new_price}</div>
+                            </li>`;
+                item_added.innerHTML = html;
+                // console.log(item_added);
+                // ++ CartNum;
+                // $('#right_cart').text(CartNum);
+                var url2 = 'api/07ShoppingCart.php';
+                console.log(data);
+                var user_id = $.cookie('id');
+                var data4 = data +'&user_id='+ user_id;
+                console.log(data4);
+                ajax('post',url2,data4,function (str) {
+                    console.log(str);
+                })
+                // shoppingCartNums();
+                // $('#right_cart').css('background','url(css/img/index/footer/cart_pop01_bf3d2d55.gif) 0 0 no-repeat');
+                /*渲染购物车数量 开始*/
+                var url3 = 'api/13user_id_shoppingcart.php';
+                var user_id = $.cookie('id');
+                var data5 = 'user_id='+ user_id;
+                ajax('get',url3,data5,function (str) {
+                    // console.log(str);
+                    var arr = JSON.parse(str);
+                    var nums = 0;
+                    for(i = 0;i < arr.length;i++){
+                        nums += arr[i].goods_num * 1
+                    }
+                    console.log(nums);
+                    // var nums = arr.length;
+                    var HeadCartcount = document.getElementById('HeadCartcount');
+                    var right_cart = document.getElementById('right_cart');
+                    HeadCartcount.innerHTML = nums;
+                    right_cart.innerHTML = nums;
+                
+                });
+                /*清除购物车卡片 开始*/
+                setTimeout(() => {
+                    $('.pop_cart').css('display','none');
+                    $('#right_cart').css('background','url(css/img/index/footer/cart_pop04_7d8dece4.gif) 0 0 no-repeat');
+                }, 2000);
+                
+                
+            })
+        }else {
+            window.location.href = 'html/login.html';
+		    alert('温馨提示：请您先登录账号');
+        }
+       
     });
     /*购物车数量 开始*/
     function shoppingCartNums() {
@@ -509,7 +852,7 @@ $(function() {
         // $(this).find('dt').css('border-right','4px solid #fff');
         $(this).find('dt').css('width','157px');
 
-        $(this).find('dt').css('background-image','url(css/img/index/header/n_menu_bg02_oc_b129e9e3.png)');
+        // $(this).find('dt').css('background-image','url(css/img/index/header/n_menu_bg02_oc_b129e9e3.png)');
         // $(this).find('dt:after').css('background-image','url(css/img/header/n_icon13_9285c147.png)');
     });
     $('#benlai .head_menu_bg').on('mouseout','.tit_sort dl',function () {
@@ -521,7 +864,7 @@ $(function() {
         $(this).find('dt').css('border','none');
         $(this).find('dt').css('width','154px');
 
-        $(this).find('dt').css('background-image','url(css/img/index/header/n_menu_bg01_oc_b4237de2.png)');
+        // $(this).find('dt').css('background-image','url(css/img/index/header/n_menu_bg01_oc_b4237de2.png)');
         // $(this).find('dt:after').css('background-image','url(css/img/header/n_icon12_498beb5a.png)');
     });
 
@@ -562,7 +905,7 @@ $(function() {
     /*新品上线 开始 */
 
     $('#benlai .index_new').on('mouseover','.index15_tab dl',function () {
-        $('dd').css('display','none');
+        // $('dd').css('display','none');
         $('dt').attr('class','');
         $(this).find('dt').addClass('on');
         $(this).find('dd').css('display','block');
